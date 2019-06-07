@@ -11,32 +11,52 @@
     <link rel="stylesheet" href="style/style.css" type="text/css" />
     <style type="text/css">
         body{
-            background-image:url(image/car-back.jpg);
-            height:1000px;
-            width:100%;
-            position:fixed;
-            background-size:cover;
-            margin:0px;
-            padding:0px;
-            background-repeat: no-repeat;
-
+            
         }
         .main-menu{
-            background-color: #E5E0E1;
-            height:800px;
+            background-image: url(image/min-back.jpg);
+            background-position:center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            height:1200px;
             width:100%;
+            
+            /*position:relative;*/
         }
-        h1, h2 {
+        .main-headline{
+            margin-top:10%;
+        }
+        h1{
             text-align: center;
+            font-size:80px;
+        } 
+        h2{
+            text-align: center;
+            font-size:50px;
         }
         .quick-menu{
-            height:100px;
+            height:200px;
             width:100px;
             background-color:red;
         }
         #about-us{
-            background-color: teal;
-            height:800px;
+            background-image:url(image/car-back.jpg);
+            height:2000px;
+            width:100%;
+
+            background-position:center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            margin:0px;
+            padding:0px;
+            /*position:fixed;*/
+
+        }
+        .about-us-text{
+            background-color: #BFA685 ;
+            text-align: center;
+            
         }
     </style>
     <title>Sell My Car</title>
@@ -57,10 +77,10 @@
                         <a class="nav-link" href="#about-us">About Us <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#about-us">Selling My Car<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="draft.html">Selling Car<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#about-us">Buying My Car<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#about-us">Buying Car<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#about-us">Contact Us<span class="sr-only">(current)</span></a>
@@ -73,11 +93,13 @@
             </div>
         </nav>
         <!--Main Headline-->
-        <div>
+        <div class="main-headline">
+            <div>
             <h1>REINVENTING</h1>
         </div>
-        <div>
+            <div>
             <h2>YOUR DRIVING EXPERIENCE</h2>
+        </div>
         </div>
         <!--Quick Menu bar-->
         <div class="row justify-content-around mt-5 p-2">
@@ -90,7 +112,15 @@
     </main>
     
     <section id="about-us">
-        
+        <div class="container-fluid about-us-text col-sm-6 ">
+            <h2>About Us</h2>
+            <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>    
+        <div>
+            <a href="#main-menu"><span class="back-button badge badge-primary">back</span></a>
+            <span class="back-button badge badge-primary">Selling Car</span>
+            <span class="back-button badge badge-primary">Buying Car</span>
+        </div>
     </section>
 
     <!-- Optional JavaScript -->
