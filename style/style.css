@@ -1,0 +1,9 @@
+.about-us{
+    /*background-color: #E5E0E1;*/
+    background-image: url(image/car-back.jpg);
+    height: 200px;
+    width: 100%; 
+    position:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
