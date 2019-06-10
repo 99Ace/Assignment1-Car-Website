@@ -15,18 +15,15 @@
         }
 
         h1 {
-            font-family: serif;
             font-size: 65pt;
         }
 
         .shout {
-            font-family: serif;
             font-size: 40pt;
             font-style: oblique;
         }
 
         h3 {
-            font-family: serif;
             font-size: 20pt;
 
         }
@@ -97,10 +94,13 @@
                 height: 120px;
                 width: 180px
             }
-            #quote {
-                padding: 20px 120px;
-                font-size: 20pt;
+            #form-quote {
+                background-color: silver;
             }
+            span.mini-text{
+                font-size:4pt;
+            }
+
         }
     </style>
     <title>sellMycar.com</title>
@@ -161,35 +161,21 @@
         </nav>
         <!--Header liner-->
         <header class="container-fluid header my-5">
-            <h1>RE-INVENTING</h1>
-            <h3>YOUR <span class="shout">DRIVING</span> EXPERIENCE</h3>
+            <h1>Quotation</h1>
+            <h3>Will will reply to you within <span class="shout">24hrs</span> time</h3>
         </header>
-        <!--Selection Menu-->
-        <div class="row ">
-            <div class="col-3"></div>
-            <div class="col-6 p-0 m-0">
-                <!--Small screen appear, more than xs is hidden -->
-                <div class="row p-0 m-0 justify-content-center align-items-end d-sm-none">
-                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
-                    <div class="menu1b p-0 m-1 order-first "><img src="image/logo.png"></div>
-                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
-                </div>
-                <!--Big Screen appear, small screen is hidden-->
-                <div class="row p-0 m-0 justify-content-center align-items-end d-none d-sm-flex">
-                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
-                    <div class="menu1b p-0 m-1 "><img src="image/logo.png"></div>
-                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
-                </div>
-                <div class="row p-0 m-0 justify-content-center">
-                    <div class="menu1 p-0 m-1">
-                        <h3><span id="quote" class="badge badge-danger">Get a Quote</span></h3>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="col-3"></div>
 
+        <!--Form Enquiry Page-->
+        <div #id="form-quote">
+            <form class="m-5 py-4">
+                <div class="row mx-5 my-2"><label class="col-4" for="">Name</label><input class="col-7" type="text"></div>
+                <div class="row mx-5 my-2"><label class="col-4" for="">Owner ID Type</label><input class="col-7" type="text"></div>
+                <div class="row mx-5 my-2"><label class="col-4" for="">Owner ID (last 5-character)</label><input class="col-7" type="text"></div>
+                <div class="row mx-5 my-2"><label class="col-4" for="">Mobile</label><input class="col-7" type="text"></div>
+                <div class="row mx-5 my-2"><label class="col-4" for="">Email</label><input class="col-7" type="text"></div>
+            </form>
         </div>
+
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
