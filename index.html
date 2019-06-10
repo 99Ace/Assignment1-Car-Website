@@ -10,135 +10,187 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css" type="text/css" />
     <style type="text/css">
-        body{
-            
-        }
-        .main-menu{
-            /*background-image: url(image/min-back.jpg);*/
-            /*background-position:center;*/
-            /*background-size:cover;*/
-            /*background-repeat: no-repeat;*/
-            height:1000px;
-            /*width:100%;*/
-            /*position:relative;*/
-        }
-        .main-headline{
-            margin-top:10%;
-        }
-        h1{
+        .header {
             text-align: center;
-            font-size:80px;
-        } 
-        h2{
-            text-align: center;
-            font-size:50px;
         }
-        .quick-menu{
-            border:black 1px solid;
-            /*background-color:red;*/
-        }
-        .menu{
-            height:100px;
-            width:100px;
-            border:black 1px solid;
-        }
-        #about-us{
-            background-image:url(image/car-back.jpg);
-            height:2000px;
-            width:100%;
 
-            background-position:center;
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-attachment:fixed;
-            margin:0px;
-            padding:0px;
-            /*position:fixed;*/
+        h1 {
+            font-family: serif;
+            font-size: 65pt;
+        }
+
+        .shout {
+            font-family: serif;
+            font-size: 40pt;
+            font-style: oblique;
+        }
+
+        h3 {
+            font-family: serif;
+            font-size: 20pt;
 
         }
-        .about-us-text{
-            background-color: #BFA685 ;
-            text-align: center;
-            
+
+        .menu1a img {
+            height: 90px;
+            width: 110px
         }
-        
+
+        .menu1b img {
+            height: 150px;
+            width: 230px
+        }
+
+        #quote {
+            padding: 20px 160px;
+            font-family: Sans-serif;
+            font-style: oblique;
+            font-size: 20pt;
+            text-align: center;
+        }
+
+        @media screen and (max-width:950px) {
+            body {
+                background-color: pink;
+            }
+            h1 {
+                font-size: 50pt;
+            }
+            .shout {
+                font-size: 35pt;
+            }
+            h3 {
+                font-size: 20pt;
+            }
+            .menu1a img {
+                height: 70px;
+                width: 90px
+            }
+            .menu1b img {
+                height: 120px;
+                width: 180px
+            }
+            #quote {
+                padding: 20px 120px;
+                font-size: 20pt;
+            }
+        }
+
+        @media screen and (max-width:425px) {
+            body {
+                background-color: gold;
+            }
+            h1 {
+                font-size: 30pt;
+            }
+            .shout {
+                font-size: 25pt;
+            }
+            h3 {
+                font-size: 15pt;
+            }
+            .menu1a img {
+                height: 70px;
+                width: 85px
+            }
+            .menu1b img {
+                height: 120px;
+                width: 180px
+            }
+            #quote {
+                padding: 20px 120px;
+                font-size: 20pt;
+            }
+        }
     </style>
-    <title>sellMyCar.com</title>
+    <title>sellMycar.com</title>
 </head>
 
 <body>
-    <main class="container-fluid main-menu m-0 p-0" id="main-menu">
-        <!--Navigation Bar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light m-0">
-            <a class="navbar-brand" href="#">sellMyCar.com</a>
+    <main class="container-fluid p-0">
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Logo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span></button>
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#about-us">About Us <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="sellcar.html">Selling Car<span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="buycar.html">Buying Car<span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="sellcar.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sell Car
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="sellcar.html">3-Steps Procedure</a>
+                            <a class="dropdown-item" href="contact-us.html">Get a Quote</a>
+                        </div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact-us.html">Contact Us<span class="sr-only">(current)</span></a>
+                    <!--Dropdown nav-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="buycar.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Buy Car
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="buycar.html">New Import Car</a>
+                            <a class="dropdown-item" href="buycar.html">Pre-Owned Cars</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                                </form>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
-        <!--Main Headline-->
-        <div class="main-headline">
-            <div>
-            <h1>REINVENTING</h1>
-        </div>
-            <div>
-            <h2>YOUR DRIVING EXPERIENCE</h2>
-        </div>
-        </div>
-        <!--Quick Menu bar-->
-        <div class="row justify-content-around mt-5 p-2">
-            <div></div>
-            <div class="quick-menu col-8">
-                <div class="row">
-                    <div class="menu col-4">
-                        <a href="#about-us">Selling A Car</a>
-                    </div>
-                    <div class="menu buycar col-4">
-                        <a href="sellcar.html">About Us</a>
-                    </div>
-                    <div class="menu buycar col-4">
-                        <a href="buycar.html">Buying A Car</a>
+        <!--Header liner-->
+        <header class="container-fluid header my-5">
+            <h1>RE-INVENTING</h1>
+            <h3>YOUR <span class="shout">DRIVING</span> EXPERIENCE</h3>
+        </header>
+        <!--Selection Menu-->
+        <div class="row ">
+            <div class="col-3"></div>
+            <div class="col-6 p-0 m-0">
+                <!--Small screen appear, more than xs is hidden -->
+                <div class="row p-0 m-0 justify-content-center align-items-end d-sm-none">
+                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
+                    <div class="menu1b p-0 m-1 order-first "><img src="image/logo.png"></div>
+                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
+                </div>
+                <!--Big Screen appear, small screen is hidden-->
+                <div class="row p-0 m-0 justify-content-center align-items-end d-none d-sm-flex">
+                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
+                    <div class="menu1b p-0 m-1 "><img src="image/logo.png"></div>
+                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
+                </div>
+                <div class="row p-0 m-0 justify-content-center">
+                    <div class="menu1 p-0 m-1">
+                        <h3><span id="quote" class="badge badge-danger">Get a Quote</span></h3>
                     </div>
                 </div>
-                <div class=""></div>
-
+                
             </div>
-            <div></div>
+            <div class="col-3"></div>
+
         </div>
     </main>
-    <!--About Us Section-->
-    <section id="about-us">
-        <div class="container-fluid about-us-text col-sm-6 ">
-            <h2>About Us</h2>
-            <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>    
-        <div class="links">
-            <a href="#main-menu"><span class="back-button badge badge-primary">back</span></a>
-            <a href="sellcar.html"><span class="back-button badge badge-primary">Sell Car</span></a>
-            <a href="buycar.html"><span class="back-button badge badge-primary">Buy Car</span></a>
-            
-        </div>
-    </section>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
