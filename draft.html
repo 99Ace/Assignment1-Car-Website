@@ -17,33 +17,25 @@
         h1 {
             font-size: 65pt;
         }
-
-        .shout {
-            font-size: 40pt;
-            font-style: oblique;
-        }
+        
 
         h3 {
             font-size: 20pt;
 
         }
-
-        .menu1a img {
-            height: 90px;
-            width: 110px
-        }
-
-        .menu1b img {
-            height: 150px;
-            width: 230px
-        }
-
-        #quote {
-            padding: 20px 160px;
-            font-family: Sans-serif;
+        .shout {
+            font-size: 40pt;
             font-style: oblique;
-            font-size: 20pt;
-            text-align: center;
+            color:red;
+        }
+        .mini-text{
+            margin-top:0; 
+            padding:0;
+            font-size:10pt;
+        }
+        #form-quote {
+                background-color: silver;
+                border-radius:35px;
         }
 
         @media screen and (max-width:950px) {
@@ -57,18 +49,6 @@
                 font-size: 35pt;
             }
             h3 {
-                font-size: 20pt;
-            }
-            .menu1a img {
-                height: 70px;
-                width: 90px
-            }
-            .menu1b img {
-                height: 120px;
-                width: 180px
-            }
-            #quote {
-                padding: 20px 120px;
                 font-size: 20pt;
             }
         }
@@ -86,21 +66,6 @@
             h3 {
                 font-size: 15pt;
             }
-            .menu1a img {
-                height: 70px;
-                width: 85px
-            }
-            .menu1b img {
-                height: 120px;
-                width: 180px
-            }
-            #form-quote {
-                background-color: silver;
-            }
-            span.mini-text{
-                font-size:4pt;
-            }
-
         }
     </style>
     <title>sellMycar.com</title>
@@ -161,20 +126,47 @@
         </nav>
         <!--Header liner-->
         <header class="container-fluid header my-5">
-            <h1>Quotation</h1>
-            <h3>Will will reply to you within <span class="shout">24hrs</span> time</h3>
+            <h1> Quotation </h1>
+            <h3>Will will reply to you within <span class="shout red">24hrs</span> time</h3>
         </header>
 
         <!--Form Enquiry Page-->
-        <div #id="form-quote">
-            <form class="m-5 py-4">
-                <div class="row mx-5 my-2"><label class="col-4" for="">Name</label><input class="col-7" type="text"></div>
-                <div class="row mx-5 my-2"><label class="col-4" for="">Owner ID Type</label><input class="col-7" type="text"></div>
-                <div class="row mx-5 my-2"><label class="col-4" for="">Owner ID (last 5-character)</label><input class="col-7" type="text"></div>
-                <div class="row mx-5 my-2"><label class="col-4" for="">Mobile</label><input class="col-7" type="text"></div>
-                <div class="row mx-5 my-2"><label class="col-4" for="">Email</label><input class="col-7" type="text"></div>
+            <!--@small screen mode-->
+            <form id="form-quote" class="m-3 py-4 d-sm-none" action="/action_page.php" method="">
+                <div class="row mx-2 my-2"><label class="col-5" for="">Name</label><input class="col-6" type="text" name="name"></div>
+                <div class="row mx-2 my-2">
+                    <label class="col-5 " for="">Owner ID Type</label>
+                    <div class="col-6">
+                        <input type="radio" name="id-type" value="nric"> SingaporeNRIC<br>
+                        <input type="radio" name="id-type" value="business"> Business<br>
+                        <input type="radio" name="id-type" value="company"> Company<br>
+                        <input type="radio" name="id-type" value="fin"> Foreign Fin<br>
+                        <input type="radio" name="id-type"> Other <input type="text" name="id-type">
+                    </div>
+                </div>
+                <div class="row mx-2 my-2"><label class="col-5" for=""><div id="owner-id">Owner ID <span class="mini-text">(last 5-character)</span></div></label><input class="col-6" type="text" name="id-5c"></div>
+                <div class="row mx-2 my-2"><label class="col-5" for="">Mobile</label><input class="col-6" type="text" name="mobile"></div>
+                <div class="row mx-2 my-2"><label class="col-5" for="">Email</label><input class="col-6" type="text" name="email"></div>
+                <div class="row mx-2 my-2"><label class="col-5" for=""></label><input class="col-6" type="submit" value="Submit"></div>
             </form>
-        </div>
+            <!--@big screen mode-->
+            <form id="form-quote" class="m-5 py-4 d-none d-sm-block" action="/action_page.php" method="">
+                <div class="row mx-5 my-2"><label class="col-4" for="">Name</label><input class="col-7" type="text" name="name"></div>
+                <div class="row mx-5 my-2">
+                    <label class="col-4 " for="">Owner ID Type</label>
+                    <div class="col-7">
+                        <input type="radio" name="id-type" value="nric"> SingaporeNRIC<br>
+                        <input type="radio" name="id-type" value="business"> Business<br>
+                        <input type="radio" name="id-type" value="company"> Company<br>
+                        <input type="radio" name="id-type" value="fin"> Foreign Fin<br>
+                        <input type="radio" name="id-type"> Other <input type="text" name="id-type">
+                    </div>
+                </div>
+                <div class="row mx-5 my-2"><label class="col-4" for=""><div id="owner-id">Owner ID <span class="mini-text">(last 5-character)</span></div></label><input class="col-7" type="text" name="id-5c"></div>
+                <div class="row mx-5 my-2"><label class="col-4" for="">Mobile</label><input class="col-7" type="text" name="mobile"></div>
+                <div class="row mx-5 my-2"><label class="col-4" for="">Email</label><input class="col-7" type="text" name="email"></div>
+                <div class="row mx-5 my-2"><label class="col-4" for=""></label><input class="col-7" type="submit" value="Submit"></div>
+            </form>
 
     </main>
     <!-- Optional JavaScript -->

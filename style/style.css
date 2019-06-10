@@ -1,7 +1,12 @@
 body{
     /*background-color: rgba(200,200,200,0.25)*/
+    font-family: serif;
+
 }
 main{
     /*background-color: rgba(20,20,00,0.25);*/
     padding:50px;
+}
+.red{
+    color: red;
 }
