@@ -81,13 +81,13 @@
                 background-color: gold;
             }
             h1 {
-                font-size: 20pt;
+                font-size: 30pt;
             }
             .shout {
-                font-size: 35pt;
+                font-size: 25pt;
             }
             h3 {
-                font-size: 20pt;
+                font-size: 15pt;
             }
             .menu1a img {
                 height: 70px;
@@ -168,9 +168,16 @@
         <div class="row ">
             <div class="col-3"></div>
             <div class="col-6 p-0 m-0">
-                <div class="row p-0 m-0 justify-content-center align-items-end">
+                <!--Big screen-->
+                <div class="row p-0 m-0 justify-content-center align-items-end d-sm-none">
                     <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
-                    <div class="menu1b p-0 m-1"><img src="image/logo.png"></div>
+                    <div class="menu1b p-0 m-1 order-first "><img src="image/logo.png"></div>
+                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
+                </div>
+                <!--Small Screen-->
+                <div class="row p-0 m-0 justify-content-center align-items-end d-none d-md-flex">
+                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
+                    <div class="menu1b p-0 m-1 "><img src="image/logo.png"></div>
                     <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
                 </div>
                 <div class="row p-0 m-0 justify-content-center">
