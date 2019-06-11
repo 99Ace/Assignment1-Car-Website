@@ -17,25 +17,27 @@
         h1 {
             font-size: 65pt;
         }
-        
+
 
         h3 {
             font-size: 20pt;
 
         }
+
         .shout {
             font-size: 40pt;
             font-style: oblique;
-            color:red;
+            color: red;
         }
-        .mini-text{
-            margin-top:0; 
-            padding:0;
-            font-size:10pt;
+
+        .mini-main {
+            height: 0%;
+            width: 90%;
         }
-        #form-quote {
-                background-color: silver;
-                border-radius:35px;
+
+        .mini-sub {
+            height: 0%;
+            width: 30%;
         }
 
         @media screen and (max-width:950px) {
@@ -75,7 +77,7 @@
     <main class="container-fluid p-0">
         <!--Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="index.html"><img src="image/logo.png" style="height:45px; margin-left:10px; padding:0;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -126,47 +128,36 @@
         </nav>
         <!--Header liner-->
         <header class="container-fluid header my-5">
-            <h1> Quotation </h1>
-            <h3>Will will reply to you within <span class="shout red">24hrs</span> time</h3>
+            <h1> Buy My Car </h1>
+            <h3>Looking for your most suitable <span class="shout red">Drive !</span></h3>
         </header>
+        <!--Car Listing-->
+        <!--@big screen mode-->
+        <div class="row m-5 px-1 py-3 border border-dark">
+            <div class="col-4">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="image/mini-front.jpg" alt="First slide">
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                     </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 text-capitalize">
+                <h4><span class="text-weight-bold">Mini Cooper S Convertible</span></h4>
+                <p>Classy White Face-lifted Cabrio! Enjoy Huge Savings Of Up To $20k Saving Compare To Getting A New Unit. 4 Yrs Warranty With Eurokars. Owner Profile: Lady Professional. Car Condition: Immaculate Condition, Good Savings Trade In And Financing Options Available. Call Us For An Appointment Now. (Owner's Car/viewing Location Flexible).</p>
+            </div>
+        </div>
+        <!--@small screen mode-->
 
-        <!--Form Enquiry Page-->
-            <!--@small screen mode-->
-            <form id="form-quote" class="m-3 py-4 d-sm-none" action="/action_page.php" method="">
-                <div class="row mx-2 my-2"><label class="col-5" for="">Name</label><input class="col-6" type="text" name="name"></div>
-                <div class="row mx-2 my-2">
-                    <label class="col-5 " for="">Owner ID Type</label>
-                    <div class="col-6">
-                        <input type="radio" name="id-type" value="nric"> SingaporeNRIC<br>
-                        <input type="radio" name="id-type" value="business"> Business<br>
-                        <input type="radio" name="id-type" value="company"> Company<br>
-                        <input type="radio" name="id-type" value="fin"> Foreign Fin<br>
-                        <input type="radio" name="id-type"> Other <input type="text" name="id-type">
-                    </div>
-                </div>
-                <div class="row mx-2 my-2"><label class="col-5" for=""><div id="owner-id">Owner ID <span class="mini-text">(last 5-character)</span></div></label><input class="col-6" type="text" name="id-5c"></div>
-                <div class="row mx-2 my-2"><label class="col-5" for="">Mobile</label><input class="col-6" type="text" name="mobile"></div>
-                <div class="row mx-2 my-2"><label class="col-5" for="">Email</label><input class="col-6" type="text" name="email"></div>
-                <div class="row mx-2 my-2"><label class="col-5" for=""></label><input class="col-6" type="submit" value="Submit"></div>
-            </form>
-            <!--@big screen mode-->
-            <form id="form-quote" class="m-5 py-4 d-none d-sm-block" action="/action_page.php" method="">
-                <div class="row mx-5 my-2"><label class="col-4" for="">Name</label><input class="col-7" type="text" name="name"></div>
-                <div class="row mx-5 my-2">
-                    <label class="col-4 " for="">Owner ID Type</label>
-                    <div class="col-7">
-                        <input type="radio" name="id-type" value="nric"> SingaporeNRIC<br>
-                        <input type="radio" name="id-type" value="business"> Business<br>
-                        <input type="radio" name="id-type" value="company"> Company<br>
-                        <input type="radio" name="id-type" value="fin"> Foreign Fin<br>
-                        <input type="radio" name="id-type"> Other <input type="text" name="id-type">
-                    </div>
-                </div>
-                <div class="row mx-5 my-2"><label class="col-4" for=""><div id="owner-id">Owner ID <span class="mini-text">(last 5-character)</span></div></label><input class="col-7" type="text" name="id-5c"></div>
-                <div class="row mx-5 my-2"><label class="col-4" for="">Mobile</label><input class="col-7" type="text" name="mobile"></div>
-                <div class="row mx-5 my-2"><label class="col-4" for="">Email</label><input class="col-7" type="text" name="email"></div>
-                <div class="row mx-5 my-2"><label class="col-4" for=""></label><input class="col-7" type="submit" value="Submit"></div>
-            </form>
 
     </main>
     <!-- Optional JavaScript -->

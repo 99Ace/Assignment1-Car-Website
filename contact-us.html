@@ -35,7 +35,7 @@
         }
         #form-quote {
                 background-color: silver;
-                border-radius:35px;
+                /*border-radius:35px;*/
         }
 
         @media screen and (max-width:950px) {
@@ -75,7 +75,7 @@
     <main class="container-fluid p-0">
         <!--Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="index.html"><img src="image/logo.png" style="height:45px; margin-left:10px; padding:0;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -129,15 +129,39 @@
             <h1> Quotation </h1>
             <h3>Will will reply to you within <span class="shout red">24hrs</span> time</h3>
         </header>
-
+        
         <!--Form Enquiry Page-->
-            <!--@small screen mode-->
+        <!--@big screen mode-->
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-7">
+            <form id="form-quote" class="m-5 py-4 d-none d-sm-block" action="/action_page.php" method="">
+                <div class="row mx-5 my-1"><label class="col-4" for="">Name</label><input class="col-7" type="text" name="name"></div>
+                <div class="row mx-5 my-1">
+                    <label class="col-4 " for="">Owner ID Type</label>
+                    <div class="col-7">
+                        <input type="radio" name="id-type" value="nric">Singapore NRIC<br>
+                        <input type="radio" name="id-type" value="business">Business<br>
+                        <input type="radio" name="id-type" value="company">Company<br>
+                        <input type="radio" name="id-type" value="fin"> Foreign Fin<br>
+                        <input type="radio" name="id-type"> Other <input type="text" name="id-type">
+                    </div>
+                </div>
+                <div class="row mx-5 my-1"><label class="col-4" for=""><div id="owner-id">Owner ID <span class="mini-text">(last 5-character)</span></div></label><input class="col-7" type="text" name="id-5c"></div>
+                <div class="row mx-5 my-1"><label class="col-4" for="">Mobile</label><input class="col-7" type="text" name="mobile"></div>
+                <div class="row mx-5 my-1"><label class="col-4" for="">Email</label><input class="col-7" type="text" name="email"></div>
+                <div class="row mx-5 my-1"><label class="col-4" for=""></label><input class="col-7" type="submit" value="Submit"></div>
+            </form>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <!--@small screen mode-->
             <form id="form-quote" class="m-3 py-4 d-sm-none" action="/action_page.php" method="">
                 <div class="row mx-2 my-2"><label class="col-5" for="">Name</label><input class="col-6" type="text" name="name"></div>
                 <div class="row mx-2 my-2">
                     <label class="col-5 " for="">Owner ID Type</label>
                     <div class="col-6">
-                        <input type="radio" name="id-type" value="nric"> SingaporeNRIC<br>
+                        <input type="radio" name="id-type" value="nric"> Singapore NRIC<br>
                         <input type="radio" name="id-type" value="business"> Business<br>
                         <input type="radio" name="id-type" value="company"> Company<br>
                         <input type="radio" name="id-type" value="fin"> Foreign Fin<br>
@@ -149,25 +173,6 @@
                 <div class="row mx-2 my-2"><label class="col-5" for="">Email</label><input class="col-6" type="text" name="email"></div>
                 <div class="row mx-2 my-2"><label class="col-5" for=""></label><input class="col-6" type="submit" value="Submit"></div>
             </form>
-            <!--@big screen mode-->
-            <form id="form-quote" class="m-5 py-4 d-none d-sm-block" action="/action_page.php" method="">
-                <div class="row mx-5 my-2"><label class="col-4" for="">Name</label><input class="col-7" type="text" name="name"></div>
-                <div class="row mx-5 my-2">
-                    <label class="col-4 " for="">Owner ID Type</label>
-                    <div class="col-7">
-                        <input type="radio" name="id-type" value="nric"> SingaporeNRIC<br>
-                        <input type="radio" name="id-type" value="business"> Business<br>
-                        <input type="radio" name="id-type" value="company"> Company<br>
-                        <input type="radio" name="id-type" value="fin"> Foreign Fin<br>
-                        <input type="radio" name="id-type"> Other <input type="text" name="id-type">
-                    </div>
-                </div>
-                <div class="row mx-5 my-2"><label class="col-4" for=""><div id="owner-id">Owner ID <span class="mini-text">(last 5-character)</span></div></label><input class="col-7" type="text" name="id-5c"></div>
-                <div class="row mx-5 my-2"><label class="col-4" for="">Mobile</label><input class="col-7" type="text" name="mobile"></div>
-                <div class="row mx-5 my-2"><label class="col-4" for="">Email</label><input class="col-7" type="text" name="email"></div>
-                <div class="row mx-5 my-2"><label class="col-4" for=""></label><input class="col-7" type="submit" value="Submit"></div>
-            </form>
-
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
