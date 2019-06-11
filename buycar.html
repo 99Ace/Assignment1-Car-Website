@@ -10,10 +10,191 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css" type="text/css" />
     <style type="text/css">
-        
+        .header {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 65pt;
+        }
+
+
+        h3 {
+            font-size: 20pt;
+
+        }
+
+        .shout {
+            font-size: 40pt;
+            font-style: oblique;
+            color: red;
+        }
+       
+
+
+        @media screen and (max-width:950px) {
+            body {
+                background-color: pink;
+            }
+            h1 {
+                font-size: 50pt;
+            }
+            .shout {
+                font-size: 35pt;
+            }
+            h3 {
+                font-size: 20pt;
+            }
+        }
+
+        @media screen and (max-width:425px) {
+            body {
+                background-color: gold;
+            }
+            h1 {
+                font-size: 30pt;
+            }
+            .shout {
+                font-size: 25pt;
+            }
+            h3 {
+                font-size: 15pt;
+            }
+        }
     </style>
+    <title>sellMycar.com</title>
 </head>
+
 <body>
-    <h1>Buy Car</h1>
+    <main class="container-fluid p-0">
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="image/logo.png" style="height:45px; margin-left:10px; padding:0;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="sellcar.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sell Car
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="sellcar.html">3-Steps Procedure</a>
+                            <a class="dropdown-item" href="contact-us.html">Get a Quote</a>
+                        </div>
+                    </li>
+                    <!--Dropdown nav-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="buycar.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Buy Car
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="buycar.html">New Import Car</a>
+                            <a class="dropdown-item" href="buycar.html">Pre-Owned Cars</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                                </form>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!--Header liner-->
+        <header class="container-fluid header my-5">
+            <h1> Buy My Car </h1>
+            <h3>Looking for your most suitable <span class="shout red">Drive !</span></h3>
+        </header>
+        <!--Car Listing-->
+        <!--@big screen mode-->
+        <div class="row m-4 pl-1 pr-0 py-3 border border-dark">
+            
+            <!--Car Pictures-->
+            <div class="col-3">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="image/mini-front.jpg" alt="First slide">
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                     </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+           
+            <!--Car Specification-->
+            <div class="col-8">
+                <!--Car make and model-->
+                <h4 class="font-weight-bold mb-0 ">Mini Cooper S Convertible</h4>
+                <!--Car Badges-->
+                <span class="badge badge-primary"> 2018</span>
+                <span class="badge badge-primary"> Mini</span>
+                <span class="badge badge-primary"> Cooper S</span>
+                <span class="badge badge-primary"> 1988cc</span>
+                <span class="badge badge-primary"> Sports Car</span>
+                <!--Car Details-->
+                <div class="mt-3">
+                    <div class="row">
+                        <div class="col-2 font-weight-bold">Price</div>
+                        <div class="col-2">$158,888</div>
+                        <div class="col-2 font-weight-bold">Reg Date</div>
+                        <div class="col-3">27-Apr-2018</div>
+                        <div class="col-1 font-weight-bold">Omv</div>
+                        <div class="col-2">$36,559</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 font-weight-bold">Depreciation</div>
+                        <div class="col-2">$15,450 /yr</div>
+                        <div class="col-2 font-weight-bold">Mileage</div>
+                        <div class="col-3">13,000 km (11.6k /yr)</div>
+                        <div class="col-1 font-weight-bold">ARF</div>
+                        <div class="col-2">$43,183</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 font-weight-bold">Road Tax</div>
+                        <div class="col-2">$1,210 /yr</div>
+                        <div class="col-2 font-weight-bold">Ownership</div>
+                        <div class="col-3">1</div>
+                        <div class="col-1 font-weight-bold">COE</div>
+                        <div class="col-2">$37,330</div>
+                    </div>
+                </div>
+            </div>
+           
+        <!--@small screen mode-->
+
+
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>

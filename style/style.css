@@ -10,3 +10,7 @@ main{
 .red{
     color: red;
 }
+.gray-back{
+    background-color: rgba(0,0,0,0.4)
+}
+
