@@ -46,13 +46,16 @@
             width: 230px
         }
 
-        .testi img {
+        .test-pic img {
             width: 100%;
         }
-
+        #testimonials{
+            background-color: rgba(10,10,10,0.08);
+            margin:40px;
+        }
         .test-text {
             font-family: Sans-serif;
-            font-size: 14pt;
+            font-size: 13pt;
             /*text-align:justify;*/
             padding:5px 15px;
         }
@@ -212,25 +215,38 @@
 
         </div>
     </main>
-    <section id="how-to" class="row p-5"></section>
+    <section id="process" class="row p-5 border m-3">
+        <div class="border b-red box p-5">
+            <!--<div class="square b-blue"></div>-->
+        </div>
+        <div class="border b-yellow box p-5">
+            <!--<div class="square b-blue"></div>-->
+        </div>
+        <div class="border b-green box p-5">
+            <!--<div class="square b-blue"></div>-->
+        </div>
+        <div class="border b-blue box p-5">
+            <!--<div class="square b-blue"></div>-->
+        </div>
+    </section>
 
     <!--Happy Customers Testimonial-->
     <section id="testimonials" class="row p-2">
         <div class="row px-5"><h4>Testimonials from our valued customers</h4></div>
         <div class="row justify-content-around">
-            <div class="testi col">
+            <div class="test-pic col p-0">
                 <img src="image/testimonial.jpg">
                 <p class="test-text d-sm-block d-none">A quick and fuss free transaction. Quote is received quickly, and the buyer honors the quoted price. Everything is well organized!</p>
                 <p class="test-text d-sm-none d-block">A quick and fuss free transaction...<span class="blue">Read more</span></p>
             </div>
-            <div class="testi col">
-                <img src="image/testimonial.jpg">
-                <p class="test-text d-sm-block d-none">A quick and fuss free transaction. Quote is received quickly, and the buyer honors the quoted price. Everything is well organized!</p>
-                <p class="test-text d-sm-none d-block">A quick and fuss free transaction...<span class="blue">Read more</span></p>
-            </div>
-            <div class="testi col d-sm-inline d-none">
+            <div class="test-pic col d-sm-inline d-none">
                 <img src="image/testimonial.jpg">
                 <p class="test-text">A quick and fuss free transaction. Quote is received quickly, and the buyer honors the quoted price. Everything is well organized!</p>
+            </div>
+            <div class="test-pic col p-0">
+                <img src="image/testimonial.jpg">
+                <p class="test-text d-sm-block d-none">A quick and fuss free transaction. Quote is received quickly, and the buyer honors the quoted price. Everything is well organized!</p>
+                <p class="test-text d-sm-none d-block">A quick and fuss free transaction...<span class="blue">Read more</span></p>
             </div>
         </div>
     </section>
