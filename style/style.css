@@ -9,8 +9,8 @@ main {
     padding: 50px;
 }
 
-.red {
-    color: red;
+.red{
+    color: rgba(188,0,0,1);
 }
 
 .gray-back {
