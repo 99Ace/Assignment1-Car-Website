@@ -8,14 +8,14 @@ main {
     /*background-color: rgba(20,20,00,0.25);*/
     padding: 50px;
 }
-
+/*Pre-fix decorations*/
 .red{
     color: rgba(188,0,0,1);
 }
-
 .gray-back {
     background-color: rgba(0, 0, 0, 0.4)
 }
+
 
 .navbar {
     position: fixed;
