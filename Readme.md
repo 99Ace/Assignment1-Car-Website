@@ -1,18 +1,52 @@
 SELL MY CAR 
-This website focus on 
-- getting car sellers to send in enquiry for quotation for their cars
-- platform for potential car buyers to buy cars from our listing (new & old)
-- 
 
+This is a prototype
+Car Owners are constantly looking for a higher price to resell their cars. 
+Hence this website provides them an alternate source to get a higher quote through our bidding system
+The foucs of the website is to show a mock up with no back-end functionality.
+Static website to convince people to use the website
+
+This website focus on 
+- getting car owners to send in enquiry for quotation for their cars
+- being a platform for potential car buyers to buy cars from our listing (new & old)
+- being an alternate platform for car owners to sell their car on our platform
 
 UX (important)
+
+As a user, you will be able to:
+- understand the simple step to get a quotation
+- submit an enquiry form for quotation for his/her car
+- browse through the listing and look for next potential car to buy
+- find the information about our company
+- see reviews and testimonials from past customers
+
+
+Tips : 
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 * As a user type, I want to perform an action, so that I can achieve a goal.
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
+
 Features (highlight what the website can do, examiner need this to assess what ur web can do
+
+Landing page:
+- background runs on a random with fadingIn and fadingOut of the name of the different brands
+- transition between pages have a car zoom from left to right and right to left if return to homepage 
+- <animation 
+- Form submission will detect if information key in contains the correct information
+
+Sell-car Page:
+- show the steps to selling 
+- contain form submission for quotation
+
+Buy-car Page:
+- Show a list of cars that contain the information of the cars
+
+
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+
+
 
 Existing Features
 * Feature 1 - allows users X to achieve Y, by having them fill out Z
