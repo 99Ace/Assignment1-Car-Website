@@ -2,30 +2,68 @@ body {
     /*background-color: rgba(200,200,200,0.25)*/
     font-family: serif;
 
+}  
+h1 {
+    font-size: 45pt;
 }
-.display{
+h3 {
+    font-size: 18pt;
+}
+.shout {
+    font-size: 30pt;
+    font-family: cursive;
+    font-weight:bolder;
+}
+.header{
+    width:50%;
+}
+.nav a {
+    text-decoration: none;
+    font-size: 16pt;
+    color: black;
+}
+.display {
     font-family: cursive, fantasy;
     font-size: 40px;
 }
+.quote{
+    background-color:white;
+}
+
+
+
+
 main {
     /*background-color: rgba(20,20,00,0.25);*/
     padding: 50px;
 }
+
 /*Pre-fix decorations*/
-.red{
-    color: rgba(188,0,0,1);
+.page{
+    width: 100%;
+    height: 300px;
 }
-.gray-back {
-    background-color: rgba(0, 0, 0, 0.4)
+.red {
+    color: #FF2D2D;
+}
+.white{
+    color:white;
+}
+.b-l-gray {
+    background-color: #717577;
+}
+.b-p-gray {
+    background-color: #4C4E50;
 }
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index:9999;
+    z-index: 9999;
 }
 
 /*Social media items*/
+
 icon-bar {
     background-color: white;
     /*padding: 10px;*/
@@ -42,32 +80,38 @@ icon-bar {
 }
 
 /*Background for social media tags*/
+
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
+
 .fa-google {
-  background: #dd4b39;
-  color: white;
+    background: #dd4b39;
+    color: white;
 }
+
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+    background: #007bb5;
+    color: white;
 }
+
 .fa-instagram {
-  background: #125688;
-  color: white;
+    background: #125688;
+    color: white;
 }
 
 
 /*footer decorations*/
+
 footer {
     position: fixed;
     background-color: white;
-    width:100%; 
+    width: 100%;
     bottom: 0;
 }
-.footer-text a{ 
+
+.footer-text a {
     color: black;
     font-size: 15px;
 }

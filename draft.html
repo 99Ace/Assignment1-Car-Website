@@ -31,17 +31,12 @@
 
         /*}*/
 
-        .page {
-            width: 100%;
-            height: 300px;
-        }
+        
 
-        .b-p-gray {
-            background-color: #e0dedc;
-        }
+        
 
         #animi {
-            height: 700px;
+            height: 788px;
             width: 100%;
         }
     </style>
@@ -49,26 +44,40 @@
 </head>
 
 <body>
-    <main class=" container-fluid p-4">
+    <main class="container-fluid px-5 pt-4">
         <!--Navigation bar - contain links to different page-->
         <ul class="nav justify-content-center collapse navbar-collapse">
             <li class="nav-item">
-                <a class="nav-link active" href="#">About Us</a>
+                <a class="nav-link active" href="#about-us">About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Selling</a>
+                <a class="nav-link" href="sellcar.html">Selling</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Buying</a>
+                <a class="nav-link" href="buycar.html">Buying</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
             </li>
         </ul>
-        <!--<div class="main-back page m-0"></div>-->
         <!-- Allocate space to do animation-->
-        <div id="animi" class="b-p-gray">
-            <!--<p id="test">Hello world</p>-->
+        <div id="animi" class="b-p-gray white p-5">
+            <div class="row">
+            <!--Header liner-->
+            <header class="col-6 b-l-gray header my-3 p-5">
+                <h1>RE-INVENTING</h1>
+                <h3>YOUR <span class="shout red font-italic">DRIVING</span> EXPERIENCE</h3>
+            </header>
+            <div class="col quote">
+                <div class = "m-5 p-5">
+                <input class ="" type="text" name="name" placeholder="Enter your name"/>
+                <input class ="" type="text" name="carplate" placeholder="Car Plate number"/>
+                <input class ="" type="text" name="ownerId" placeholder="id (Sxxx4567A"/>
+                <input class ="" type="text" name="mileage" placeholder="Current mileage"/>
+                <input type="button" onClick="" value="Quote my car"/>
+                </div>
+            </div>
+            </div>
         </div>
     </main>
 
