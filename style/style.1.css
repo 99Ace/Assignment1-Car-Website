@@ -3,10 +3,7 @@ body {
     font-family: serif;
 
 }
-.display{
-    font-family: cursive, fantasy;
-    font-size: 40px;
-}
+
 main {
     /*background-color: rgba(20,20,00,0.25);*/
     padding: 50px;
@@ -18,6 +15,8 @@ main {
 .gray-back {
     background-color: rgba(0, 0, 0, 0.4)
 }
+
+
 .navbar {
     position: fixed;
     top: 0;
