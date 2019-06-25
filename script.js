@@ -34,8 +34,7 @@ function generate_random_number(length) { // create random number
 }
 function print_text(words) {
     // alert("got run")
-    $("#animi").append(`<div class="display">${words}</div>`)
-    $("#animi").children(0).fadeOut(100000,"swing");
+    $(".animation").append(`<div class="display">${words}</div>`)
 }
  
 let num = generate_random_number(car_brands.length);
