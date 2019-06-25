@@ -4,6 +4,9 @@ body {
 h1 {
     font-size: 45pt;
 }
+h2{
+    font-size: 25pt;
+}
 h3 {
     font-size: 18pt;
 }
@@ -26,11 +29,12 @@ h3 {
 }/*Keep navbar fix to top and in front of all text*/
 .nav a{
     text-decoration: none;
-    font-size: 20pt;
-    color: black;
+    font-size: 18pt;
+    color: rgba(17,17,17,0.5);
 }
 .nav a:hover{
-    background-color:#E5E5E6;
+    background-color:rgba(17,17,17,0.5);
+    color:rgba(17,17,17,0.7);
 }
 .logo_image {
     height:50px;
@@ -62,7 +66,7 @@ main {
 }
 .rectangle{
     width: 30%;
-    height: 600px;
+    height: 500px;
     font-size:16pt;
 }
 .rectangle span{

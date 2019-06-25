@@ -14,16 +14,17 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <style>
         .animation {
-            background-image: url("image/value.jpg");
+            background-image: url("image/car-row.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             height: 800px;
         }
+
         .picture_main {
             background-image: url("image/car_main.jpg");
             /*background-size: ;*/
-            background-repeat:no-repeat;
-            background-position:35%;
+            background-repeat: no-repeat;
+            background-position: 35%;
             width: 100%;
             height: 400px;
         }
@@ -39,7 +40,7 @@
                 <a class="nav-link active" href="#about-us">About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="sellcar.html">Selling</a>
+                <a class="nav-link active" href="#sellcar">Selling</a>
             </li>
             <li><img src="image/logo.png" class="logo_image mx-3"></img>
             </li>
@@ -51,7 +52,7 @@
             </li>
         </ul>
         <!--Landing page-->
-        <div class="mx-5 my-0">
+        <div id="about-us" class="mx-5 my-0">
             <div class="picture_main m-0"></div>
             <div class="row page m-0 b-gray white p-5 justify-content-between">
                 <!--Company Tagline-->
@@ -75,23 +76,27 @@
         </div>
     </main>
     <!-- Allocate space to do animation-->
-    <section class="animation p-4">
+    <section id="sellcar" class="row animation p-4 mt-5">
+        <!--Header for Selling car-->
+        <div class="col-12 text-center"><h2 class="white b-gray w-40 p-3 mt-5 mx-5">How to <span class="red shout">SELL</span> your car in 3 simple steps</h2></div>
         <!--Step by step instruction to inform car owner our 3-step process -->
-        <section class="row border white justify-content-center m-3">
+        <div class="row border white justify-content-center m-3">
             <div class="col rectangle b-l-gray border py-3 pt-2 rounded">
                 <p class="m-4"><span class="badge badge-danger py-3 px-5">QUOTE</span></p>
+                <p class="m-4"><u>Click to submit a quote</u></p>
                 <p class="step pl-4 pb-0 my-0">Submit your details. We'll schedule your car up for bidding for the best quote.</p>
             </div>
             <div class="col rectangle b-l-gray border py-3 pt-2 rounded">
                 <p class="m-4"><span class="badge badge-danger py-3 px-5">BIDDING</span></p>
+                <p class="m-4"><u>Click to check your latest bidding status</u></p>
                 <p class="step pl-4 pb-0 my-0">Bidding among our certified used car dealer network give you the best possible price for your car.</p>
             </div>
             <div class="col rectangle b-l-gray border py-3 pt-2 rounded">
                 <p class="m-4"><span class="badge badge-danger py-3 px-5">SOLD</span></p>
+                <p class="m-4"><u>Click to accept a recent bid</u></p>
                 <p class="step pl-4 pb-0 my-0">Deal immediately or within 7 days. Otherwise we can put it up for sale to direct buyer on our platform</p>
             </div>
-
-        </section>
+        </div>
     </section>
 
 
