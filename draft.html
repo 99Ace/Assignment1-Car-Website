@@ -21,9 +21,11 @@
         }
         .picture_main {
             background-image: url("image/car_main.jpg");
-            background-size: cover;
+            /*background-size: ;*/
+            background-repeat:no-repeat;
+            background-position:35%;
             width: 100%;
-            height: 600px;
+            height: 400px;
         }
     </style>
     <title></title>
@@ -49,25 +51,23 @@
             </li>
         </ul>
         <!--Landing page-->
-        <div class="mx-5">
-            <div class="picture_main"></div>
-            <div class="row page b-gray white p-5 justify-content-between">
-                <!--<div class="row justify-content-between">-->
-                <!--<div class="col-7">-->
+        <div class="mx-5 my-0">
+            <div class="picture_main m-0"></div>
+            <div class="row page m-0 b-gray white p-5 justify-content-between">
                 <!--Company Tagline-->
                 <header class="col-7 container-fluid header ">
                     <h1>RE-INVENTING</h1>
                     <h3 class="text-center">YOUR <span class="shout red font-italic">DRIVING</span> EXPERIENCE</h3>
                 </header>
-                <!--</div>-->
                 <!--Quote form for car owners to key in their car details and submit for a quote-->
-                <div id="quote" class="quote col-4 align-middle mr-4">
-                    <div class="b-white m-5 p-5 justify-content-around">
-                        <input class="m-1 p-2" type="text" name="name" placeholder="Enter your name" /><br>
-                        <input class="m-1 p-2" type="text" name="carplate" placeholder="Car Plate number" /><br>
-                        <input class="m-1 p-2" type="text" name="ownerId" placeholder="id (Sxxx4567A)" /><br>
-                        <input class="m-1 p-2" type="text" name="mileage" placeholder="Current mileage" /><br>
-                        <input class="btn btn-danger" type="button" onClick="" value="Quote my car" />
+                <div id="quote" class="col-4 mr-4">
+                    <div class="row b-white m-5 p-4 justify-content-around">
+                        <div class="form-title">GET A <span class="red">QUOTATION</span></div>
+                        <input class="my-1 p-1 w-100" type="text" name="name" placeholder="Enter your name" /><br>
+                        <input class="my-1 p-1 w-100" type="text" name="carplate" placeholder="Car Plate number" /><br>
+                        <input class="my-1 p-1 w-100" type="text" name="ownerId" placeholder="id (Sxxx4567A)" /><br>
+                        <input class="my-1 p-1 w-100" type="text" name="mileage" placeholder="Current mileage" /><br>
+                        <div class="col-12 text-center"><input class="btn btn-danger w-70 mt-3" type="button" onClick="" value="Submit" /></div>
                     </div>
                 </div>
                 <!--</div>-->
@@ -76,20 +76,16 @@
     </main>
     <!-- Allocate space to do animation-->
     <section class="animation p-4">
-
         <!--Step by step instruction to inform car owner our 3-step process -->
         <section class="row border white justify-content-center m-3">
-
             <div class="col rectangle b-l-gray border py-3 pt-2 rounded">
                 <p class="m-4"><span class="badge badge-danger py-3 px-5">QUOTE</span></p>
                 <p class="step pl-4 pb-0 my-0">Submit your details. We'll schedule your car up for bidding for the best quote.</p>
             </div>
-
             <div class="col rectangle b-l-gray border py-3 pt-2 rounded">
                 <p class="m-4"><span class="badge badge-danger py-3 px-5">BIDDING</span></p>
                 <p class="step pl-4 pb-0 my-0">Bidding among our certified used car dealer network give you the best possible price for your car.</p>
             </div>
-
             <div class="col rectangle b-l-gray border py-3 pt-2 rounded">
                 <p class="m-4"><span class="badge badge-danger py-3 px-5">SOLD</span></p>
                 <p class="step pl-4 pb-0 my-0">Deal immediately or within 7 days. Otherwise we can put it up for sale to direct buyer on our platform</p>

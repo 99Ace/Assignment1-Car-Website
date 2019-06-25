@@ -44,19 +44,22 @@ h3 {
 }
 #quote{
     position:relative;
-    top:-380%;
+    top:-650%;
 }
-
+.form-title{
+    font-size:16pt;
+    font-family:San-serif;
+    color:rgba(17,17,17,0.9);
+    /*text-shadow: 2px 2px 4px #000000;*/
+}
 main {
     /*background-color: rgba(20,20,00,0.25);*/
     padding: 50px;
 }
-
 .page{
     width: 100%;
-    height: 200px;
+    height: 150px;
 }
-
 .rectangle{
     width: 30%;
     height: 600px;
