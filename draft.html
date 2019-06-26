@@ -36,21 +36,85 @@
                 <a class="nav-link active" href="contact-us.html">Contact Us</a>
             </li>
         </ul>
+        <!--Search Bar: allows user to key in the make/model of cars they looking for, budget, etc-->
         <div class="search-box b-gold white mt-5 p-2">
-            <div>
-                <label class="font-weight-bold" style="font-size:14pt">Search </label>
-                <input id="seach-bar" type="text" placeholder="Car Make / Model" style="font-size:11pt; color:rgb(127, 127, 127)"/>
-            </div>
-        
+            <form style="font-size:10pt; color:rgb(127, 127, 127)">
+                <input id="seach-bar" type="text" placeholder="Car Make / Model" />
+                <!--To allow user to select their lowest budget-->
+                <select name = "price-min">
+                    <option value="">Min Price</option>                    
+                    <option value="">$10,000</option>                    
+                    <option value="">$20,000</option>                    
+                    <option value="">$30,000</option>                    
+                    <option value="">$40,000</option>                    
+                    <option value="">$50,000</option>                    
+                    <option value="">$60,000</option>                    
+                    <option value="">$70,000</option>                    
+                    <option value="">$80,000</option>                    
+                    <option value="">$90,000</option>                    
+                    <option value="">$100,000</option>                    
+                    <option value="">$200,000</option>                    
+                </select>
+                <!--To allow user to select their max budget-->
+                <select name = "price-max">
+                    <option value="">Max Price</option>                    
+                    <option value="">$10,000</option>                    
+                    <option value="">$20,000</option>                    
+                    <option value="">$30,000</option>                    
+                    <option value="">$40,000</option>                    
+                    <option value="">$50,000</option>                    
+                    <option value="">$60,000</option>                    
+                    <option value="">$70,000</option>                    
+                    <option value="">$80,000</option>                    
+                    <option value="">$90,000</option>                    
+                    <option value="">$100,000</option>                    
+                    <option value="">$110,000</option>                    
+                    <option value="">$120,000</option>                    
+                    <option value="">$130,000</option>                    
+                    <option value="">$140,000</option>                    
+                    <option value="">$150,000</option>                    
+                    <option value="">$200,000</option>                    
+                    <option value="">$300,000</option>                    
+               </select>
+                <!--To allow user to select his choice of age of cars to view -->
+                <select name = "year-of-make">
+                    <option value="">Year Reg</option>                    
+                    <option value="">2018</option>                    
+                    <option value="">2016</option>                    
+                    <option value="">2015</option>                    
+                    <option value="">2014</option>                    
+                    <option value="">2013</option>                    
+                    <option value="">2011</option>                    
+                    <option value="">2010</option>                    
+                    <option value="">2009</option>                    
+                    <option value="">&lt1 year(s) old</option>                    
+                    <option value="">&lt2 year(s) old</option>                    
+                    <option value="">&lt3 year(s) old</option>                    
+                    <option value="">&lt4 year(s) old</option>                    
+                    <option value="">&lt5 year(s) old</option>                    
+                    <option value="">&gt6 year(s) old</option>                    
+                    <option value="">&gt7 year(s) old</option>                    
+                    <option value="">&gt8 year(s) old</option>                    
+                    <option value="">&gt9 year(s) old</option>                    
+                    <option value="">&gt10 year(s) old</option>                    
+                    <option value="">All</option>                    
+                </select>
+                <!--To allow user to select his choice of type of cars to view -->
+                <select name = "car-type">
+                    <option value="">Vehicle Type</option>                    
+                    <option value="">Hybrid Car</option>                    
+                    <option value="">Hatchback</option>                    
+                    <option value="">Luxury Sedan</option>                    
+                    <option value="">MPV</option>                    
+                    <option value="">Mid-sized Sedan</option>                    
+                    <option value="">Sports Car</option>                    
+                    <option value="">Stationwagon</option>                    
+                    <option value="">SUV</option>                    
+                    <option value="">All</option>    
+                </select>
+            </form>
         </div>
-        <div class="search-box white b-l-gray p-2">
-            <div>
-                <label class="font-weight-bold" style="font-size:14pt">Search </label>
-                <input id="seach-bar" type="text" placeholder="Car Make / Model" style="font-size:11pt; color:rgb(127, 127, 127)"/>
-            </div>
-        
-        </div>
-        
+        <div class="search-box2 b-l-gray white p-1"></div>
     </main>
     
 

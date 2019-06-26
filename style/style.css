@@ -84,7 +84,10 @@ main {
     width:100%;
     height:45px;
 }
-
+.search-box2{
+    width:100%;
+    /*height:35px;*/
+}
 /*Pre-fix decorations*/
 .red {
     color: #FF2D2D;
