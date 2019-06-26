@@ -13,21 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <style>
-        .animation {
-            background-image: url("image/car-row.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 800px;
-        }
-
-        .picture_main {
-            background-image: url("image/car_main.jpg");
-            /*background-size: ;*/
-            background-repeat: no-repeat;
-            background-position: 35%;
-            width: 100%;
-            height: 400px;
-        }
     </style>
     <title></title>
 </head>
@@ -51,54 +36,23 @@
                 <a class="nav-link active" href="contact-us.html">Contact Us</a>
             </li>
         </ul>
-        <!--Landing page-->
-        <div id="about-us" class="mx-5 my-0">
-            <div class="picture_main m-0"></div>
-            <div class="row page m-0 b-gray white p-5 justify-content-between">
-                <!--Company Tagline-->
-                <header class="col-7 container-fluid header ">
-                    <h1>RE-INVENTING</h1>
-                    <h3 class="text-center">YOUR <span class="shout red font-italic">DRIVING</span> EXPERIENCE</h3>
-                </header>
-                <!--Quote form for car owners to key in their car details and submit for a quote-->
-                <div id="quote" class="col-4 mr-4">
-                    <div class="row b-white m-5 p-4 justify-content-around">
-                        <div class="form-title">GET A <span class="red">QUOTATION</span></div>
-                        <input class="my-1 p-1 w-100" type="text" name="name" placeholder="Enter your name" /><br>
-                        <input class="my-1 p-1 w-100" type="text" name="carplate" placeholder="Car Plate number" /><br>
-                        <input class="my-1 p-1 w-100" type="text" name="ownerId" placeholder="id (Sxxx4567A)" /><br>
-                        <input class="my-1 p-1 w-100" type="text" name="mileage" placeholder="Current mileage" /><br>
-                        <div class="col-12 text-center"><input class="btn btn-danger w-70 mt-3" type="button" onClick="" value="Submit" /></div>
-                    </div>
-                </div>
-                <!--</div>-->
+        <div class="search-box b-gold white mt-5 p-2">
+            <div>
+                <label class="font-weight-bold" style="font-size:14pt">Search </label>
+                <input id="seach-bar" type="text" placeholder="Car Make / Model" style="font-size:11pt; color:rgb(127, 127, 127)"/>
             </div>
+        
         </div>
+        <div class="search-box white b-l-gray p-2">
+            <div>
+                <label class="font-weight-bold" style="font-size:14pt">Search </label>
+                <input id="seach-bar" type="text" placeholder="Car Make / Model" style="font-size:11pt; color:rgb(127, 127, 127)"/>
+            </div>
+        
+        </div>
+        
     </main>
-    <!-- Allocate space to do animation-->
-    <section id="sellcar" class="row animation p-4 mt-5">
-        <!--Header for Selling car-->
-        <div class="col-12 text-center"><h2 class="white b-gray w-40 p-3 mt-5 mx-5">How to <span class="red shout">SELL</span> your car in 3 simple steps</h2></div>
-        <!--Step by step instruction to inform car owner our 3-step process -->
-        <div class="row border white justify-content-center m-3">
-            <div class="col rectangle b-l-gray border py-3 pt-2 rounded">
-                <p class="m-4"><span class="badge badge-danger py-3 px-5">QUOTE</span></p>
-                <p class="m-4"><u>Click to submit a quote</u></p>
-                <p class="step pl-4 pb-0 my-0">Submit your details. We'll schedule your car up for bidding for the best quote.</p>
-            </div>
-            <div class="col rectangle b-l-gray border py-3 pt-2 rounded">
-                <p class="m-4"><span class="badge badge-danger py-3 px-5">BIDDING</span></p>
-                <p class="m-4"><u>Click to check your latest bidding status</u></p>
-                <p class="step pl-4 pb-0 my-0">Bidding among our certified used car dealer network give you the best possible price for your car.</p>
-            </div>
-            <div class="col rectangle b-l-gray border py-3 pt-2 rounded">
-                <p class="m-4"><span class="badge badge-danger py-3 px-5">SOLD</span></p>
-                <p class="m-4"><u>Click to accept a recent bid</u></p>
-                <p class="step pl-4 pb-0 my-0">Deal immediately or within 7 days. Otherwise we can put it up for sale to direct buyer on our platform</p>
-            </div>
-        </div>
-    </section>
-
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

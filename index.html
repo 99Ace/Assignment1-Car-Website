@@ -11,281 +11,98 @@
     <link rel="stylesheet" href="style/style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">
-        main {
-            background-image: url(image/main-back.jpg);
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <style>
+        .animation {
+            background-image: url("image/car-row.jpg");
             background-size: cover;
+            background-repeat: no-repeat;
+            height: 800px;
+        }
+
+        .picture_main {
+            background-image: url("image/car_main.jpg");
+            /*background-size: ;*/
+            background-repeat: no-repeat;
+            background-position: 35%;
             width: 100%;
-            height: 888px;
-        }
-        .header {
-            text-align: center;
-        }
-        h1 {
-            font-size: 65pt;
-        }
-        .shout {
-            font-size: 40pt;
-            font-style: oblique;
-        }
-        h3 {
-            font-size: 20pt;
-        }
-        .process{
-            font-size:16pt;
-            padding:20px;
-            
-        }
-        .menu1a img {
-            height: 90px;
-            width: 110px
-        }
-        .menu1b img {
-            height: 150px;
-            width: 230px
-        }
-        .test-pic img {
-            width: 100%;
-        }
-        #testimonials{
-            background-color: rgba(10,10,10,0.08);
-            margin:40px;
-        }
-        .test-text {
-            font-family: Sans-serif;
-            font-size: 13pt;
-            /*text-align:justify;*/
-            padding:5px 15px;
-            font-weight:bolder;
-        }
-
-        #quote {
-            padding: 20px 160px;
-            font-family: Sans-serif;
-            font-style: oblique;
-            font-size: 20pt;
-            text-align: center;
-        }
-
-        @media screen and (max-width:950px) {
-            body {
-                background-color: pink;
-            }
-            h1 {
-                font-size: 50pt;
-            }
-            .shout {
-                font-size: 35pt;
-            }
-            h3 {
-                font-size: 20pt;
-            }
-            .menu1a img {
-                height: 70px;
-                width: 90px
-            }
-            .menu1b img {
-                height: 120px;
-                width: 180px
-            }
-            .test-text {
-            font-size: 12pt;
-            padding:5px 8px;
-            } 
-            #quote {
-                padding: 20px 120px;
-                font-size: 20pt;
-            }
-        }
-
-        @media screen and (max-width:425px) {
-            /*body {*/
-            /*    background-color: gold;*/
-            /*}*/
-            h1 {
-                font-size: 30pt;
-            }
-            .shout {
-                font-size: 25pt;
-            }
-            h3 {
-                font-size: 15pt;
-            }
-            .menu1a img {
-                height: 70px;
-                width: 85px
-            }
-            .menu1b img {
-                height: 120px;
-                width: 180px
-            }
-               
-            #quote {
-                padding: 20px 120px;
-                font-size: 20pt;
-            }
+            height: 400px;
         }
     </style>
-    <title>sellMycar.com</title>
+    <title></title>
 </head>
 
 <body>
-    <main class="container-fluid p-0">
-        <!--Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="image/logo.png" style="height:45px; margin-left:10px; padding:0;"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-us">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="sellcar.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sell Car
-                      </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="sellcar.html">3-Steps Procedure</a>
-                            <a class="dropdown-item" href="contact-us.html">Get a Quote</a>
-                        </div>
-                    </li>
-                    <!--Dropdown nav-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="buycar.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Buy Car
-                      </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="buycar.html">New Import Car</a>
-                            <a class="dropdown-item" href="buycar.html">Pre-Owned Cars</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">
-                                <form class="form-inline my-2 my-lg-0">
-                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-                                </form>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html">Contact</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        <!--Header liner-->
-        <header class="container-fluid header my-5 p-5">
-            <h1>RE-INVENTING</h1>
-            <h3>YOUR <span class="shout">DRIVING</span> EXPERIENCE</h3>
-        </header>
-        <!--Picture Selection Menu-->
-        <div class="row ">
-            <div class="col-3"></div>
-            <div class="col-6 p-0 m-0">
-                <!--Small screen appear, more than xs is hidden -->
-                <div class="row p-0 m-0 justify-content-center align-items-end d-sm-none">
-                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
-                    <div class="menu1b p-0 m-1 order-first "><img src="image/logo.png"></div>
-                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
-                </div>
-                <!--Big Screen appear, small screen is hidden-->
-                <div class="row p-0 m-0 justify-content-center align-items-end d-none d-sm-flex">
-                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
-                    <div class="menu1b p-0 m-1"><img src="image/logo.png"></div>
-                    <div class="menu1a p-0 m-1"><img src="image/logo2.jpg"></div>
-                </div>
-                <div class="row p-0 m-0 justify-content-center">
-                    <div class="menu1 p-0 m-1">
-                        <h3><span id="quote" class="badge badge-danger">Get a Quote</span></h3>
+    <main class="container-fluid px-0 pt-5 mx-0">
+        <!--Navigation bar - contain links to different page-->
+        <ul class="nav justify-content-center pt-4 mx-0">
+            <li class="nav-item">
+                <a class="nav-link active" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#sellcar">Selling</a>
+            </li>
+            <li><img src="image/logo.png" class="logo_image mx-3"></img>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="buycar.html">Buying</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="contact-us.html">Contact Us</a>
+            </li>
+        </ul>
+        <!--Landing page-->
+        <div id="about-us" class="mx-5 my-0">
+            <div class="picture_main m-0"></div>
+            <div class="row page m-0 b-gray white p-5 justify-content-between">
+                <!--Company Tagline-->
+                <header class="col-7 container-fluid header ">
+                    <h1>RE-INVENTING</h1>
+                    <h3 class="text-center">YOUR <span class="shout red font-italic">DRIVING</span> EXPERIENCE</h3>
+                </header>
+                <!--Quote form for car owners to key in their car details and submit for a quote-->
+                <div id="quote" class="col-4 mr-4">
+                    <div class="row b-white m-5 p-4 justify-content-around">
+                        <div class="form-title">GET A <span class="red">QUOTATION</span></div>
+                        <input class="my-1 p-1 w-100" type="text" name="name" placeholder="Enter your name" /><br>
+                        <input class="my-1 p-1 w-100" type="text" name="carplate" placeholder="Car Plate number" /><br>
+                        <input class="my-1 p-1 w-100" type="text" name="ownerId" placeholder="id (Sxxx4567A)" /><br>
+                        <input class="my-1 p-1 w-100" type="text" name="mileage" placeholder="Current mileage" /><br>
+                        <div class="col-12 text-center"><input class="btn btn-danger w-70 mt-3" type="button" onClick="" value="Submit" /></div>
                     </div>
                 </div>
-
+                <!--</div>-->
             </div>
-            <div class="col-3"></div>
-
         </div>
     </main>
-    <section class="border m-3">
-        <div class="border px-4 py-2">
-            <div class="row">
-                <span class=" col-sm-3 process badge badge-danger">1 MINUTE </span>
-                <p class="col test-text pl-4 pb-0 my-0">Submit your details. We'll give you a call to verify the details & schedule your car up for bidding.</p>
+    <!-- Allocate space to do animation-->
+    <section id="sellcar" class="row animation p-4 mt-5">
+        <!--Header for Selling car-->
+        <div class="col-12 text-center"><h2 class="white b-gray w-40 p-3 mt-5 mx-5">How to <span class="red shout">SELL</span> your car in 3 simple steps</h2></div>
+        <!--Step by step instruction to inform car owner our 3-step process -->
+        <div class="row border white justify-content-center m-3">
+            <div class="col rectangle b-l-gray border py-3 pt-2 rounded">
+                <p class="m-4"><span class="badge badge-danger py-3 px-5">QUOTE</span></p>
+                <p class="m-4"><u>Click to submit a quote</u></p>
+                <p class="step pl-4 pb-0 my-0">Submit your details. We'll schedule your car up for bidding for the best quote.</p>
             </div>
-        </div>
-        <div class="border px-4 py-2">
-            <div class="row">
-                <span class="col-sm-3  process badge badge-danger">3 HOURS</span>
-                <p class="col test-text pl-4">Bidding among our certified used car dealer network.</p>
+            <div class="col rectangle b-l-gray border py-3 pt-2 rounded">
+                <p class="m-4"><span class="badge badge-danger py-3 px-5">BIDDING</span></p>
+                <p class="m-4"><u>Click to check your latest bidding status</u></p>
+                <p class="step pl-4 pb-0 my-0">Bidding among our certified used car dealer network give you the best possible price for your car.</p>
             </div>
-        </div>
-        <div class="border px-4 py-2">
-            <div class="row">
-                <span class="col-sm-3 process badge badge-danger">5 HOURS</span>
-                <p class="col test-text pl-3">Inspection on your car will be carried out at the dealership of the highest bidder.</p>
-            </div>
-        </div>
-        <div class="border px-4 py-2">
-            <div class="row">
-                <span class="col-sm-3 process badge badge-danger">7 DAYS</span>
-                <p class="col pl-3 test-text">Quote is valid for 7 days.</p>
+            <div class="col rectangle b-l-gray border py-3 pt-2 rounded">
+                <p class="m-4"><span class="badge badge-danger py-3 px-5">SOLD</span></p>
+                <p class="m-4"><u>Click to accept a recent bid</u></p>
+                <p class="step pl-4 pb-0 my-0">Deal immediately or within 7 days. Otherwise we can put it up for sale to direct buyer on our platform</p>
             </div>
         </div>
     </section>
 
-    <!--Happy Customers Testimonial-->
-    <section id="testimonials" class="row p-2">
-        <div class="row px-5"><h4>Testimonials from our valued customers</h4></div>
-        <div class="row justify-content-around">
-            <div class="test-pic col p-0">
-                <img src="image/testimonial.jpg">
-                <p class="test-text d-sm-block d-none">A quick and fuss free transaction. Quote is received quickly, and the buyer honors the quoted price. Everything is well organized!</p>
-                <p class="test-text d-sm-none d-block">A quick and fuss free transaction...<span class="red">Read more</span></p>
-            </div>
-            <div class="test-pic col d-sm-inline d-none">
-                <img src="image/testimonial.jpg">
-                <p class="test-text">A quick and fuss free transaction. Quote is received quickly, and the buyer honors the quoted price. Everything is well organized!</p>
-            </div>
-            <div class="test-pic col p-0">
-                <img src="image/testimonial.jpg">
-                <p class="test-text d-sm-block d-none">A quick and fuss free transaction. Quote is received quickly, and the buyer honors the quoted price. Everything is well organized!</p>
-                <p class="test-text d-sm-none d-block">A quick and fuss free transaction...<span class="red">Read more</span></p>
-            </div>
-        </div>
-    </section>
-    <div style="padding:80px"></div>
-    <!--Footer-->
-    <footer class="row p-3 mx-0">
-        <!--<div class="col-3 footer-text">-->
-        <!--</div>-->
-        <div class="col-8 ">
-            <div class="row align-">
-                <div class="icon-bar">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-google"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                </div>
-            </div>
-        </div>
-        <div class="col footer-text ">
-            <a href="tel:+6597802808">Contact us : +65 9780 2808</a><br>
-            <a href="enquiry@sellmycar.com">Email : enquiry@sellmycar.com</a>
-        </div>
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
