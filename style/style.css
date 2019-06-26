@@ -3,23 +3,28 @@ body {
 }
 /*Set the font-family Serif as default for webpage*/
 h1 {
-    font-size: 45pt;
+    font-size: 42pt;
 }
 h2 {
-    font-size: 25pt;
+    font-size: 35pt;
 }
 h3 {
-    font-size: 18pt;
+    font-size: 27pt;
 }
 .shout {
-    font-size: 35pt;
+    font-size: 40pt;
     font-family: cursive;
     font-weight: bolder;
 }
-.header {
-    position: relative;
-    top: -80px;
-    left: 0;
+.header-main1 {
+    position: absolute;
+    top:57%;
+    left: 08%;
+}
+.header-main2 {
+    position: absolute;
+    top: 64%;
+    left: 13%;
 }
 .nav {
     position: fixed;
@@ -45,7 +50,7 @@ h3 {
     vertical-align:text-bottom;
     color: rgba(17, 17, 17, 0.5);
 }
-.navbar2 a:hover {
+.navbar2 a.nav-link:hover {
     background-color: rgba(17, 17, 17, 0.5);
     color: rgba(17, 17, 17, 0.7);
 }
@@ -57,6 +62,7 @@ h3 {
 }
 a.select{
     color:white;
+    font-size:15pt;
 }
 
 .display {
@@ -64,18 +70,16 @@ a.select{
     font-size: 40px;
 }
 #quote {
-    position: relative;
-    top: -650%;
+    position: absolute;
+    top: 19%;
+    right:3%;
+    width:33%;
 }
 .form-title {
     font-size: 16pt;
     font-family: San-serif;
     color: rgba(17, 17, 17, 0.9);
     /*text-shadow: 2px 2px 4px #000000;*/
-}
-main {
-    /*background-color: rgba(20,20,00,0.25);*/
-    padding: 50px;
 }
 .page {
     width: 100%;
@@ -95,11 +99,26 @@ main {
 .step {
     width: 80%;
 }
-/*Buy page stying*/
+/*BUYCAR page stying*/
+.header-buycar1{
+    position:absolute;
+    top:27%;
+    left:5%;
+}
+.header-buycar2{
+    position:absolute;
+    top:33%;
+    left:10%;
+}
+.header-buycar3{
+    position:absolute;
+    top:41%;
+    left:15%;
+}
 #search-main {
-    position: relative;
-    top: -100px;
-    left: 3%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
 }
 .search-box {
     width: 50%;
@@ -130,6 +149,9 @@ main {
 }
 .white {
     color: white;
+}
+.gold{
+    color:rgb(249, 225, 39);
 }
 .b-white {
     background-color: white;
