@@ -141,6 +141,11 @@ a.select{
     top:30px;
     font-size:14pt;
 }
+/*BUYCAR search page*/
+.car-list{
+    width:100%;
+    height: 180px;
+}
 
 
 /*Pre-fix decorations*/
