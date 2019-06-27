@@ -1,7 +1,8 @@
+/*Set the font-family Serif as default for webpage*/
 body {
     font-family: serif, Arial;
 }
-/*Set the font-family Serif as default for webpage*/
+/*Styling of the HEADERS for visual effect*/
 h1 {
     font-size: 42pt;
 }
@@ -11,21 +12,13 @@ h2 {
 h3 {
     font-size: 27pt;
 }
+/*Specially added to add special highlight to some key words */
 .shout {
     font-size: 40pt;
     font-family: cursive;
     font-weight: bolder;
 }
-.header-main1 {
-    position: absolute;
-    top:57%;
-    left: 08%;
-}
-.header-main2 {
-    position: absolute;
-    top: 64%;
-    left: 13%;
-}
+
 .nav {
     position: fixed;
     top: 0;
@@ -81,10 +74,7 @@ a.select{
     color: rgba(17, 17, 17, 0.9);
     /*text-shadow: 2px 2px 4px #000000;*/
 }
-.page {
-    width: 100%;
-    height: 150px;
-}
+
 .rectangle {
     width: 30%;
     height: 500px;
