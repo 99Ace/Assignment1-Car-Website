@@ -1,23 +1,23 @@
 /*Set the font-family Serif as default for webpage*/
 body {
     font-family: serif, Arial;
-}
+}/*done*/
 /*Styling of the HEADERS for visual effect*/
 h1 {
-    font-size: 42pt;
-}
+    font-size: 50pt;
+}/*done*/
 h2 {
-    font-size: 35pt;
-}
+    font-size: 40pt;
+}/*done*/
 h3 {
-    font-size: 27pt;
-}
+    font-size: 28pt;
+}/*done*/
 /*Specially added to add special highlight to some key words */
 .shout {
-    font-size: 40pt;
+    font-size: 46pt;
     font-family: cursive;
     font-weight: bolder;
-}
+}/*done*/
 
 /*Keep navbar fix to top and in front of all text*/
 .nav {
@@ -26,48 +26,39 @@ h3 {
     background-color: white;
     width: 100%;
     z-index: 9999;
-}
-.navbar a {
+}/*done*/
+.nav-bar a {
     text-decoration: none;
-    font-size: 18pt;
+    font-size: 16pt;
     vertical-align:text-bottom;
     color: rgba(17, 17, 17, 0.5);
+    padding-bottom:0;
 }
-.navbar a:hover {
-    background-color: rgba(17, 17, 17, 0.5);
-    color: rgba(17, 17, 17, 0.7);
-}
-.navbar2 a {
-    text-decoration: none;
-    font-size: 14pt;
-    vertical-align:text-bottom;
-    color: rgba(17, 17, 17, 0.5);
-}
-.navbar2 a.nav-link:hover {
-    background-color: rgba(17, 17, 17, 0.5);
+.nav-bar li:hover {
+    background-color: rgba(17, 17, 17, 0.6);
     color: rgba(17, 17, 17, 0.7);
 }
 .logo_image {
     height: 40px;
-}
-a.select{
-    color:white;
-    font-size:15pt;
-}
+}/*done*/
+.select a{
+    color:rgb(249, 225, 39);
+    font-size:16pt;
+}/*done*/
 /*Landing Page styling*/
 #about-us{
-    height:600px;
+    height:800px;
 }
 .picture_main {
-    background-image: url("../image/car_main.jpg");
+    background-image: url("../image/car-snow.jpg");
     background-size: cover ;
     background-repeat: no-repeat;
-    background-position: 35% 80%;
+    background-position: 50% 80%;
     width: 100%;
-    height: 400px;
+    height: 600px;
 }
 .box{
-    height:400px;
+    height:490px;
     width:100%;
 }
 header-main1{
@@ -80,13 +71,17 @@ header-main2{
     font-family: cursive, fantasy;
     font-size: 40px;
 }
-
 .form-title {
-    font-size: 16pt;
+    font-size: 21pt;
+    font-weight:bold;
     font-family: San-serif;
     color: rgba(17, 17, 17, 0.9);
     /*text-shadow: 2px 2px 4px #000000;*/
 }
+.home-gap {
+    height: 30px;
+}
+
 
 .rectangle {
     width: 30%;
@@ -161,6 +156,9 @@ header-main2{
 .gold{
     color:rgb(249, 225, 39);
 }
+.gray{
+    color:rgb(90,90,110);
+}
 .b-white {
     background-color: white;
 }
@@ -178,14 +176,12 @@ header-main2{
 }
 
 /*Social media items*/
-
 icon-bar {
     background-color: white;
     /*padding: 10px;*/
     bottom: 0;
     width: 100%;
 }
-
 .fa {
     padding: 15px;
     font-size: 60px;
@@ -195,38 +191,148 @@ icon-bar {
 }
 
 /*Background for social media tags*/
-
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
-
 .fa-google {
     background: #dd4b39;
     color: white;
 }
-
 .fa-linkedin {
     background: #007bb5;
     color: white;
 }
-
 .fa-instagram {
     background: #125688;
     color: white;
 }
 
-
 /*footer decorations*/
-
 footer {
     position: fixed;
     background-color: white;
     width: 100%;
     bottom: 0;
 }
-
 .footer-text a {
     color: black;
     font-size: 15px;
 }
+
+
+@media screen and (max-width:1500px) {
+/*Styling of the HEADERS for visual effect*/
+h1 {
+    font-size: 40pt;
+}
+h2 {
+    font-size: 33pt;
+}
+h3 {
+    font-size: 25pt;
+}
+/*Specially added to add special highlight to some key words */
+.shout {
+    font-size: 38pt;
+}
+/*Landing Page styling*/
+#about-us{
+    height:550px;
+}
+.picture_main {
+    height: 400px;
+}
+.box{
+    height:400px;
+    width:100%;
+}
+}
+.form-title {
+    font-size: 16pt;
+    font-family: San-serif;
+    color: rgba(17, 17, 17, 0.9);
+    /*text-shadow: 2px 2px 4px #000000;*/
+}
+@media screen and (max-width:1024px) {
+/*Styling of the HEADERS for visual effect*/
+    h1 {
+        font-size: 32pt;
+    }
+    h2 {
+        font-size: 26pt;
+    }
+    h3 {
+        font-size: 20pt;
+    }
+    /*Specially added to add special highlight to some key words */
+    .shout {
+        font-size: 31pt;
+    }
+}
+/*Ipad Pro*/
+@media screen and (max-width:950px) {
+    h1 {
+        font-size: 27pt;
+    }
+    h2 {
+        font-size: 22pt;
+    }
+    h3 {
+        font-size: 17pt;
+    }
+    /*Specially added to add special highlight to some key words */
+    .shout {
+        font-size: 25pt;
+    }
+    
+}
+/*Ipad Size*/
+@media screen and (max-width:950px) {
+    h1 {
+        font-size: 24pt;
+    }
+    h2 {
+        font-size: 22pt;
+    }
+    h3 {
+        font-size: 15pt;
+    }
+    /*Specially added to add special highlight to some key words */
+    .shout {
+        font-size: 21pt;
+    }
+}
+/*Small Devices*/
+@media screen and (max-width:576px) {
+    h1 {
+        font-size: 24pt;
+    }
+    h2 {
+        font-size: 22pt;
+    }
+    h3 {
+        font-size: 15pt;
+    }
+    /*Specially added to add special highlight to some key words */
+    .shout {
+        font-size: 21pt;
+    }
+    
+    .logo_image {
+        height: 30px;
+    }/*done*/
+    .nav a{
+        font-size:15px;
+    }
+
+   .picture_main {
+    background-image: url("../image/car-snow.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    width: 100%;
+    height: 300px;
+   }
+}
+ 
