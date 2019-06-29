@@ -1,5 +1,14 @@
 /*Set the font-family Serif as default for webpage*/
-
+body {
+            padding:0;
+            font-family: serif, Arial;
+            background-image:url("image/roads2.jpg");
+            background-attachment:fixed;
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: 0% 70%;
+            height:1000px;
+        }
 /*Styling of the HEADERS for visual effect*/
 h1 {
     font-size: 50pt;
@@ -37,10 +46,6 @@ h3 {
 }
 .logo_image {
     height: 40px;
-}/*done*/
-.select a{
-    color:rgb(249, 225, 39);
-    font-size:16pt;
 }/*done*/
 /*Landing Page styling*/
 .frame{
@@ -87,8 +92,10 @@ header-main2{
 /*About Us page styling*/
 #about-us > div{
     position:relative; 
-    left:25%;
-    width:50%;
+    left:20%;
+    top:8%;
+    width:60%;
+    
 }
 .write-up{
     font-size:15pt;    
@@ -282,7 +289,7 @@ h3 {
     }
     h2 {
         font-size: 26pt;
-    }
+    }s
     h3 {
         font-size: 20pt;
     }
@@ -290,13 +297,15 @@ h3 {
     .shout {
         font-size: 31pt;
     }
+    .frame{
+        width:100%;
+        height:650px;
+    }
     #about-us > div{
         position:relative; 
         left:15%;
+        top: 5%;
         width:70%;
-    }
-    .write-up{
-        font-size:15pt;    
     }
 }
 @media screen and (max-width:950px) {
@@ -309,13 +318,13 @@ h3 {
     h3 {
         font-size: 17pt;
     }
-    /*Specially added to add special highlight to some key words */
+    Specially added to add special highlight to some key words 
     .shout {
         font-size: 25pt;
     }
 }
 /*Ipad Size*/
-@media screen and (max-width:950px) {
+@media screen and (max-width:768px) {
     h1 {
         font-size: 24pt;
     }
@@ -345,11 +354,14 @@ h3 {
     }
     #about-us > div{
         position:relative; 
-        left:10%;
-        width:80%;
+        left:7%;
+        top: 0%;
+        width:86%;
     }
     .write-up{
-        font-size:15pt;    
+        font-size:13pt;
+        padding:20px;
+        /*text-align:justify;*/
     }
 
 
@@ -386,11 +398,14 @@ h3 {
    }
     #about-us > div{
         position:relative; 
-        left:5%;
-        width:90%;
+        left:7%;
+        top: 0%;
+        width:86%;
     }
     .write-up{
-        font-size:13pt;    
+        font-size:12pt;
+        padding:20px;
+        /*text-align:justify;*/
     }
    
 }
