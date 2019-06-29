@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <style>
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <main class="container-fluid px-0 pt-5 mx-0">
+        <!--Navigation bar - contain links to different page-->
+        <ul class="nav navbar2 justify-content-left mx-0 mt-0">
+            <li><a href="index.html"><img src="image/logo.png" class="logo_image2 mx-2 mt-2" ></img></a></li>
+            <li class="nav-item mt-2">
+                <a class="nav-link active" href="index.html">About Us</a>
+            </li>
+            <li class="nav-item mt-2">
+                <a class="nav-link active" href="index.html#sellcar">Selling</a>
+            </li>
+            <li class="nav-item mt-2 ">
+                <a class="nav-link active b-l-gray select" href="buycar.html">Buying</a>
+            </li>
+            <li class="nav-item mt-2">
+                <a class="nav-link active" href="contact-us.html">Contact Us</a>
+            </li>
+        </ul>
+        <!--BUYCAR>link to Search Page -->
+        <!--Search Bar: allows user to key in the make/model of cars they looking for, budget, etc-->
+        <div id="car-list" class="search-box b-l-gray white pl-5 py-2 mt-2 w-100">
+            <form style="font-size:10pt; color:rgb(127, 127, 127)" class="row justify-content-around"></a>>
+                <input id="search-bar" type="text" placeholder="Car Make / Model" />
+                <!--To allow user to select their lowest budget-->
+                <select name="price-min">
+                        <option value="">Min Price</option>                    
+                        <option value="">$10,000</option>                    
+                        <option value="">$20,000</option>                    
+                        <option value="">$30,000</option>                    
+                        <option value="">$40,000</option>                    
+                        <option value="">$50,000</option>                    
+                        <option value="">$60,000</option>                    
+                        <option value="">$70,000</option>                    
+                        <option value="">$80,000</option>                    
+                        <option value="">$90,000</option>                    
+                        <option value="">$100,000</option>                    
+                        <option value="">$200,000</option>                    
+                    </select>
+                <!--To allow user to select their max budget-->
+                <select name="price-max">
+                        <option value="">Max Price</option>                    
+                        <option value="">$10,000</option>                    
+                        <option value="">$20,000</option>                    
+                        <option value="">$30,000</option>                    
+                        <option value="">$40,000</option>                    
+                        <option value="">$50,000</option>                    
+                        <option value="">$60,000</option>                    
+                        <option value="">$70,000</option>                    
+                        <option value="">$80,000</option>                    
+                        <option value="">$90,000</option>                    
+                        <option value="">$100,000</option>                    
+                        <option value="">$110,000</option>                    
+                        <option value="">$120,000</option>                    
+                        <option value="">$130,000</option>                    
+                        <option value="">$140,000</option>                    
+                        <option value="">$150,000</option>                    
+                        <option value="">$200,000</option>                    
+                        <option value="">$300,000</option>                    
+                   </select>
+                <!--To allow user to select his choice of age of cars to view -->
+                <select name="year-of-make">
+                        <option value="">Year Reg</option>                    
+                        <option value="">2018</option>                    
+                        <option value="">2016</option>                    
+                        <option value="">2015</option>                    
+                        <option value="">2014</option>                    
+                        <option value="">2013</option>                    
+                        <option value="">2011</option>                    
+                        <option value="">2010</option>                    
+                        <option value="">2009</option>                    
+                        <option value="">&lt1 year(s) old</option>                    
+                        <option value="">&lt2 year(s) old</option>                    
+                        <option value="">&lt3 year(s) old</option>                    
+                        <option value="">&lt4 year(s) old</option>                    
+                        <option value="">&lt5 year(s) old</option>                    
+                        <option value="">&gt6 year(s) old</option>                    
+                        <option value="">&gt7 year(s) old</option>                    
+                        <option value="">&gt8 year(s) old</option>                    
+                        <option value="">&gt9 year(s) old</option>                    
+                        <option value="">&gt10 year(s) old</option>                    
+                        <option value="">All</option>                    
+                    </select>
+                <!--To allow user to select his choice of type of cars to view -->
+                <select name="car-type">
+                        <option value="">Vehicle Type</option>                    
+                        <option value="">Hybrid Car</option>                    
+                        <option value="">Hatchback</option>                    
+                        <option value="">Luxury Sedan</option>                    
+                        <option value="">MPV</option>                    
+                        <option value="">Mid-sized Sedan</option>                    
+                        <option value="">Sports Car</option>                    
+                        <option value="">Stationwagon</option>                    
+                        <option value="">SUV</option>                    
+                        <option value="">All</option>    
+                    </select>
+                <input type="submit" class="btn-warning" value="Find Used" />
+            </form>
+        </div>
+        <!--CAR Listings     -->
+        <div class="row car-list">
+            <div class="col-3 m-3 ">
+                <a href=""><image src="image/car-listing/mini.jpg" class="w-50"/></a>
+            </div>
+            
+            
+            <div class="col-1"></div>
+            <!--Car Specification-->
+            <div class="row">
+                
+            </div>
+            
+            <!--<div class="col-7">-->
+                <!--Car make and model-->
+            <!--    <h4 class="font-weight-bold mb-0 ">Mini Cooper S Convertible</h4>-->
+                <!--Car Badges-->
+            <!--    <span class="badge badge-primary"> 2018</span>-->
+            <!--    <span class="badge badge-primary"> Mini</span>-->
+            <!--    <span class="badge badge-primary"> Cooper S</span>-->
+            <!--    <span class="badge badge-primary"> 1988cc</span>-->
+            <!--    <span class="badge badge-primary"> Sports Car</span>-->
+                <!--Car Details-->
+            <!--    <div class="mt-3">-->
+            <!--        <div class="row">-->
+            <!--            <div class="col-2 font-weight-bold">Price</div>-->
+            <!--            <div class="col-2">$158,888</div>-->
+            <!--            <div class="col-2 font-weight-bold">Reg Date</div>-->
+            <!--            <div class="col-3">27-Apr-2018</div>-->
+            <!--            <div class="col-1 font-weight-bold">Omv</div>-->
+            <!--            <div class="col-2">$36,559</div>-->
+            <!--        </div>-->
+            <!--        <div class="row">-->
+            <!--            <div class="col-2 font-weight-bold">Depreciation</div>-->
+            <!--            <div class="col-2">$15,450 /yr</div>-->
+            <!--            <div class="col-2 font-weight-bold">Mileage</div>-->
+            <!--            <div class="col-3">13,000 km (11.6k /yr)</div>-->
+            <!--            <div class="col-1 font-weight-bold">ARF</div>-->
+            <!--            <div class="col-2">$43,183</div>-->
+            <!--        </div>-->
+            <!--        <div class="row">-->
+            <!--            <div class="col-2 font-weight-bold">Road Tax</div>-->
+            <!--            <div class="col-2">$1,210 /yr</div>-->
+            <!--            <div class="col-2 font-weight-bold">Ownership</div>-->
+            <!--            <div class="col-3">1</div>-->
+            <!--            <div class="col-1 font-weight-bold">COE</div>-->
+            <!--            <div class="col-2">$37,330</div>-->
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--</div>-->
+            
+        </div>
+        
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
