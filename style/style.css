@@ -1,7 +1,5 @@
 /*Set the font-family Serif as default for webpage*/
-body {
-    font-family: serif, Arial;
-}/*done*/
+
 /*Styling of the HEADERS for visual effect*/
 h1 {
     font-size: 50pt;
@@ -18,7 +16,6 @@ h3 {
     font-family: cursive;
     font-weight: bolder;
 }/*done*/
-
 /*Keep navbar fix to top and in front of all text*/
 .nav {
     position: fixed;
@@ -46,7 +43,8 @@ h3 {
     font-size:16pt;
 }/*done*/
 /*Landing Page styling*/
-#about-us{
+.frame{
+    width:100%;
     height:800px;
 }
 .picture_main {
@@ -84,10 +82,25 @@ header-main2{
     color: rgba(17, 17, 17, 0.9);
     /*text-shadow: 2px 2px 4px #000000;*/
 }
+/*End of Landing page styling*/
 
+/*About Us page styling*/
+#about-us > div{
+    position:relative; 
+    left:25%;
+    width:50%;
+}
+.write-up{
+    font-size:15pt;    
+}
 
-
-
+#sellcar {
+    background-image: url("../image/car-row.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    padding:50px;
+}
 .rectangle {
     width: 30%;
     height: 500px;
@@ -99,9 +112,7 @@ header-main2{
 .rectangle:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-.step {
-    width: 80%;
-}
+
 /*BUYCAR page stying*/
 .header-buycar1{
     position:absolute;
@@ -225,7 +236,7 @@ footer {
     font-size: 15px;
 }
 
-
+/*Laptop Screen Size*/
 @media screen and (max-width:1500px) {
 /*Styling of the HEADERS for visual effect*/
 h1 {
@@ -242,8 +253,9 @@ h3 {
     font-size: 38pt;
 }
 /*Landing Page styling*/
-#about-us{
-    height:600px;
+.frame{
+    width:100%;
+    height:700px;
 }
 .picture_main {
     height:400px;
@@ -262,6 +274,7 @@ h3 {
     height: 100px;
 }
 }
+/*Ipad Pro*/
 @media screen and (max-width:1024px) {
 /*Styling of the HEADERS for visual effect*/
     h1 {
@@ -277,8 +290,15 @@ h3 {
     .shout {
         font-size: 31pt;
     }
+    #about-us > div{
+        position:relative; 
+        left:15%;
+        width:70%;
+    }
+    .write-up{
+        font-size:15pt;    
+    }
 }
-/*Ipad Pro*/
 @media screen and (max-width:950px) {
     h1 {
         font-size: 27pt;
@@ -309,19 +329,30 @@ h3 {
     .shout {
         font-size: 21pt;
     }
-    #about-us{
+    .frame{
+        width:100%;
         height:450px;
     }
     .box{
         height:250px;
     }
     .picture_main {
-    background-position:45% 0%;
-    height: 300px;
+        background-position:62% 0%;
+        height: 300px;
    }
     .quote{
         height:380px;
     }
+    #about-us > div{
+        position:relative; 
+        left:10%;
+        width:80%;
+    }
+    .write-up{
+        font-size:15pt;    
+    }
+
+
 }
 /*Small Devices*/
 @media screen and (max-width:576px) {
@@ -338,15 +369,29 @@ h3 {
     .shout {
         font-size: 21pt;
     }
+    .frame{
+        width:100%;
+        height:300px;
+    }
+
     .logo_image {
         height: 30px;
     }/*done*/
     .nav a{
         font-size:15px;
     }
-   .picture_main {
+    .picture_main {
     background-position:45% 0%;
     height: 250px;
    }
+    #about-us > div{
+        position:relative; 
+        left:5%;
+        width:90%;
+    }
+    .write-up{
+        font-size:13pt;    
+    }
+   
 }
  
