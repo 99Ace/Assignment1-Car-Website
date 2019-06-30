@@ -67,11 +67,14 @@ h3 {
 .gap {
     height: 50px;
 }
-header-main1{
-    padding-left:20%;
+.header-main1{
+    position:relative;
+    left:40%;
 }
-header-main2{
-    padding-left:20%;
+.header-main2{
+    position:relative;
+    top:-8%;
+    left:45%;
 }
 /*.display {*/
 /*    font-family: cursive, fantasy;*/
@@ -79,6 +82,10 @@ header-main2{
 /*}*/
 .quote{
     height:400px;
+    position:relative;
+    top:20%;
+    margin-right:70px;
+    padding: 40px 50px;
 }
 .form-title {
     font-size: 21pt;
@@ -98,27 +105,41 @@ header-main2{
     
 }
 .write-up{
-    font-size:15pt;    
+    font-size:15pt;
+    padding:30px;
 }
+/*End of About-Us styling*/
 
+/*Sellcar page styling*/
 #sellcar {
     background-image: url("../image/car-row.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width:100%;
     padding:50px;
+    margin:0;
 }
 .rectangle {
-    width: 30%;
-    height: 500px;
-    font-size: 16pt;
+    width: 25%;
+    height: 400px;
+    font-size: 15pt;
+    text-align:center;
+    padding:35px 15px;
+    margin:10px;
+
+}
+.button-sell{
+    padding:20px 30px;
+    font-size:17pt;
+    margin-bottom: 30px;
 }
 .rectangle span {
     font-size: 19pt;
 }
 .rectangle:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 1);
 }
+/*End of Sellcar page styling*/
 
 /*BUYCAR page stying*/
 .header-buycar1{
@@ -189,7 +210,7 @@ header-main2{
     background-color: rgba(50, 50, 50, 1);
 }
 .b-l-gray {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .b-p-gray {
     background-color: rgba(0, 0, 0, 0.8);
@@ -277,9 +298,17 @@ h3 {
     color: rgba(17, 17, 17, 0.9);
     /*text-shadow: 2px 2px 4px #000000;*/
 }
+.quote{
+    height:340px;
+    position:relative;
+    top:10%;
+    margin-right:60px;
+    padding: 10px 40px;
+}
 .gap {
     height: 100px;
 }
+
 }
 /*Ipad Pro*/
 @media screen and (max-width:1024px) {
@@ -298,16 +327,45 @@ h3 {
         font-size: 31pt;
     }
     .frame{
-        width:100%;
+        /*width:100%;*/
         height:650px;
     }
+    .header-main1{
+        position:relative;
+        left:30%;
+    }
+    .header-main2{
+        position:relative;
+        top:-8%;
+        left:35%;
+    }
+    .quote{
+        height:360px;
+        position:relative;
+        top:8%;
+        margin-right:50px;
+        padding: 0px 30px;
+    }
+
     #about-us > div{
         position:relative; 
         left:15%;
         top: 5%;
         width:70%;
     }
-}
+    /*Sellcar page styling*/
+    .rectangle {
+        width:30%;
+        height: 380px;
+    }
+    .button-sell{
+        padding:15px 25px;
+        font-size:17pt;
+        margin-bottom: 25px;
+    }
+
+    /*End of Sellcar page styling*/
+    }
 @media screen and (max-width:950px) {
     h1 {
         font-size: 27pt;
@@ -339,19 +397,36 @@ h3 {
         font-size: 21pt;
     }
     .frame{
-        width:100%;
+        /*width:100%;*/
         height:450px;
     }
     .box{
-        height:250px;
+        /*width:100%;*/
+        height:300px;
     }
     .picture_main {
         background-position:62% 0%;
+        width:100%;
         height: 300px;
-   }
-    .quote{
-        height:380px;
     }
+        .header-main1{
+        position:relative;
+        left:25%;
+    }
+    .header-main2{
+        position:relative;
+        top:-8%;
+        left:30%;
+    }
+    .quote{
+        height:360px;
+        position:relative;
+        top:8%;
+        margin-right:50px;
+        padding: 0px 30px;
+        width:25%;
+    }
+    /*About-Us page styling*/
     #about-us > div{
         position:relative; 
         left:7%;
@@ -363,7 +438,33 @@ h3 {
         padding:20px;
         /*text-align:justify;*/
     }
-
+    
+/*Sellcar page styling*/
+    #sellcar {
+        background-image: url("../image/car-row.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:100%;
+        padding:10px;
+    }
+    .rectangle {
+        width: 30%;
+        height: 310px;
+        font-size: 12pt;
+        text-align:center;
+        padding:25px 15px;
+        margin:5px;
+    
+    }
+    .button-sell{
+        padding:10px 20px;
+        font-size:15pt;
+        margin-bottom: 30px;
+    }
+    .rectangle span {
+        font-size: 11pt;
+    }
+/*End of Sellcar page styling*/
 
 }
 /*Small Devices*/
@@ -382,10 +483,9 @@ h3 {
         font-size: 21pt;
     }
     .frame{
-        width:100%;
+        /*width:100%;*/
         height:300px;
     }
-
     .logo_image {
         height: 30px;
     }/*done*/
