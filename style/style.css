@@ -1,24 +1,22 @@
+/*Set the quote portion to settle the boundaries error*/
+
+
+
 /*Set the font-family Serif as default for webpage*/
 body {
             padding:0;
             font-family: Serif, Arial;
-            background-image:url("image/roads2.jpg");
-            background-attachment:fixed;
-            background-repeat:no-repeat;
-            background-size:cover;
-            background-position: 0% 70%;
-            height:1000px;
-        }
+}
 /*Styling of the HEADERS for visual effect*/
 h1 {
     font-size: 50pt;
-}/*done*/
+}
 h2 {
     font-size: 40pt;
-}/*done*/
+}
 h3 {
     font-size: 28pt;
-}/*done*/
+}
 /*Specially added to add special highlight to some key words */
 .shout {
     font-size: 46pt;
@@ -160,7 +158,7 @@ h3 {
 }
 /*End of Sellcar page styling*/
 
-/*BUYCAR page stying*/
+/*Buycar page stying*/
 .header-buycar1{
     position:absolute;
     top:27%;
@@ -185,28 +183,79 @@ h3 {
     width: 50%;
     height: 45px;
 }
-.circle{
-    width:250px;
-    height:250px;
-    border-radius:50%;
-}
 /*Testimonial boxes styling and shifting the positions of words*/
 #testimonial1{
-    position:relative;
-    left:-150px;
+    /*position:relative;*/
+    /*left:-150px;*/
     font-size:14pt;
 }
 #testimonial2{
-    position:relative;
-    left:150px;
-    top:30px;
+    /*position:relative;*/
+    /*left:150px;*/
+    /*top:30px;*/
     font-size:14pt;
 }
-/*BUYCAR search page*/
-.car-list{
+/*End of Buycar page styling*/
+
+/*Car list page styling*/
+.search-box2{
     width:100%;
-    height: 180px;
+    height:42px;
+    font-size:12pt;
+    color:rgb(127, 127, 127);
+    padding:6px 20px 6px 16%;
+
 }
+.search-box2 *{
+    border-radius:0px;
+    margin: auto 10px;
+}
+.car-listing{
+    display:flex;
+    padding:15px;
+    font-size:16pt;
+    color:rgb(0,0,0);
+    width:100%;
+    height:200px;
+}
+.car-detail{
+    /*width:100%;*/
+    /*padding:15px;*/
+    margin:6px;
+    display:flex;
+    text-align:center;
+}
+.car-specs{
+    width:15%;
+}
+.car-badge{
+    width:20%;
+}
+.car-description{
+    padding:15%;
+    display:flex;
+}
+
+
+
+
+
+
+
+
+.circle{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+}
+
+
+
+
+
+
+
+
 
 
 /*Pre-fix decorations*/
@@ -283,6 +332,11 @@ footer {
     font-size: 15px;
 }
 
+
+
+
+
+
 /*Laptop Screen Size*/
 @media screen and (max-width:1440px) {
 /*Styling of the HEADERS for visual effect*/
@@ -326,6 +380,18 @@ h3 {
     height: 100px;
 }
 
+.search-box2{
+    width:100%;
+    height:42px;
+    font-size:12pt;
+    color:rgb(127, 127, 127);
+    padding:6px 20px 6px 15%;
+}
+.search-box2 *{
+    border-radius:0px;
+    margin: auto 10px;
+}
+
 }
 /*Ipad Pro*/
 @media screen and (max-width:1024px) {
@@ -367,14 +433,6 @@ h3 {
     .form-title {
         font-size: 18pt;
     }
-    /*.quote{*/
-    /*    height:360px;*/
-    /*    position:relative;*/
-    /*    top:8%;*/
-    /*    margin-right:35px;*/
-    /*    padding: 0px 30px;*/
-    /*}*/
-
     #about-us > div{
         position:relative; 
         left:15%;
@@ -393,7 +451,19 @@ h3 {
     }
 
     /*End of Sellcar page styling*/
+    
+    
+    /*Car Listing Styling*/
+    .search-box2{
+        height:40px;
+        font-size:10pt;
+        padding:4px 20px 6px 15%;
     }
+    .search-box2 *{
+        margin: 4px 6px;
+    }
+}
+
 @media screen and (max-width:950px) {
     h1 {
         font-size: 27pt;
@@ -404,7 +474,7 @@ h3 {
     h3 {
         font-size: 17pt;
     }
-    Specially added to add special highlight to some key words 
+    /*Specially added to add special highlight to some key words */
     .shout {
         font-size: 25pt;
     }
@@ -465,6 +535,14 @@ h3 {
         font-size:13pt;
         padding:20px;
         /*text-align:justify;*/
+    }
+    .search-box2{
+        height:34px;
+        font-size:8pt;
+        padding:2px 20px 2px 15%;
+    }
+    .search-box2 *{
+        margin: 4px 3px;
     }
     
 /*Sellcar page styling*/
