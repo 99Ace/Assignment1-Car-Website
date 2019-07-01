@@ -204,7 +204,6 @@ h3 {
     font-size:12pt;
     color:rgb(127, 127, 127);
     padding:6px 20px 6px 16%;
-
 }
 .search-box2 *{
     border-radius:0px;
@@ -218,22 +217,29 @@ h3 {
     width:100%;
     height:200px;
 }
+.car-image{
+    height:80%;
+}
 .car-detail{
     /*width:100%;*/
-    /*padding:15px;*/
+    padding:15px;
     margin:6px;
     display:flex;
-    text-align:center;
+    text-align:left;
+}
+.car-specs-mm{
+    width:30%;
 }
 .car-specs{
     width:15%;
+    text-align:center;
 }
 .car-badge{
     width:20%;
 }
 .car-description{
-    padding:15%;
-    display:flex;
+    padding:20px;
+    /*display:flex;*/
 }
 
 
@@ -391,7 +397,9 @@ h3 {
     border-radius:0px;
     margin: auto 10px;
 }
-
+.car-image{
+    height:90%;
+}
 }
 /*Ipad Pro*/
 @media screen and (max-width:1024px) {
@@ -462,6 +470,30 @@ h3 {
     .search-box2 *{
         margin: 4px 6px;
     }
+.car-listing{
+    font-size:12pt;
+}
+.car-image{
+    height:75%;
+}
+.car-detail{
+    padding:5px;
+    margin:6px;
+}
+.car-specs-mm{
+    width:35%;
+}
+.car-specs{
+    width:15%;
+    /*text-align:center;*/
+}
+.car-badge{
+    width:20%;
+}
+.car-description{
+    padding:20px;
+    /*display:flex;*/
+}    
 }
 
 @media screen and (max-width:950px) {
@@ -544,6 +576,27 @@ h3 {
     .search-box2 *{
         margin: 4px 3px;
     }
+.car-listing{
+    font-size:10pt;
+}
+.car-detail{
+    padding:5px;
+    margin:6px;
+}
+.car-specs-mm{
+    width:40%;
+}
+.car-specs{
+    width:12%;
+    /*text-align:center;*/
+}
+.car-badge{
+    width:20%;
+}
+.car-description{
+    padding:20px;
+    /*display:flex;*/
+}    
     
 /*Sellcar page styling*/
     #sellcar {
@@ -613,6 +666,6 @@ h3 {
         padding:20px;
         /*text-align:justify;*/
     }
-   
+
 }
  
