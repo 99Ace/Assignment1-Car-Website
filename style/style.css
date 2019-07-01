@@ -1,7 +1,5 @@
 /*Set the quote portion to settle the boundaries error*/
 
-
-
 /*Set the font-family Serif as default for webpage*/
 body {
             padding:0;
@@ -209,6 +207,16 @@ h3 {
     border-radius:0px;
     margin: auto 10px;
 }
+.car-title{
+    display:flex;
+    font-size:16pt;
+}
+.car-space{
+    width:17%;
+}
+.car-end{
+    width:39%;
+}
 .car-listing{
     display:flex;
     padding:15px;
@@ -400,6 +408,16 @@ h3 {
 .car-image{
     height:90%;
 }
+.car-title{
+    display:flex;
+    font-size:16pt;
+}
+.car-space{
+    width:24%;
+}
+.car-end{
+    width:28%;
+}
 }
 /*Ipad Pro*/
 @media screen and (max-width:1024px) {
@@ -470,6 +488,16 @@ h3 {
     .search-box2 *{
         margin: 4px 6px;
     }
+.car-title{
+    display:flex;
+    font-size:12pt;
+}
+.car-space{
+    width:32%;
+}
+.car-end{
+    width:30%;
+}
 .car-listing{
     font-size:12pt;
 }
@@ -576,8 +604,21 @@ h3 {
     .search-box2 *{
         margin: 4px 3px;
     }
+.car-title{
+    display:flex;
+    font-size:10pt;
+}
+.car-space{
+    width:32%;
+}
+.car-end{
+    width:30%;
+}    
 .car-listing{
     font-size:10pt;
+}
+.car-image{
+    height:50%;
 }
 .car-detail{
     padding:5px;
@@ -594,7 +635,7 @@ h3 {
     width:20%;
 }
 .car-description{
-    padding:20px;
+    padding:10px;
     /*display:flex;*/
 }    
     
