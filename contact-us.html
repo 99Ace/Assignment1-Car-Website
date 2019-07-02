@@ -53,11 +53,23 @@
         <div id="contact-us" class="text-center">
             <div id="contact-text-frame" class="b-white">
                 <div id="contact-text-textbox" class= "white bg-dark">
-                   
                     
-                   
-                   
-                   
+                    <h2><u>Contact Details</u></h2>
+                    <div><table>
+                        <tr>
+                            <td><h5>Ace Ang</h5></td>
+                            <td><a href="tel:+6597802808">+65 9780 2808</a></td>
+                        </tr>
+                        <tr>
+                            <td><h5>Bravo Ang</h5></td>
+                            <td><a href="tel:+6597803808">+65 9780 3808</a></td>
+                        </tr>
+                        <tr>
+                            <td><h5>Charlie Ang</h5></td>
+                            <td><a href="tel:+6597804808">+65 9780 4808</a></td>
+                        </tr>
+                    </table>
+                    </div>
                    
                 </div>
             </div>
@@ -75,23 +87,24 @@
         /*global $*/
         $(function(){
             $("#contact-locate").click(function(){
-                $("#contact-text-textbox").html("<h2>Locate Us page</h2>");
+                $("#contact-text-textbox").html(
+                `<h2><u>Locate Us</u></h2>
+                    <div class="row justify-content-around mt-3">
+                        <img src="image/location.jpg"></img>
+                        <div>
+                            <p>Lot 88 Selegie Road Singapore (180008)<br><h4 class="text-warning">Find your direction</h4></p>
+                            <form>
+                                <input type="text" placeholder="Enter your location"/>
+                                <input type="button" class="submit badge-warning" value="Direct Me!"/>
+                            </form>
+                        </div>
+                    </div>`);
             })
-            // $("#contact-locate").hover(function(){
-            //     $("#contact-locate img").css("opacity","1");
-            //     }, function(){
-            //     $("#contact-locate img").css("opacity","0.6");
-            // })
             
             $("#contact-details").click(function(){
                 $("#contact-text-textbox").html("<h2>Our Details page</h2>");
             })
-            //  $("#contact-details").hover(function(){
-            //     $("#contact-details img").css("opacity","1");
-            //     }, function(){
-            //     $("#contact-details img").css("opacity","0.6");
-            // })
-            
+     
             $("#contact-join-us").click(function(){
                 $("#contact-text-textbox").html(
                     `<h2>Join Us page</h2>
@@ -102,24 +115,22 @@
                         <input type="text" placeholder="Position applying"/>
                         <input type="button" class="submit badge-warning" value="Hire Me!"/>
                     </form>`);
-                // }, function(){
-                // $("#contact-text").html("<h2>Thank you</h2>");
+             
             })
-            // $("#contact-join-us").hover(function(){
-            //     $("#contact-join-us img").css("opacity","1");
-            //     }, function(){
-            //     $("#contact-join-us img").css("opacity","0.6");
-            // })
  
             $("#contact-feedback").click(function(){
-                $("#contact-text-textbox").html("<h2>Feedback page</h2>");
+                $("#contact-text-textbox").html(
+                `<h2>We value your feedback</h2>
+                    <p>We are alway constantly looking to improve our people and system<br><h4 class="text-warning">Always Learning! Always Improving!</h4></p>
+                    <form>
+                        <input type="text" placeholder="Enter your name"/>
+                        <input type="text" placeholder="Contact number"/><br>
+                        <input type="text" class="feedback" placeholder="Feedback"/><br>
+                        <input type="button" class="submit badge-warning" value="Submit!"/>
+                    </form>`);
             })
-            // $("#contact-feedback").hover(function(){
-            //     $("#contact-feedback img").css("opacity","1");
-            //     }, function(){
-            //     $("#contact-feedback img").css("opacity","0.6");
-            // })
 
+    
         })    
     </script>
 

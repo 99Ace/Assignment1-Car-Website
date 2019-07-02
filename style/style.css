@@ -308,8 +308,18 @@ h3 {
 #contact-text-textbox input{
     padding:0 1%;
 }
+.feedback{
+    height:50px;
+    width:48%;
+}
 #contact-text-textbox p{
     font-size:15pt;
+}
+#contact-text-textbox img{
+    width:40%;
+}
+#contact-text-textbox a{
+    text-decoration:none;
 }
 .square-large{
     width:80%;
