@@ -33,7 +33,7 @@
     <video autoplay muted loop id="myVideo"><source src="https://www.audi.com.sg/content/dam/nemo/models/r8/r8-spyder/my-2017/1920x1080-gallery/videos/R8_Spyder_Highlight_1385B001E.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
     </video>
-    <main class="container-fluid px-0 pt-5 m-0">
+    <main class="container-fluid px-0 pt-5 m-0 white">
         <ul class="nav nav-bar justify-content-left mx-0 mt-0 pb-0 mb-0">
             <a href="index.html"><img src="image/logo.png" class="logo_image mx-2 mt-2" ></img></a></li>
             <li class="nav-item ml-3 mt-2">
@@ -51,42 +51,75 @@
         </ul>
 
         <div id="contact-us" class="text-center">
-            <div id="contact-text" class="w-80 gray b-white"><h2>Thank you</h2></div>
-            <div class=" square-large row">
-                <div id="contact-locate" class="square-med bg-dark"><image src="image/contact-locate.jpg"/></div>
-                <div id="contact-details" class="square-med bg-dark"><img src="image/contact-details.jpg"/></div>
-                <div id="contact-join-us" class="square-med bg-dark"><img src="image/contact-join-us.jpg"/></div>
-                <div id="contact-feedback" class="square-med bg-dark"><img src="image/contact-feedback.jpg"/></div>
+            <div id="contact-text-frame" class="b-white">
+                <div id="contact-text-textbox" class= "white bg-dark">
+                   
+                    
+                   
+                   
+                   
+                   
+                </div>
+            </div>
+            <div class="square-large row">
+                <div id="contact-locate" class="square-med bg-dark"><image src="image/contact-locate.jpg"/><h4>Locate Us</h4></div>
+                <div id="contact-details" class="square-med bg-dark"><img src="image/contact-details.jpg"/><h4>Contact Details</h4></div>
+                <div id="contact-join-us" class="square-med bg-dark"><img src="image/contact-join-us.jpg"/><h4>Join Us</h4></div>
+                <div id="contact-feedback" class="square-med bg-dark"><img src="image/contact-feedback.jpg"/><h4>Feedback</h4></div>
             </div>
         </div>
 
-        <div>
-            <!--<h1>Add some fun and thrills </h1>-->
-        </div>
+
     </main>
     <script>
         /*global $*/
         $(function(){
             $("#contact-locate").click(function(){
-                $("#contact-text").html("<h2>Locate Us page</h2>");
-                // }, function(){
-                // $("#contact-text").html("<h2>Thank you</h2>");
+                $("#contact-text-textbox").html("<h2>Locate Us page</h2>");
             })
+            // $("#contact-locate").hover(function(){
+            //     $("#contact-locate img").css("opacity","1");
+            //     }, function(){
+            //     $("#contact-locate img").css("opacity","0.6");
+            // })
+            
             $("#contact-details").click(function(){
-                $("#contact-text").html("<h2>Our Details page</h2>");
-                // }, function(){
-                // $("#contact-text").html("<h2>Thank you</h2>");
+                $("#contact-text-textbox").html("<h2>Our Details page</h2>");
             })
+            //  $("#contact-details").hover(function(){
+            //     $("#contact-details img").css("opacity","1");
+            //     }, function(){
+            //     $("#contact-details img").css("opacity","0.6");
+            // })
+            
             $("#contact-join-us").click(function(){
-                $("#contact-text").html("<h2>Join Us page</h2>");
+                $("#contact-text-textbox").html(
+                    `<h2>Join Us page</h2>
+                    <p>We are looking for people who are constantly looking to grow and improve themselves.<br>Our company motto is<br><h4 class="text-warning">Being Happy!</h4></p>
+                    <form>
+                        <input type="text" placeholder="Enter your Exciting name"/>
+                        <input type="text" placeholder="Contact number"/>
+                        <input type="text" placeholder="Position applying"/>
+                        <input type="button" class="submit badge-warning" value="Hire Me!"/>
+                    </form>`);
                 // }, function(){
                 // $("#contact-text").html("<h2>Thank you</h2>");
             })
+            // $("#contact-join-us").hover(function(){
+            //     $("#contact-join-us img").css("opacity","1");
+            //     }, function(){
+            //     $("#contact-join-us img").css("opacity","0.6");
+            // })
+ 
             $("#contact-feedback").click(function(){
-                $("#contact-text").html("<h2>Feedback page</h2>");
-                // }, function(){
-                // $("#contact-text").html("<h2>Thank you</h2>");
+                $("#contact-text-textbox").html("<h2>Feedback page</h2>");
             })
+            // $("#contact-feedback").hover(function(){
+            //     $("#contact-feedback img").css("opacity","1");
+            //     }, function(){
+            //     $("#contact-feedback img").css("opacity","0.6");
+            // })
+
         })    
     </script>
 

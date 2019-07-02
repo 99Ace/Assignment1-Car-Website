@@ -295,10 +295,21 @@ h3 {
     width:90%;
     padding:0;
 }
-#contact-text{
+#contact-text-frame{
     width:80%;
     height:60%;
-
+    padding:2%;
+}
+#contact-text-textbox{
+    width:100%;
+    height:100%;
+    padding: 5% 10%;
+}
+#contact-text-textbox input{
+    padding:0 1%;
+}
+#contact-text-textbox p{
+    font-size:15pt;
 }
 .square-large{
     width:80%;
@@ -312,8 +323,15 @@ h3 {
 }
 .square-med img{
     width:100%;
-    height:100%;
-    padding:10%;
+    height:80%;
+    padding:10% 10% 0;
+    opacity:0.6;
+}
+.square-med img:hover{
+    opacity:1;
+}
+#contact-locate{
+    background-image:url("image/contact-locate.jpg");
 }
 /*Social media items*/
 icon-bar {
