@@ -10,169 +10,102 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css" type="text/css" />
     <style type="text/css">
-        .header {
-            text-align: center;
-        }
+        /** {*/
+        /*    padding: 0;*/
+        /*    margin: 0;*/
+        /*}*/
 
-        h1 {
-            font-size: 65pt;
-        }
-        
-
-        h3 {
-            font-size: 20pt;
-
-        }
-        .shout {
-            font-size: 40pt;
-            font-style: oblique;
-            color:red;
-        }
-        .mini-text{
-            margin-top:0; 
-            padding:0;
-            font-size:10pt;
-        }
-        #form-quote {
-                background-color: silver;
-                /*border-radius:35px;*/
-        }
-
-        @media screen and (max-width:950px) {
-            body {
-                background-color: pink;
-            }
-            h1 {
-                font-size: 50pt;
-            }
-            .shout {
-                font-size: 35pt;
-            }
-            h3 {
-                font-size: 20pt;
-            }
-        }
-
-        @media screen and (max-width:425px) {
-            body {
-                background-color: gold;
-            }
-            h1 {
-                font-size: 30pt;
-            }
-            .shout {
-                font-size: 25pt;
-            }
-            h3 {
-                font-size: 15pt;
-            }
+        #myVideo {
+            opacity: 0.7;
+            position: fixed;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
         }
     </style>
     <title>sellMycar.com</title>
 </head>
 
-<body>
-    <main class="container-fluid p-0">
-        <!--Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="image/logo.png" style="height:45px; margin-left:10px; padding:0;"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-us">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="sellcar.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sell Car
-                      </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="sellcar.html">3-Steps Procedure</a>
-                            <a class="dropdown-item" href="contact-us.html">Get a Quote</a>
-                        </div>
-                    </li>
-                    <!--Dropdown nav-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="buycar.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Buy Car
-                      </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="buycar.html">New Import Car</a>
-                            <a class="dropdown-item" href="buycar.html">Pre-Owned Cars</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">
-                                <form class="form-inline my-2 my-lg-0">
-                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-                                </form>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html">Contact</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
+<body>
+    
+    <main id="contact-us" class="container-fluid b-l-gray">
+        <!--<video autoplay muted loop id="myVideo"><source src="https://www.audi.com.sg/content/dam/nemo/models/r8/r8-spyder/my-2017/1920x1080-gallery/videos/R8_Spyder_Highlight_1385B001E.mp4" type="video/mp4">-->
+        <!--  Your browser does not support HTML5 video.</video>-->
+        <!--Navigation-->
+        <ul class="nav nav-bar justify-content-left mx-0 mt-0 pb-0 mb-0">
+            <a href="index.html"><img src="image/logo.png" class="logo_image mx-2 mt-2" ></img></a></li>
+            <li class="nav-item ml-3 mt-2">
+                <a class="nav-link active" href="index.html#about-us">About Us</a>
+            </li>
+            <li class="nav-item mt-2">
+                <a class="nav-link active" href="index.html#sellcar">Selling</a>
+            </li>
+            <li class="nav-item mt-2 ">
+                <a class="nav-link active " href="buycar.html">Buying</a>
+            </li>
+            <li class="nav-item mt-2">
+                <a class="nav-link active" href="contact-us.html">Contact Us</a>
+            </li>
+        </ul>
+
+        <!--<div class="container-fluid square-large row justify-content-center">-->
+        <!--        <div class="square-med bg-danger"></div>-->
+        <!--        <div class="square-med bg-warning"></div>-->
+        <!--        <div class="square-med bg-success"></div>-->
+        <!--        <div class="square-med bg-primary"></div>-->
+        <!--</div>-->
+
+
+
         <!--Header liner-->
-        <header class="container-fluid header my-5">
-            <h1>Quotation</h1>
-            <h3>We will reply to you within <span class="shout red">24hrs</span> time</h3>
-        </header>
-        
+        <!--<header class="container-fluid header my-5">-->
+        <!--    <h1>Quotation</h1>-->
+        <!--    <h3>We will reply to you within <span class="shout red">24hrs</span> time</h3>-->
+        <!--</header>-->
         <!--Form Enquiry Page-->
         <!--@big screen mode-->
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-7">
-            <form id="form-quote" class="m-5 py-4 d-none d-sm-block" action="/action_page.php" method="">
-                <div class="row mx-5 my-1"><label class="col-4" for="">Name</label><input class="col-7" type="text" name="name"></div>
-                <div class="row mx-5 my-1">
-                    <label class="col-4 " for="">ID Type</label>
-                    <div class="col-7">
-                        <input type="radio" name="id-type" value="nric">Singapore NRIC<br>
-                        <input type="radio" name="id-type" value="business">Business<br>
-                        <input type="radio" name="id-type" value="company">Company<br>
-                        <input type="radio" name="id-type" value="fin"> Foreign Fin<br>
-                        <input type="radio" name="id-type"> Other <input type="text" name="id-type">
-                    </div>
-                </div>
-                <div class="row mx-5 my-1"><label class="col-4" for=""><div id="owner-id">Owner ID <span class="mini-text">(last 5-character)</span></div></label><input class="col-7" type="text" name="id-5c"></div>
-                <div class="row mx-5 my-1"><label class="col-4" for="">Mobile</label><input class="col-7" type="text" name="mobile"></div>
-                <div class="row mx-5 my-1"><label class="col-4" for="">Email</label><input class="col-7" type="text" name="email"></div>
-                <div class="row mx-5 my-1"><label class="col-4" for=""></label><input class="col-7" type="submit" value="Submit"></div>
-            </form>
-            </div>
-            <div class="col-2"></div>
-        </div>
+        <!--<div class="row">-->
+        <!--    <div class="col-3"></div>-->
+        <!--    <div class="col-7">-->
+        <!--    <form id="form-quote" class="m-5 py-4 d-none d-sm-block" action="/action_page.php" method="">-->
+        <!--        <div class="row mx-5 my-1"><label class="col-4" for="">Name</label><input class="col-7" type="text" name="name"></div>-->
+        <!--        <div class="row mx-5 my-1">-->
+        <!--            <label class="col-4 " for="">ID Type</label>-->
+        <!--            <div class="col-7">-->
+        <!--                <input type="radio" name="id-type" value="nric">Singapore NRIC<br>-->
+        <!--                <input type="radio" name="id-type" value="business">Business<br>-->
+        <!--                <input type="radio" name="id-type" value="company">Company<br>-->
+        <!--                <input type="radio" name="id-type" value="fin"> Foreign Fin<br>-->
+        <!--                <input type="radio" name="id-type"> Other <input type="text" name="id-type">-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="row mx-5 my-1"><label class="col-4" for=""><div id="owner-id">Owner ID <span class="mini-text">(last 5-character)</span></div></label><input class="col-7" type="text" name="id-5c"></div>-->
+        <!--        <div class="row mx-5 my-1"><label class="col-4" for="">Mobile</label><input class="col-7" type="text" name="mobile"></div>-->
+        <!--        <div class="row mx-5 my-1"><label class="col-4" for="">Email</label><input class="col-7" type="text" name="email"></div>-->
+        <!--        <div class="row mx-5 my-1"><label class="col-4" for=""></label><input class="col-7" type="submit" value="Submit"></div>-->
+        <!--    </form>-->
+        <!--    </div>-->
+        <!--    <div class="col-2"></div>-->
+        <!--</div>-->
         <!--@small screen mode-->
-            <form id="form-quote" class="m-3 py-4 d-sm-none" action="/action_page.php" method="">
-                <div class="row mx-2 my-2"><label class="col-5" for="">Name</label><input class="col-6" type="text" name="name"></div>
-                <div class="row mx-2 my-2">
-                    <label class="col-5 " for="">Owner ID Type</label>
-                    <div class="col-6">
-                        <input type="radio" name="id-type" value="nric"> Singapore NRIC<br>
-                        <input type="radio" name="id-type" value="business"> Business<br>
-                        <input type="radio" name="id-type" value="company"> Company<br>
-                        <input type="radio" name="id-type" value="fin"> Foreign Fin<br>
-                        <input type="radio" name="id-type"> Other <input type="text" name="id-type">
-                    </div>
-                </div>
-                <div class="row mx-2 my-2"><label class="col-5" for=""><div id="owner-id">Owner ID <span class="mini-text">(last 5-character)</span></div></label><input class="col-6" type="text" name="id-5c"></div>
-                <div class="row mx-2 my-2"><label class="col-5" for="">Mobile</label><input class="col-6" type="text" name="mobile"></div>
-                <div class="row mx-2 my-2"><label class="col-5" for="">Email</label><input class="col-6" type="text" name="email"></div>
-                <div class="row mx-2 my-2"><label class="col-5" for=""></label><input class="col-6" type="submit" value="Submit"></div>
-            </form>
+        <!--    <form id="form-quote" class="m-3 py-4 d-sm-none" action="/action_page.php" method="">-->
+        <!--        <div class="row mx-2 my-2"><label class="col-5" for="">Name</label><input class="col-6" type="text" name="name"></div>-->
+        <!--        <div class="row mx-2 my-2">-->
+        <!--            <label class="col-5 " for="">Owner ID Type</label>-->
+        <!--            <div class="col-6">-->
+        <!--                <input type="radio" name="id-type" value="nric"> Singapore NRIC<br>-->
+        <!--                <input type="radio" name="id-type" value="business"> Business<br>-->
+        <!--                <input type="radio" name="id-type" value="company"> Company<br>-->
+        <!--                <input type="radio" name="id-type" value="fin"> Foreign Fin<br>-->
+        <!--                <input type="radio" name="id-type"> Other <input type="text" name="id-type">-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="row mx-2 my-2"><label class="col-5" for=""><div id="owner-id">Owner ID <span class="mini-text">(last 5-character)</span></div></label><input class="col-6" type="text" name="id-5c"></div>-->
+        <!--        <div class="row mx-2 my-2"><label class="col-5" for="">Mobile</label><input class="col-6" type="text" name="mobile"></div>-->
+        <!--        <div class="row mx-2 my-2"><label class="col-5" for="">Email</label><input class="col-6" type="text" name="email"></div>-->
+        <!--        <div class="row mx-2 my-2"><label class="col-5" for=""></label><input class="col-6" type="submit" value="Submit"></div>-->
+        <!--    </form>-->
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
