@@ -53,23 +53,18 @@
         <div id="contact-us" class="text-center">
             <div id="contact-text-frame" class="b-white">
                 <div id="contact-text-textbox" class= "white bg-dark">
-                    
-                    <h2><u>Contact Details</u></h2>
-                    <div><table>
-                        <tr>
-                            <td><h5>Ace Ang</h5></td>
-                            <td><a href="tel:+6597802808">+65 9780 2808</a></td>
-                        </tr>
-                        <tr>
-                            <td><h5>Bravo Ang</h5></td>
-                            <td><a href="tel:+6597803808">+65 9780 3808</a></td>
-                        </tr>
-                        <tr>
-                            <td><h5>Charlie Ang</h5></td>
-                            <td><a href="tel:+6597804808">+65 9780 4808</a></td>
-                        </tr>
-                    </table>
+                    <h2><u>Locate Us</u></h2>
+                    <div class="row justify-content-around mt-3">
+                        <img src="image/location.jpg"></img>
+                        <div>
+                            <p>Lot 88 Selegie Road Singapore (180008)<br><h4 class="text-warning">Find your direction</h4></p>
+                            <form>
+                                <input type="text" placeholder="Enter your location"/>
+                                <input type="button" class="submit badge-warning" value="Direct Me!"/>
+                            </form>
+                        </div>
                     </div>
+                    
                    
                 </div>
             </div>
@@ -102,7 +97,22 @@
             })
             
             $("#contact-details").click(function(){
-                $("#contact-text-textbox").html("<h2>Our Details page</h2>");
+                $("#contact-text-textbox").html(
+                    `<h2><u>Contact Details</u></h2>
+                    <div class="text-left row mt-5 justify-content-around">
+                        <div class="contact-list text-warning">
+                            <h5>Ace Ang</h5>
+                            <h5>Bravo Ang</h5>
+                            <h5>Charlie Ang</h5>
+                        </div>
+                        <div class="contact-list">
+                            <div><a href="tel:+6597802808">+65 9780 2808</a></div>
+                            <div><a href="tel:+6597803808">+65 9780 3808</a></div>
+                            <div><a href="tel:+6597804808">+65 9780 4808</a></div>
+                        </div>  
+                      
+                    </div>
+`);
             })
      
             $("#contact-join-us").click(function(){
