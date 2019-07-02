@@ -9,30 +9,31 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css" type="text/css" />
-    <style type="text/css">
-        /** {*/
-        /*    padding: 0;*/
-        /*    margin: 0;*/
-        /*}*/
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>    
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
         #myVideo {
             opacity: 0.7;
             position: fixed;
             min-width: 100%;
             min-height: 100%;
-            z-index: -1;
+            z-index:-1;
         }
     </style>
-    <title>sellMycar.com</title>
+    <title></title>
 </head>
 
-
 <body>
-    
-    <main id="contact-us" class="container-fluid b-l-gray">
-        <!--<video autoplay muted loop id="myVideo"><source src="https://www.audi.com.sg/content/dam/nemo/models/r8/r8-spyder/my-2017/1920x1080-gallery/videos/R8_Spyder_Highlight_1385B001E.mp4" type="video/mp4">-->
-        <!--  Your browser does not support HTML5 video.</video>-->
-        <!--Navigation-->
+
+    <video autoplay muted loop id="myVideo"><source src="https://www.audi.com.sg/content/dam/nemo/models/r8/r8-spyder/my-2017/1920x1080-gallery/videos/R8_Spyder_Highlight_1385B001E.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+    </video>
+    <main class="container-fluid px-0 pt-5 m-0">
         <ul class="nav nav-bar justify-content-left mx-0 mt-0 pb-0 mb-0">
             <a href="index.html"><img src="image/logo.png" class="logo_image mx-2 mt-2" ></img></a></li>
             <li class="nav-item ml-3 mt-2">
@@ -49,69 +50,49 @@
             </li>
         </ul>
 
-        <!--<div class="container-fluid square-large row justify-content-center">-->
-        <!--        <div class="square-med bg-danger"></div>-->
-        <!--        <div class="square-med bg-warning"></div>-->
-        <!--        <div class="square-med bg-success"></div>-->
-        <!--        <div class="square-med bg-primary"></div>-->
-        <!--</div>-->
+        <div id="contact-us" class="text-center">
+            <div id="contact-text" class="w-80 gray b-white"><h2>Thank you</h2></div>
+            <div class=" square-large row">
+                <div id="contact-locate" class="square-med bg-dark"><image src="image/contact-locate.jpg"/></div>
+                <div id="contact-details" class="square-med bg-dark"><img src="image/contact-details.jpg"/></div>
+                <div id="contact-join-us" class="square-med bg-dark"><img src="image/contact-join-us.jpg"/></div>
+                <div id="contact-feedback" class="square-med bg-dark"><img src="image/contact-feedback.jpg"/></div>
+            </div>
+        </div>
 
-
-
-        <!--Header liner-->
-        <!--<header class="container-fluid header my-5">-->
-        <!--    <h1>Quotation</h1>-->
-        <!--    <h3>We will reply to you within <span class="shout red">24hrs</span> time</h3>-->
-        <!--</header>-->
-        <!--Form Enquiry Page-->
-        <!--@big screen mode-->
-        <!--<div class="row">-->
-        <!--    <div class="col-3"></div>-->
-        <!--    <div class="col-7">-->
-        <!--    <form id="form-quote" class="m-5 py-4 d-none d-sm-block" action="/action_page.php" method="">-->
-        <!--        <div class="row mx-5 my-1"><label class="col-4" for="">Name</label><input class="col-7" type="text" name="name"></div>-->
-        <!--        <div class="row mx-5 my-1">-->
-        <!--            <label class="col-4 " for="">ID Type</label>-->
-        <!--            <div class="col-7">-->
-        <!--                <input type="radio" name="id-type" value="nric">Singapore NRIC<br>-->
-        <!--                <input type="radio" name="id-type" value="business">Business<br>-->
-        <!--                <input type="radio" name="id-type" value="company">Company<br>-->
-        <!--                <input type="radio" name="id-type" value="fin"> Foreign Fin<br>-->
-        <!--                <input type="radio" name="id-type"> Other <input type="text" name="id-type">-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div class="row mx-5 my-1"><label class="col-4" for=""><div id="owner-id">Owner ID <span class="mini-text">(last 5-character)</span></div></label><input class="col-7" type="text" name="id-5c"></div>-->
-        <!--        <div class="row mx-5 my-1"><label class="col-4" for="">Mobile</label><input class="col-7" type="text" name="mobile"></div>-->
-        <!--        <div class="row mx-5 my-1"><label class="col-4" for="">Email</label><input class="col-7" type="text" name="email"></div>-->
-        <!--        <div class="row mx-5 my-1"><label class="col-4" for=""></label><input class="col-7" type="submit" value="Submit"></div>-->
-        <!--    </form>-->
-        <!--    </div>-->
-        <!--    <div class="col-2"></div>-->
-        <!--</div>-->
-        <!--@small screen mode-->
-        <!--    <form id="form-quote" class="m-3 py-4 d-sm-none" action="/action_page.php" method="">-->
-        <!--        <div class="row mx-2 my-2"><label class="col-5" for="">Name</label><input class="col-6" type="text" name="name"></div>-->
-        <!--        <div class="row mx-2 my-2">-->
-        <!--            <label class="col-5 " for="">Owner ID Type</label>-->
-        <!--            <div class="col-6">-->
-        <!--                <input type="radio" name="id-type" value="nric"> Singapore NRIC<br>-->
-        <!--                <input type="radio" name="id-type" value="business"> Business<br>-->
-        <!--                <input type="radio" name="id-type" value="company"> Company<br>-->
-        <!--                <input type="radio" name="id-type" value="fin"> Foreign Fin<br>-->
-        <!--                <input type="radio" name="id-type"> Other <input type="text" name="id-type">-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div class="row mx-2 my-2"><label class="col-5" for=""><div id="owner-id">Owner ID <span class="mini-text">(last 5-character)</span></div></label><input class="col-6" type="text" name="id-5c"></div>-->
-        <!--        <div class="row mx-2 my-2"><label class="col-5" for="">Mobile</label><input class="col-6" type="text" name="mobile"></div>-->
-        <!--        <div class="row mx-2 my-2"><label class="col-5" for="">Email</label><input class="col-6" type="text" name="email"></div>-->
-        <!--        <div class="row mx-2 my-2"><label class="col-5" for=""></label><input class="col-6" type="submit" value="Submit"></div>-->
-        <!--    </form>-->
+        <div>
+            <!--<h1>Add some fun and thrills </h1>-->
+        </div>
     </main>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        /*global $*/
+        $(function(){
+            $("#contact-locate").click(function(){
+                $("#contact-text").html("<h2>Locate Us page</h2>");
+                // }, function(){
+                // $("#contact-text").html("<h2>Thank you</h2>");
+            })
+            $("#contact-details").click(function(){
+                $("#contact-text").html("<h2>Our Details page</h2>");
+                // }, function(){
+                // $("#contact-text").html("<h2>Thank you</h2>");
+            })
+            $("#contact-join-us").click(function(){
+                $("#contact-text").html("<h2>Join Us page</h2>");
+                // }, function(){
+                // $("#contact-text").html("<h2>Thank you</h2>");
+            })
+            $("#contact-feedback").click(function(){
+                $("#contact-text").html("<h2>Feedback page</h2>");
+                // }, function(){
+                // $("#contact-text").html("<h2>Thank you</h2>");
+            })
+        })    
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
