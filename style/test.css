@@ -1,0 +1,67 @@
+/*Set the font-family Serif as default for webpage*/
+body *{
+    font-family: Serif, Arial;
+    font-size:1em;
+    padding:0;
+    margin:0;
+}
+.nav-bar{
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+    margin :0;
+    padding: 0;
+    cursor: pointer;
+    display:flex;
+    justify-content:space-around;
+    list-style:none;
+}
+.nav-bar li {
+    width:20%;
+    text-align:center;   
+    margin:10px 0 0 0;
+}
+a{
+    text-decoration:none;
+    color : black;
+
+}
+ /*a{*/
+ /*   text-decoration:none;*/
+ /*   font-size:1em;*/
+ /*   color: black;*/
+ /*   display:inline-block;*/
+
+ 
+    /*transition-property: background-color, color;*/
+    /*transition-timing-function: ease-in-out;*/
+    /*transition: 1s;*/
+/*}*/
+/*.nav-bar li:hover {*/
+/*    background-color: rgba(17, 17, 17, 0.6);*/
+/*    color: rgba(17, 17, 17, 0.7);*/
+/*}*/
+/*.nav-bar a {*/
+/*    vertical-align:text-bottom;*/
+/*    padding-bottom:2px;*/
+/*    opacity:1;*/
+/*    transition-property: opacity;*/
+/*    transition-timing-function: ease-in-out;*/
+/*    transition: 0.5s;*/
+/*}*/
+/*.nav-bar a:hover {*/
+/*    opacity:0.7;*/
+/*}*/
+.logo_image {
+    height: 40px;
+    margin:1%;
+}
+
+
+/*@media screen and (max-width:1440px){*/
+/*.logo_image {*/
+/*    height: 35px;*/
+/*}    */
+/*}*/
