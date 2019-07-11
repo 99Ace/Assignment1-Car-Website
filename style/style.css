@@ -1,40 +1,8 @@
-/*Set the quote portion to settle the boundaries error*/
-
 
 /*Styling of the HEADERS for visual effect*/
-h1 {
-    font-size: 50pt;
-}
-h2 {
-    font-size: 40pt;
-}
 h3 {
     font-size: 28pt;
 }
-/*Specially added to add special highlight to some key words */
-.shout {
-    font-size: 46pt;
-    font-family: cursive;
-    font-weight: bolder;
-}/*done*/
-
-
-
-.gap {
-    height: 50px;
-}
-.header-main1{
-    position:relative;
-    left:40%;
-}
-.header-main2{
-    position:relative;
-    top:-8%;
-    left:45%;
-}
-
-
-/*End of Landing page styling*/
 
 /*About Us page styling*/
 #about-us > div{

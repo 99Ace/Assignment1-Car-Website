@@ -3,55 +3,61 @@ body {
     font-family: Serif, Arial;
     /*font-size:1em;*/
 }
+h1 {
+    font-size: 5em;
+}
+h2 {    
+    font-size: 3.5em;
+}
+h3{
+    font-size:2.2em;
+}
+.shout {
+    font-size: 2.5em;
+    font-family:cursive;
+    font-weight:bolder;
+    font-style:italic;
+}
 /*Keep navbar fix to top and in front of all text*/
 .navbar a {
     font-size: 1.1em;
     /*transition: color 0.5s ease-in-out;*/
 }
-
 /*Landing Page styling*/   
 .frame{
     width:100%;
-    height:50rem;
+    height:60rem;
 }
 .picture_main {
     background-image: url("../image/car-snow.jpg");
     background-size: cover ;
     background-repeat: no-repeat;
-    background-position: 55% 70%;
+    background-position: 65% 70%;
     width: 100%;
     height: 65%;
     margin: 1% 0 0;
 }
-.box{
-    height:600px;
-    width:100%;
-}
-
 /*quote form styling*/
-
 .quote-frame{
     width:30%;
     height:100%; 
-    /*background:red;*/
 }
 .quote{
     height:100%;
     width:100%;
-    font-size:0.8em;
-    /*padding: 8% 5%;*/
+    /*font-size:0.8em;*/
 }
 .form-title {
-    font-size: 22pt;
+    font-size: 1.8em;
     font-weight:bold;
-    font-family: San-serif;
+    /*font-family: San-serif;*/
     /*text-shadow: 2px 2px 4px #000000;*/
 }
-.holder-quote{
-    margin-bottom:10px;
-    text-align:center;
-    width:100%;
-}
+/*.holder-quote{*/
+/*    margin-bottom:10px;*/
+/*    text-align:center;*/
+/*    width:100%;*/
+/*}*/
 .input{
     margin: 5px 0;
     padding:5px;
@@ -63,6 +69,21 @@ body {
     width:50%;
     margin-top:20px;
 }
+/*HEADER : setting the positions*/
+.header-main1{
+    position:relative;
+    left:15%;
+}
+.header-main2{
+    position:relative;
+    top:-30px;
+    left:25%;
+}
+
+.gap {
+    height: 50px;
+}
+
 
 /*Pre-fix decorations*/
 .red {
@@ -93,17 +114,184 @@ body {
     background-color: rgb(239, 235, 40);
 }
 
+
+
 @media screen and (max-width:1440px){
-    
+    h1 {
+        font-size: 4.3em;
+    }
+    h2 {    
+        font-size: 3.3em;
+    }
+    h3{
+        font-size:2em;
+    }
+    .shout {
+        font-size: 2.3em;
+        font-family:cursive;
+        font-weight:bolder;
+        font-style:italic;
+    }
+    /*Landing Page styling*/   
+    .frame{
+        width:100%;
+        height:50rem;
+    }
+    .picture_main {
+        background-image: url("../image/car-snow.jpg");
+        background-size: cover ;
+        background-repeat: no-repeat;
+        background-position: 65% 70%;
+        width: 100%;
+        height: 65%;
+        margin: 1% 0 0;
+    }
+    /*quote form styling*/
+    .quote-frame{
+        width:30%;
+        height:100%; 
+    }
+    .quote{
+        height:100%;
+        width:100%;
+        /*font-size:0.8em;*/
+    }
+    .form-title {
+        font-size: 1.8em;
+        font-weight:bold;
+        /*font-family: San-serif;*/
+        /*text-shadow: 2px 2px 4px #000000;*/
+    }
+    /*.holder-quote{*/
+    /*    margin-bottom:10px;*/
+    /*    text-align:center;*/
+    /*    width:100%;*/
+    /*}*/
+    .input{
+        margin: 5px 0;
+        padding:5px;
+        width:100%;
+    }
+    .submit{
+        font-size:15pt;
+        font-weight:bold;
+        width:50%;
+        margin-top:20px;
+    }
+    /*HEADER : setting the positions*/
+    .header-main1{
+        position:relative;
+        left:15%;
+    }
+    .header-main2{
+        position:relative;
+        top:-30px;
+        left:25%;
+    }    
 }
 @media screen and (max-width:1024px){
-    .picture_main {
-        background-position: 60% 70%;
-    }
+    /*.picture_main {*/
+    /*    background-position: 68% 70%;*/
+    /*    height: 65%;*/
+    /*}*/
+    /*.header-main1{*/
+    /*    position:relative;*/
+    /*    left:18%;*/
+    /*}*/
+    /*.header-main2{*/
+    /*    position:relative;*/
+    /*    top:-30px;*/
+    /*    left:28%;*/
+    /*}    */
 }
 @media screen and (max-width:768px){
-    
+    h1 {
+        font-size: 3.5em;
+    }
+    h2 {    
+        font-size: 2.8em;
+    }
+    h3{
+        font-size:1.8em;
+    }
+    .shout {
+        font-size: 2em;
+        font-family:cursive;
+        font-weight:bolder;
+        font-style:italic;
+    }
+    /*.frame{*/
+    /*    width:100%;*/
+    /*    height:40rem;*/
+    /*}*/
+    /*.picture_main {*/
+    /*    background-position: 65% 70%;*/
+    /*    height: 55%;*/
+    /*}*/
+    .header-main1{
+        position:relative;
+        left:10%;
+    }
+    .header-main2{
+        position:relative;
+        top:-15px;
+        left:18%;
+    }
+    /*quote form styling*/
+    /*.quote-frame{*/
+        /*width:30%;*/
+        /*height:100%; */
+        /*background:red;*/
+    /*}*/
+    /*.quote{*/
+    /*    font-size:0.6em;*/
+    /*}*/
+    /*.form-title {*/
+    /*    font-size: 22pt;*/
+    /*    font-weight:bold;*/
+    /*    font-family: San-serif;*/
+        /*text-shadow: 2px 2px 4px #000000;*/
+    /*}*/
+    /*.holder-quote{*/
+    /*    margin-bottom:10px;*/
+    /*    text-align:center;*/
+    /*    width:100%;*/
+    /*}*/
+    /*.input{*/
+    /*    margin: 5px 0;*/
+    /*    padding:5px;*/
+    /*    width:100%;*/
+    /*}*/
+    /*.submit{*/
+    /*    font-size:15pt;*/
+    /*    font-weight:bold;*/
+    /*    width:50%;*/
+    /*    margin-top:20px;*/
+    /*}*/
 }
 @media screen and (max-width:425px){
-    
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {    
+        font-size: 1.8em;
+    }
+    h3{
+        font-size:1.3em;
+    }
+    .shout {
+        font-size: 1em;
+        font-family:cursive;
+        font-weight:bolder;
+        font-style:italic;
+    }
+    /*HEADER : setting the positions*/
+    .header-main1{
+        position:relative;
+        left:1%;
+    }
+    .header-main2{
+        position:relative;
+        left:8%;
+    }    
 }
