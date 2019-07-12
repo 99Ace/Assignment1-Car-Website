@@ -16,52 +16,51 @@
             background-attachment:fixed;
             background-repeat:no-repeat;
             background-size:cover;
-            background-position: 0% 70%;
+            background-position: 35% 70%;
             width:100%;
-            height:1000px;
+            height:100%;
         }
     </style>
     <title></title>
 </head>
 <body>
     
-    <!--Landing Page HTML-->
-    <!--<main class="container-fluid m-0 p-0">-->
-    <!--NAVIGATION BAR: done using Bootstrap; fixed to top, dark for current page, -->
-    <!--    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-0">-->
-    <!--  <a class="navbar-brand mr-5" href="index.html"><img src="image/logo.png"/></a>-->
-    <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
-    <!--  <span class="navbar-toggler-icon"></span></button>-->
+<!--Landing Page HTML-->
+    <main class="container-fluid m-0 p-0">
+      <!--NAVIGATION BAR: done using Bootstrap; fixed to top, dark for current page, -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-0">
+        <a class="navbar-brand mr-5" href="index.html"><img src="image/logo.png"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item mr-lg-3 active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only .sr-only-focusable">(current)</span></a>
+            </li>
+            <li class="nav-item mr-lg-3">
+              <a class="nav-link" href="index.html#about-us">About Us</a>
+            </li>
+            <li class="nav-item mr-lg-3">
+              <a class="nav-link" href="index.html#sellcar">Selling</a>
+            </li>
+            <li class="nav-item mr-lg-3">
+              <a class="nav-link" href="buycar.html">Buying</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-1">
+            <input class="form-control mr-sm-2" type="search" placeholder="Enter Make/Model" aria-label="Search">
+            <button class="btn bg-warning my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
       
-    <!--  <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-    <!--    <ul class="navbar-nav mr-auto">-->
-    <!--      <li class="nav-item mr-lg-3 active">-->
-    <!--        <a class="nav-link" href="index.html">Home <span class="sr-only .sr-only-focusable">(current)</span></a>-->
-    <!--      </li>-->
-    <!--      <li class="nav-item mr-lg-3">-->
-    <!--        <a class="nav-link" href="index.html#about-us">About Us</a>-->
-    <!--      </li>-->
-    <!--      <li class="nav-item mr-lg-3">-->
-    <!--        <a class="nav-link" href="index.html#sellcar">Selling</a>-->
-    <!--      </li>-->
-    <!--      <li class="nav-item mr-lg-3">-->
-    <!--        <a class="nav-link" href="buycar.html">Buying</a>-->
-    <!--      </li>-->
-    <!--      <li class="nav-item">-->
-    <!--        <a class="nav-link" href="contact-us.html">Contact Us</a>-->
-    <!--      </li>-->
-    <!--    </ul>-->
-    <!--    <form class="form-inline my-2 my-lg-1">-->
-    <!--      <input class="form-control mr-sm-2" type="search" placeholder="Enter Make/Model" aria-label="Search">-->
-    <!--      <button class="btn bg-warning my-2 my-sm-0" type="submit">Search</button>-->
-    <!--    </form>-->
-    <!--  </div>-->
-    <!--</nav>-->
-      
-    <!--LANDING PAGE: include a quotation request form-->
+        <!--LANDING PAGE: include a quotation request form-->
         <!--Display for sm & above-->
-    
-        <div id="home" class="frame b-gray white d-md-block d-none p-0 mt-4">
+        <div id="home" class="frame b-gray white d-sm-block d-none p-0 mt-4">
             <div class="row picture_main justify-content-center">
                 <div class="col-lg-8 col-md-7 "></div>
                 <!--    Form for quotation entry-->
@@ -84,82 +83,70 @@
                 </div>
             </div>
             <!--    Company Tagline-->
-            <header>
-                <!--<div class="box"></div>-->
-                <h1 class="header-main1">RE-INVENTING</h1>
-                <h3 class="header-main2">YOUR <span class="shout gold">DRIVING</span> EXPERIENCE</h3>
-                </div>
-            </header>
+            <div>
+                <h1 class="header-main1 mt-3 mb-0">RE-INVENTING</h1>
+                <h3 class="header-main2 mt-0">YOUR <span class="shout gold">DRIVING</span> EXPERIENCE</h3>
+            </div>
         </div> 
 
         <!--Display for small screen-->
-        <!--<div class="frame b-gray white d-md-none d-block">-->
-            <!--Company Tagline-->
-        <!--    <header>-->
-        <!--        <h1 class="text-center m-0">RE-INVENTING</h1>-->
-        <!--        <h3 class="text-center m-0">YOUR <span class="shout gold font-italic">DRIVING</span> EXPERIENCE</h3>-->
-        <!--    </header>-->
-        <!--    <div class=" picture_main"></div>-->
-        <!--    <div class="pt-4 mt-4 white">-->
-        <!--    <form class="form-group b-gray py-3 px-2">-->
-        <!--        <h5 class="form-title text-center mb-3">GET A <span class="gold">QUOTATION</span></h5>-->
-        <!--        <input class="input form-control" type="text" name="name" placeholder=" Enter your name" />-->
-        <!--        <input class="input form-control" type="text" name="carplate" placeholder=" Car Plate number" />-->
-        <!--        <input class="input form-control" type="text" name="ownerId" placeholder=" Id (SXXX4567A)" />-->
-        <!--        <input class="input form-control" type="text" name="mileage" placeholder=" Current mileage" />-->
-        <!--        <input class="input form-control" type="text" name="contact" placeholder=" Mobile" />-->
-        <!--        <div class="text-center mt-3"><input class="btn btn-warning " type="button" onClick="" value="Submit" /></div>-->
-        <!--    </form>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div id="home" class="frame b-gray white d-md-block d-none p-0 mt-4">-->
-        <!--<div id="home" class="frame b-gray white d-md-none pt-5">-->
-        <div>
-            <header>
-                <h4 class="border border-white m-1">Testing</h4>
-                <!--<h1 class="bg-primary text-center border border-white">RE-INVENTING</h1>-->
-                <!--<h3 class="bg-primary border border-white">YOUR <span class="shout gold font-italic">DRIVING</span> EXPERIENCE</h3>-->
-            </header>
+        <div class="frame b-gray white d-sm-none">
+          <!--Company Tagline-->
+          <header>
+                  <h1 class="text-center pt-5 m-0">RE-INVENTING</h1>
+                  <h3 class="text-center mt-0">YOUR <span class="shout gold font-italic">DRIVING</span> EXPERIENCE</h3>
+          </header>
+          <div class=" picture_main"></div> 
+          <div class="pt-4 mt-4 white">
+              <form class="form-group b-gray py-3 px-2">
+                  <h5 class="form-title text-center mb-3">GET A <span class="gold">QUOTATION</span></h5>
+                  <input class="input form-control" type="text" name="name" placeholder=" Enter your name" />
+                  <input class="input form-control" type="text" name="carplate" placeholder=" Car Plate number" />
+                  <input class="input form-control" type="text" name="ownerId" placeholder=" Id (SXXX4567A)" />
+                  <input class="input form-control" type="text" name="mileage" placeholder=" Current mileage" />
+                  <input class="input form-control" type="text" name="contact" placeholder=" Mobile" />
+                  <div class="text-center mt-3"><input class="btn btn-warning " type="button" onClick="" value="Submit" /></div>
+              </form>
+          </div>
         </div>
         
-        
-        <div class="gap"></div>
-    <!--</main>-->
+        <!--<div class="gap"></div>-->
+    </main>
+<!--End of Landing Page HTML-->
+
+<!--About Us Page HTML-->
+    <!--<div class="gap d-sm-block d-none"></div>-->
+    <section id="about-us" class="container-fluid frame white pt-5">
+        <div class="write-up-box b-p-gray">
+            <h1 class="border-bottom border-bottom-white text-center">ABOUT US</h1>
+            <p class="write-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </section>
+<!--End of About Us Page HTML-->
     
-    
-    <!--End of Landing Page HTML-->
-    <!--ABOUT US Page HTML-->
-    <!--<section id="about-us" class="container-fluid frame white">-->
-    <!--    <div class="gap d-sm-block d-none"></div>-->
-    <!--    <div class="b-p-gray">-->
-    <!--        <h1 class="text-center border-bottom border-bottom-white">ABOUT US</h1>-->
-    <!--        <p class="write-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
-    <!--    </div>-->
-    <!--</section>-->
-    
-    <!--Sell Car Page HTML-->
-    <!--<section id="sellcar" class="container-fluid frame row">-->
+<!--Sell Car Page HTML-->
+    <section id="sellcar" class="container-fluid frame">
         <!--Header for Selling car-->
-    <!--    <div class="col-12 text-center"><h2 class="white b-gray w-40 p-3 mt-3 mx-5"><span class="gold shout">SELL</span> YOUR CAR IN 3 SIMPLE STEPS</h2></div>-->
+        <h2 class="text-center white b-gray w-100"><span class="gold ">SELL</span> YOUR CAR IN 3 SIMPLE STEPS</h2>
         <!--Step by s67dtep instruction to inform car owner our 3-step process -->
-    <!--    <div class="row white justify-content-center py-0">-->
-    <!--        <div class=" rectangle b-l-gray ">-->
-    <!--            <div class="button-sell badge badge-warning white">QUOTE</div>-->
-    <!--            <p class="w-80"><u>Click to submit a quote</u></p>-->
-    <!--            <p class="mx-2 text-left">Submit your details.<br> We'll schedule your car up for bidding for the best quote.</p>-->
-    <!--        </div>-->
-    <!--        <div class=" rectangle b-l-gray ">-->
-    <!--            <div class="button-sell badge badge-warning white">BID</div>-->
-    <!--            <p class="w-80"><u>Click to check your bid status</u></p>-->
-    <!--            <p class="mx-2 text-left">Bidding among our certified used car dealer network give you the best possible price for your car.</p>-->
-    <!--        </div>-->
-    <!--        <div class=" rectangle b-l-gray ">-->
-    <!--            <div class="button-sell badge badge-warning white">SELL</div>-->
-    <!--            <p class="w-80"><u>Click to accept a recent bid</u></p>-->
-    <!--            <p class="mx-2 text-left">Deal immediately or within 7 days. Otherwise we can put it up for sale to direct buyer on our platform</p>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</section>-->
+        <div class="row white justify-content-center py-0">
+              <div class="rectangle b-l-gray">
+                  <div class="button-sell badge badge-warning white">QUOTE</div>
+                  <p class="w-80"><u>Click to submit a quote</u></p>
+                  <p class="mx-2 text-left">Submit your details.<br> We'll schedule your car up for bidding for the best quote.</p>
+              </div>
+              <div class="rectangle b-l-gray">
+                  <div class="button-sell badge badge-warning white">BID</div>
+                  <p class="w-80"><u>Click to check your bid status</u></p>
+                  <p class="mx-2 text-left">Bidding among our certified used car dealer network give you the best possible price for your car.</p>
+              </div>
+              <div class="rectangle b-l-gray ">
+                  <div class="button-sell badge badge-warning white">SELL</div>
+                  <p class="w-80"><u>Click to accept a recent bid</u></p>
+                  <p class="mx-2 text-left">Deal immediately or within 7 days. Otherwise we can put it up for sale to direct buyer on our platform</p>
+              </div>
+          </div>
+    </section>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

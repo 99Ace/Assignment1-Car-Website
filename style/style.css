@@ -4,29 +4,11 @@ h3 {
     font-size: 28pt;
 }
 
-/*About Us page styling*/
-#about-us > div{
-    position:relative; 
-    left:20%;
-    top:8%;
-    width:60%;
-    
-}
-.write-up{
-    font-size:15pt;
-    padding:30px;
-}
+
 /*End of About-Us styling*/
 
 /*Sellcar page styling*/
-#sellcar {
-    background-image: url("../image/car-row.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width:100%;
-    padding:50px;
-    margin:0;
-}
+
 .rectangle {
     width: 25%;
     height: 400px;

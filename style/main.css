@@ -5,6 +5,7 @@ body {
     width:100%;
     /*font-size:1em;*/
 }
+/*Setting Font Sizes*/
 h1 {
     font-size: 5em;
 }
@@ -12,19 +13,18 @@ h2 {
     font-size: 3.5em;
 }
 h3{
-    font-size:2.2em;
+    font-size:2.7em;
 }
 .shout {
-    font-size: 2.5em;
+    font-size: 2em;
     font-family:cursive;
     font-weight:bolder;
     font-style:italic;
 }
-/*Keep navbar fix to top and in front of all text*/
 .navbar a {
     font-size: 1.1em;
-    /*transition: color 0.5s ease-in-out;*/
 }
+
 /*Landing Page styling*/   
 .frame{
     width:100%;
@@ -39,6 +39,7 @@ h3{
     height: 65%;
     margin: 1% 0 0;
 }
+
 /*quote form styling*/
 .quote-frame{
     width:30%;
@@ -55,38 +56,72 @@ h3{
     /*font-family: San-serif;*/
     /*text-shadow: 2px 2px 4px #000000;*/
 }
-/*.holder-quote{*/
-/*    margin-bottom:10px;*/
-/*    text-align:center;*/
-/*    width:100%;*/
-/*}*/
 .input{
-    /*margin: 5px 0;*/
-    /*padding:5px;*/
     width:100%;
+    margin-top:2%;
 }
-.submit{
-    /*font-size:15pt;*/
-    /*font-weight:bold;*/
-    width:50%;
-    margin-top:20px;
-}
+/*.submit{*/
+/*    width:50%;*/
+/*    margin-top:20px;*/
+/*}*/
+
 /*HEADER : setting the positions*/
 .header-main1{
-    position:relative;
-    left:15%;
+    padding-left:17%;
 }
 .header-main2{
-    position:relative;
-    top:-30px;
-    left:25%;
+    padding-left:20%;
 }
 
-.gap {
-    height: 3.2rem;
+/*.gap {*/
+/*    height: 3.2rem;*/
+/*    width:100%;*/
+/*}*/
+
+/*About Us page styling*/
+.write-up-box{
+    width:70%;
+    margin:5% 15% auto;
+}
+.write-up{
+    font-size:1.8em;
+    /*width:100%;*/
+    padding:5%;
+}
+
+/*Sellcar page styling*/
+#sellcar {
+    background-image: url("../image/car-row.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     width:100%;
+    padding:5%;
+    margin:0;
 }
-
+.sell-car-header{
+    width:100%;
+    margin-top:3%;
+}
+.rectangle {
+    width:25%;
+    min-height: 25rem;
+    font-size: 1.5em;
+    text-align:center;
+    padding:2% 1%;
+    margin:1%;
+}
+.button-sell{
+    padding:20px 30px;
+    font-size:17pt;
+    margin-bottom: 30px;
+}
+.rectangle span {
+    font-size: 19pt;
+}
+.rectangle:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+/*End of Sellcar page styling*/
 
 /*Pre-fix decorations*/
 .red {
@@ -96,7 +131,7 @@ h3{
     color: white;
 }
 .gold{
-    color:rgb(249, 225, 39);
+    color:#FFC107;
 }
 .gray{
     color:rgb(90,90,110);
@@ -127,7 +162,7 @@ h3{
         font-size: 3.3em;
     }
     h3{
-        font-size:2em;
+        font-size:2.2em;
     }
     .shout {
         font-size: 2.3em;
@@ -165,37 +200,53 @@ h3{
         /*font-family: San-serif;*/
         /*text-shadow: 2px 2px 4px #000000;*/
     }
+    .write-up-box{
+        width:70%;
+        margin:10% 15% auto;
+    }
+    .write-up{
+        font-size:1.5em;
+        padding:5%;
+    }
     /*.holder-quote{*/
     /*    margin-bottom:10px;*/
     /*    text-align:center;*/
     /*    width:100%;*/
     /*}*/
-    .input{
-        margin: 5px 0;
-        padding:5px;
-        width:100%;
-    }
-    .submit{
-        font-size:15pt;
-        font-weight:bold;
-        width:50%;
-        margin-top:20px;
-    }
+    /*.input{*/
+    /*    margin: 5px 0;*/
+    /*    padding:5px;*/
+    /*    width:100%;*/
+    /*}*/
+    /*.submit{*/
+    /*    font-size:0.9em;*/
+    /*    font-weight:bold;*/
+    /*    width:50%;*/
+    /*    margin-top:20px;*/
+    /*}*/
     /*HEADER : setting the positions*/
-    .header-main1{
-        position:relative;
-        left:15%;
-    }
-    .header-main2{
-        position:relative;
-        top:-30px;
-        left:25%;
-    }    
+    /*.header-main1{*/
+    /*    position:relative;*/
+    /*    left:15%;*/
+    /*}*/
+    /*.header-main2{*/
+    /*    position:relative;*/
+    /*    top:-30px;*/
+    /*    left:25%;*/
+    /*}    */
 }
 @media screen and (max-width:1024px){
     .picture_main {
         background-position: 68% 70%;
         height: 65%;
+    }
+    .write-up-box{
+        width:80%;
+        margin:5% 10% auto;
+    }
+    .write-up{
+        font-size:1.3em;
+        padding:5%;
     }
     /*.header-main1{*/
     /*    position:relative;*/
@@ -223,20 +274,6 @@ h3{
         font-weight:bolder;
         font-style:italic;
     }
-    /*.frame{*/
-    /*    width:100%;*/
-    /*    height:40rem;*/
-    /*}*/
-
-    .header-main1{
-        position:relative;
-        left:10%;
-    }
-    .header-main2{
-        position:relative;
-        top:-15px;
-        left:18%;
-    }
     .picture_main {
         background-image: url("../image/car-snow.jpg");
         background-size: cover ;
@@ -245,40 +282,20 @@ h3{
         width: 100%;
         height: 28rem;
         margin: 1% 0 0;
+    }  
+    .frame{
+        width:100%;
+        height:40rem;
+    }
+    .write-up-box{
+        width:90%;
+        margin:5%;
+    }
+    .write-up{
+        font-size:1.2em;
     }    
-    /*quote form styling*/
-    /*.quote-frame{*/
-        /*width:30%;*/
-        /*height:100%; */
-        /*background:red;*/
-    /*}*/
-    /*.quote{*/
-    /*    font-size:0.6em;*/
-    /*}*/
-    /*.form-title {*/
-    /*    font-size: 22pt;*/
-    /*    font-weight:bold;*/
-    /*    font-family: San-serif;*/
-        /*text-shadow: 2px 2px 4px #000000;*/
-    /*}*/
-    /*.holder-quote{*/
-    /*    margin-bottom:10px;*/
-    /*    text-align:center;*/
-    /*    width:100%;*/
-    /*}*/
-    /*.input{*/
-    /*    margin: 5px 0;*/
-    /*    padding:5px;*/
-    /*    width:100%;*/
-    /*}*/
-    /*.submit{*/
-    /*    font-size:15pt;*/
-    /*    font-weight:bold;*/
-    /*    width:50%;*/
-    /*    margin-top:20px;*/
-    /*}*/
 }
-@media screen and (max-width:425px){
+@media screen and (max-width:767px){
     h1 {
         font-size: 1.8em;
     }
@@ -295,11 +312,11 @@ h3{
         font-style:italic;
     }
     .form-title {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
     .frame{
         width:100%;
-        height:30rem;
+        height:40rem;
     }
     .picture_main {
         background-image: url("../image/car-snow.jpg");
@@ -308,6 +325,13 @@ h3{
         background-position: 65% 70%;
         width: 100%;
         height: 12.5rem;
-
     }
-}
+    .write-up-box{
+        width:90%;
+        margin:35% 5% 0;
+    }
+    .write-up{
+        font-size:1em;
+        padding:2%;
+    }
+}    
