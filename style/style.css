@@ -7,29 +7,7 @@ h3 {
 
 /*End of About-Us styling*/
 
-/*Sellcar page styling*/
 
-.rectangle {
-    width: 25%;
-    height: 400px;
-    font-size: 15pt;
-    text-align:center;
-    padding:35px 15px;
-    margin:10px;
-
-}
-.button-sell{
-    padding:20px 30px;
-    font-size:17pt;
-    margin-bottom: 30px;
-}
-.rectangle span {
-    font-size: 19pt;
-}
-.rectangle:hover {
-    background-color: rgba(0, 0, 0, 1);
-}
-/*End of Sellcar page styling*/
 
 /*Buycar page stying*/
 .header-buycar1{
