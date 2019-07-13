@@ -361,9 +361,15 @@ h3{
         font-size:1em;
         padding:2%;
     }
+    #sellcar {
+       height:20rem;
+       padding-top:10%;
+       margin:0;
+    }    
     .rectangle {
         width:90%;
         min-height:0;
+        font-size: 0.8em;
         text-align:left;
         padding:2% 5%;
         margin-top:1%;
