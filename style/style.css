@@ -293,32 +293,11 @@ h4{
         font-size:1.5em;
         padding:5%;
     }
-    /*.holder-quote{*/
-    /*    margin-bottom:10px;*/
-    /*    text-align:center;*/
-    /*    width:100%;*/
+    /*#contact-text-textbox a{*/
+    /*    text-decoration:none;*/
+    /*    font-size:1em;*/
+    /*    color:white;*/
     /*}*/
-    /*.input{*/
-    /*    margin: 5px 0;*/
-    /*    padding:5px;*/
-    /*    width:100%;*/
-    /*}*/
-    /*.submit{*/
-    /*    font-size:0.9em;*/
-    /*    font-weight:bold;*/
-    /*    width:50%;*/
-    /*    margin-top:20px;*/
-    /*}*/
-    /*HEADER : setting the positions*/
-    /*.header-main1{*/
-    /*    position:relative;*/
-    /*    left:15%;*/
-    /*}*/
-    /*.header-main2{*/
-    /*    position:relative;*/
-    /*    top:-30px;*/
-    /*    left:25%;*/
-    /*}    */
 }
 @media screen and (max-width:1024px){
     .picture_main {
@@ -347,10 +326,13 @@ h4{
         font-size: 3.5em;
     }
     h2 {    
-        font-size: 2.8em;
+        font-size: 2.3em;
     }
     h3{
         font-size:1.8em;
+    }
+    h4{
+        font-size:1.3em;
     }
     .shout {
         font-size: 2em;
@@ -382,6 +364,15 @@ h4{
         background-color: rgba(50, 50, 50, 1);
         color:white; 
     }
+    /*Background for social media tags*/
+    .fa {
+    padding: 10px;
+    font-size: 60px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
 }
 @media screen and (max-width:767px){
     h1 {
