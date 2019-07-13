@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="style/style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script  src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <style>
-        *{
-            padding:0;
-            margin:0;
+        * {
+            padding: 0;
+            margin: 0;
         }
         #myVideo {
             opacity: 0.7;
             position: fixed;
             min-width: 100%;
             min-height: 100%;
-            z-index:-1;
+            z-index: -1;
         }
     </style>
     <title></title>
@@ -36,66 +36,82 @@
     <main class="container-fluid px-0 pt-4 m-0 white">
         <!--NAVIGATION BAR: done using Bootstrap; fixed to top, dark for current page, -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-0">
-        <a class="navbar-brand mr-5" href="index.html"><img src="image/logo.png"/></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand mr-5" href="index.html"><img src="image/logo.png"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span></button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item mr-lg-3 ">
-              <a class="nav-link" href="index.html">Home <span class="sr-only .sr-only-focusable">(current)</span></a>
-            </li>
-            <li class="nav-item mr-lg-3">
-              <a class="nav-link" href="index.html#about-us">About Us</a>
-            </li>
-            <li class="nav-item mr-lg-3">
-              <a class="nav-link" href="index.html#sellcar">Selling</a>
-            </li>
-            <li class="nav-item mr-lg-3 active">
-              <a class="nav-link" href="buycar.html">Buying</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact-us.html">Contact Us</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-1">
-            <input class="form-control mr-sm-2" type="search" placeholder="Enter Make/Model" aria-label="Search">
-            <button class="btn bg-warning my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mr-lg-3 ">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only .sr-only-focusable">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-lg-3">
+                        <a class="nav-link" href="index.html#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item mr-lg-3">
+                        <a class="nav-link" href="index.html#sellcar">Selling</a>
+                    </li>
+                    <li class="nav-item mr-lg-3 active">
+                        <a class="nav-link" href="buycar.html">Buying</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-1">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Enter Make/Model" aria-label="Search">
+                    <button class="btn bg-warning my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
         <div id="contact-us">
             <div id="contact-text-frame" class="bg-white">
-                <div id="contact-text-textbox" class= "white bg-dark">
-            <!--        <h2><u>Locate Us</u></h2>-->
-            <!--        <div class="row justify-content-around mt-3">-->
-            <!--            <img src="image/location.jpg"></img>-->
-            <!--            <div>-->
-            <!--                <p>Lot 88 Selegie Road Singapore (180008)<br><h4 class="text-warning">Find your direction</h4></p>-->
-            <!--                <form>-->
-            <!--                    <input type="text" placeholder="Enter your location"/>-->
-            <!--                    <input type="button" class="submit badge-warning" value="Direct Me!"/>-->
-            <!--                </form>-->
-            <!--            </div>-->
-                    <!--</div>-->
-                    
-                   
+                <div id="contact-text-textbox text-center" class="white bg-dark">
+                    <div class="row w-100">
+                        <div class="col-5 pt-5 text-center">
+                            <h2 class="text-center"><u>Locate Us</u></h2>
+                            <p>ADDRESS : LOT 88 SELEGIE ROAD SINGAPORE (180008)</p>
+                            <h4 class="text-warning">Find your direction</h4>
+                            <form>
+                                <input type="text" placeholder="Enter your location" />
+                                <button class="bg-warning">Guide me there now!</button>
+                            </form><br>
+  
+                            <h5 class="card-title gold"><strong>Follow Us</strong></h5>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-google"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </div>
+                        <div class="col pt-4 ">
+                            <image src="image/location.jpg" class="map-image"></image>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="square-large row">
-                <div id="contact-locate" class="square-med bg-dark"><image src="image/contact-locate.jpg"/><h4>Locate Us</h4></div>
-                <div id="contact-details" class="square-med bg-dark"><img src="image/contact-details.jpg"/><h4>Contact Details</h4></div>
-                <div id="contact-join-us" class="square-med bg-dark"><img src="image/contact-join-us.jpg"/><h4>Join Us</h4></div>
-                <div id="contact-feedback" class="square-med bg-dark"><img src="image/contact-feedback.jpg"/><h4>Feedback</h4></div>
+            <div class="square-large row text-center">
+                <div id="contact-locate" class="square-med bg-dark">
+                    <image src="image/contact-locate.jpg" />
+                    <h4>Locate Us</h4>
+                </div>
+                <div id="contact-details" class="square-med bg-dark"><img src="image/contact-details.jpg" />
+                    <h4>Contact Details</h4>
+                </div>
+                <div id="contact-join-us" class="square-med bg-dark"><img src="image/contact-join-us.jpg" />
+                    <h4>Join Us</h4>
+                </div>
+                <div id="contact-feedback" class="square-med bg-dark"><img src="image/contact-feedback.jpg" />
+                    <h4>Feedback</h4>
+                </div>
             </div>
         </div>
     </main>
     <script>
         /*global $*/
-        $(function(){
-            $("#contact-locate").click(function(){
+        $(function() {
+            $("#contact-locate").click(function() {
                 $("#contact-text-textbox").html(
-                `<h2><u>Locate Us</u></h2>
+                    `<h2><u>Locate Us</u></h2>
                     <div class="row justify-content-around mt-3">
                         <img src="image/location.jpg"></img>
                         <div>
@@ -107,8 +123,8 @@
                         </div>
                     </div>`).hide().fadeIn(1000);
             })
-            
-            $("#contact-details").click(function(){
+
+            $("#contact-details").click(function() {
                 $("#contact-text-textbox").html(
                     `<h2><u>Contact Details</u></h2>
                     <div class="text-left row mt-5 justify-content-around">
@@ -125,8 +141,8 @@
                       
                     </div>`).hide().fadeIn(1000);
             })
-     
-            $("#contact-join-us").click(function(){
+
+            $("#contact-join-us").click(function() {
                 $("#contact-text-textbox").html(
                     `<h2>Join Us page</h2>
                     <p>We are looking for people who are constantly looking to grow and improve themselves.<br>Our company motto is<br><h4 class="text-warning">Being Happy!</h4></p>
@@ -136,12 +152,12 @@
                         <input type="text" placeholder="Position applying"/>
                         <input type="button" class="submit badge-warning" value="Hire Me!"/>
                     </form>`).hide().fadeIn(1000);
-             
+
             })
- 
-            $("#contact-feedback").click(function(){
+
+            $("#contact-feedback").click(function() {
                 $("#contact-text-textbox").html(
-                `<h2>We value your feedback</h2>
+                    `<h2>We value your feedback</h2>
                     <p>We are alway constantly looking to improve our people and system<br><h4 class="text-warning">Always Learning! Always Improving!</h4></p>
                     <form>
                         <input type="text" placeholder="Enter your name"/>
@@ -151,8 +167,8 @@
                     </form>`).hide().fadeIn(1000);
             })
 
-    
-        })    
+
+        })
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
