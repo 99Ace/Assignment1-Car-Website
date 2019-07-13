@@ -33,37 +33,51 @@
     <video autoplay muted loop id="myVideo"><source src="https://www.audi.com.sg/content/dam/nemo/models/r8/r8-spyder/my-2017/1920x1080-gallery/videos/R8_Spyder_Highlight_1385B001E.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
     </video>
-    <main class="container-fluid px-0 pt-5 m-0 white">
-        <ul class="nav nav-bar justify-content-left mx-0 mt-0 pb-0 mb-0">
-            <a href="index.html"><img src="image/logo.png" class="logo_image mx-2 mt-2" ></img></a></li>
-            <li class="nav-item ml-3 mt-2">
-                <a class="nav-link active" href="index.html#about-us">About Us</a>
+    <main class="container-fluid px-0 pt-4 m-0 white">
+        <!--NAVIGATION BAR: done using Bootstrap; fixed to top, dark for current page, -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-0">
+        <a class="navbar-brand mr-5" href="index.html"><img src="image/logo.png"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item mr-lg-3 ">
+              <a class="nav-link" href="index.html">Home <span class="sr-only .sr-only-focusable">(current)</span></a>
             </li>
-            <li class="nav-item mt-2">
-                <a class="nav-link active" href="index.html#sellcar">Selling</a>
+            <li class="nav-item mr-lg-3">
+              <a class="nav-link" href="index.html#about-us">About Us</a>
             </li>
-            <li class="nav-item mt-2 ">
-                <a class="nav-link active " href="buycar.html">Buying</a>
+            <li class="nav-item mr-lg-3">
+              <a class="nav-link" href="index.html#sellcar">Selling</a>
             </li>
-            <li class="nav-item mt-2">
-                <a class="nav-link active" href="contact-us.html">Contact Us</a>
+            <li class="nav-item mr-lg-3 active">
+              <a class="nav-link" href="buycar.html">Buying</a>
             </li>
-        </ul>
-
-        <div id="contact-us" class="text-center">
-            <div id="contact-text-frame" class="b-white">
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-1">
+            <input class="form-control mr-sm-2" type="search" placeholder="Enter Make/Model" aria-label="Search">
+            <button class="btn bg-warning my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+        <div id="contact-us">
+            <div id="contact-text-frame" class="bg-white">
                 <div id="contact-text-textbox" class= "white bg-dark">
-                    <h2><u>Locate Us</u></h2>
-                    <div class="row justify-content-around mt-3">
-                        <img src="image/location.jpg"></img>
-                        <div>
-                            <p>Lot 88 Selegie Road Singapore (180008)<br><h4 class="text-warning">Find your direction</h4></p>
-                            <form>
-                                <input type="text" placeholder="Enter your location"/>
-                                <input type="button" class="submit badge-warning" value="Direct Me!"/>
-                            </form>
-                        </div>
-                    </div>
+            <!--        <h2><u>Locate Us</u></h2>-->
+            <!--        <div class="row justify-content-around mt-3">-->
+            <!--            <img src="image/location.jpg"></img>-->
+            <!--            <div>-->
+            <!--                <p>Lot 88 Selegie Road Singapore (180008)<br><h4 class="text-warning">Find your direction</h4></p>-->
+            <!--                <form>-->
+            <!--                    <input type="text" placeholder="Enter your location"/>-->
+            <!--                    <input type="button" class="submit badge-warning" value="Direct Me!"/>-->
+            <!--                </form>-->
+            <!--            </div>-->
+                    <!--</div>-->
                     
                    
                 </div>
@@ -75,8 +89,6 @@
                 <div id="contact-feedback" class="square-med bg-dark"><img src="image/contact-feedback.jpg"/><h4>Feedback</h4></div>
             </div>
         </div>
-
-
     </main>
     <script>
         /*global $*/
