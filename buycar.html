@@ -50,105 +50,115 @@
         </div>
       </nav>
          <!--BUYCAR Page main banner-->
-        <image src="image/suv-back.jpg" class="mt-n1 mb-0" style="width:100%" />
-        <h2 class="header-buycar1 white">Drive with a <span class="shout">Peace of Mind</span></h2>
-        <h2 class="header-buycar2 white">with <span class="gold shout">Warranty</span></h2>
-        <h3 class="header-buycar3 white">by <span><a href="http://mbmwheelpower.com.sg" target="_blank" style="color:white">MBM WheelPower!</a></span></h3>
-        <!--Search Bar: allows user to key in the make/model of cars they looking for, budget, etc-->
-        <div id="search-main" class="search-box b-l-gray white pl-5 py-2 m-0">
-            <form style="font-size:10pt; color:rgb(127, 127, 127)">
-                <input id="search-bar" type="text" placeholder="Car Make / Model" />
-                <!--To allow user to select their lowest budget-->
-                <select name="price-min">
-                        <option value="">Min Price</option>                    
-                        <option value="">$10,000</option>                    
-                        <option value="">$20,000</option>                    
-                        <option value="">$30,000</option>                    
-                        <option value="">$40,000</option>                    
-                        <option value="">$50,000</option>                    
-                        <option value="">$60,000</option>                    
-                        <option value="">$70,000</option>                    
-                        <option value="">$80,000</option>                    
-                        <option value="">$90,000</option>                    
-                        <option value="">$100,000</option>                    
-                        <option value="">$200,000</option>                    
-                    </select>
-                <!--To allow user to select their max budget-->
-                <select name="price-max">
-                        <option value="">Max Price</option>                    
-                        <option value="">$10,000</option>                    
-                        <option value="">$20,000</option>                    
-                        <option value="">$30,000</option>                    
-                        <option value="">$40,000</option>                    
-                        <option value="">$50,000</option>                    
-                        <option value="">$60,000</option>                    
-                        <option value="">$70,000</option>                    
-                        <option value="">$80,000</option>                    
-                        <option value="">$90,000</option>                    
-                        <option value="">$100,000</option>                    
-                        <option value="">$110,000</option>                    
-                        <option value="">$120,000</option>                    
-                        <option value="">$130,000</option>                    
-                        <option value="">$140,000</option>                    
-                        <option value="">$150,000</option>                    
-                        <option value="">$200,000</option>                    
-                        <option value="">$300,000</option>                    
-                   </select>
-                <!--To allow user to select his choice of age of cars to view -->
-                <select name="year-of-make">
-                        <option value="">Year Reg</option>                    
-                        <option value="">2018</option>                    
-                        <option value="">2016</option>                    
-                        <option value="">2015</option>                    
-                        <option value="">2014</option>                    
-                        <option value="">2013</option>                    
-                        <option value="">2011</option>                    
-                        <option value="">2010</option>                    
-                        <option value="">2009</option>                    
-                        <option value="">&lt1 year(s) old</option>                    
-                        <option value="">&lt2 year(s) old</option>                    
-                        <option value="">&lt3 year(s) old</option>                    
-                        <option value="">&lt4 year(s) old</option>                    
-                        <option value="">&lt5 year(s) old</option>                    
-                        <option value="">&gt6 year(s) old</option>                    
-                        <option value="">&gt7 year(s) old</option>                    
-                        <option value="">&gt8 year(s) old</option>                    
-                        <option value="">&gt9 year(s) old</option>                    
-                        <option value="">&gt10 year(s) old</option>                    
-                        <option value="">All</option>                    
-                    </select>
-                <!--To allow user to select his choice of type of cars to view -->
-                <select name="car-type">
-                        <option value="">Vehicle Type</option>                    
-                        <option value="">Hybrid Car</option>                    
-                        <option value="">Hatchback</option>                    
-                        <option value="">Luxury Sedan</option>                    
-                        <option value="">MPV</option>                    
-                        <option value="">Mid-sized Sedan</option>                    
-                        <option value="">Sports Car</option>                    
-                        <option value="">Stationwagon</option>                    
-                        <option value="">SUV</option>                    
-                        <option value="">All</option>    
-                    </select>
-                <a href="buycar-search.html"><input type="button" class="btn-warning" value="Find Used" /></a>
-            </form>
+      <div  id="buycar">
+        <div class="buycar-frame d-md-block d-none">
+            <h2 class="header-buycar1 white">Drive with a <span class="shout">Peace of Mind</span></h2>
+            <h3 class="header-buycar2 white">with <span class="gold shout">Warranty</span></h3>
+            <h3 class="header-buycar3 white">by <span><a href="http://mbmwheelpower.com.sg" target="_blank" style="color:white">MBM WheelPower!</a></span></h3>
         </div>
-
-        <!--Testimonial from customers: involve position shifting of the testimonials closer to respective customers-->
-        <section class="row justify-content-center mt-4">
-            <img src="image/testimonial.jpg" class="circle" />
-            </div>
-            <div class="col-4">
-                <div id="testimonial1">
-                    <p class="p-0">"A wonderful buying experience with Ace. Process is smooth and hassle-free!"</p>
-                    <p class="text-right p-0">Michael Ang</p></div>
-                <div id="testimonial2">
-                    <p>"Ace got me the lowest insurance quote and excellent coating on the car!"</p>
-                    <p class="text-right">Farhan</p></div>
-            </div>
-            <img src="image/testimonial2.jpg" class="circle" />
-        </section>
-
+        <div class="buycar-frame d-md-none"></div>
+        <div class="b-p-gray d-md-none">
+          <h2 class="header-buycar1 white">Drive with a <span class="shout">Peace of Mind</span></h2>
+          <h3 class="header-buycar2 white">with <span class="gold shout">Warranty</span></h3>
+          <h3 class="header-buycar3 white">by <span><a href="http://mbmwheelpower.com.sg" target="_blank" style="color:white">MBM WheelPower!</a></span></h3>
+        </div>  
+      </div>
+          <!--<image src="image/suv-back.jpg" class="mt-n1 mb -0" style="width:100%" />-->
+            <!--Search Bar: allows user to key in the make/model of cars they looking for, budget, etc-->
+            <!--<div id="search-main" class="search-box b-l-gray white pl-5 py-2 m-0">-->
+            <!--    <form style="font-size:10pt; color:rgb(127, 127, 127)">-->
+            <!--        <input id="search-bar" type="text" placeholder="Car Make / Model" />-->
+            <!--        To allow user to select their lowest budget-->
+            <!--        <select name="price-min">-->
+            <!--                <option value="">Min Price</option>                    -->
+            <!--                <option value="">$10,000</option>                    -->
+            <!--                <option value="">$20,000</option>                    -->
+            <!--                <option value="">$30,000</option>                    -->
+            <!--                <option value="">$40,000</option>                    -->
+            <!--                <option value="">$50,000</option>                    -->
+            <!--                <option value="">$60,000</option>                    -->
+            <!--                <option value="">$70,000</option>                    -->
+            <!--                <option value="">$80,000</option>                    -->
+            <!--                <option value="">$90,000</option>                    -->
+            <!--                <option value="">$100,000</option>                    -->
+            <!--                <option value="">$200,000</option>                    -->
+            <!--            </select>-->
+            <!--        To allow user to select their max budget-->
+            <!--        <select name="price-max">-->
+            <!--                <option value="">Max Price</option>                    -->
+            <!--                <option value="">$10,000</option>                    -->
+            <!--                <option value="">$20,000</option>                    -->
+            <!--                <option value="">$30,000</option>                    -->
+            <!--                <option value="">$40,000</option>                    -->
+            <!--                <option value="">$50,000</option>                    -->
+            <!--                <option value="">$60,000</option>                    -->
+            <!--                <option value="">$70,000</option>                    -->
+            <!--                <option value="">$80,000</option>                    -->
+            <!--                <option value="">$90,000</option>                    -->
+            <!--                <option value="">$100,000</option>                    -->
+            <!--                <option value="">$110,000</option>                    -->
+            <!--                <option value="">$120,000</option>                    -->
+            <!--                <option value="">$130,000</option>                    -->
+            <!--                <option value="">$140,000</option>                    -->
+            <!--                <option value="">$150,000</option>                    -->
+            <!--                <option value="">$200,000</option>                    -->
+            <!--                <option value="">$300,000</option>                    -->
+            <!--           </select>-->
+            <!--        To allow user to select his choice of age of cars to view -->
+            <!--        <select name="year-of-make">-->
+            <!--                <option value="">Year Reg</option>                    -->
+            <!--                <option value="">2018</option>                    -->
+            <!--                <option value="">2016</option>                    -->
+            <!--                <option value="">2015</option>                    -->
+            <!--                <option value="">2014</option>                    -->
+            <!--                <option value="">2013</option>                    -->
+            <!--                <option value="">2011</option>                    -->
+            <!--                <option value="">2010</option>                    -->
+            <!--                <option value="">2009</option>                    -->
+            <!--                <option value="">&lt1 year(s) old</option>                    -->
+            <!--                <option value="">&lt2 year(s) old</option>                    -->
+            <!--                <option value="">&lt3 year(s) old</option>                    -->
+            <!--                <option value="">&lt4 year(s) old</option>                    -->
+            <!--                <option value="">&lt5 year(s) old</option>                    -->
+            <!--                <option value="">&gt6 year(s) old</option>                    -->
+            <!--                <option value="">&gt7 year(s) old</option>                    -->
+            <!--                <option value="">&gt8 year(s) old</option>                    -->
+            <!--                <option value="">&gt9 year(s) old</option>                    -->
+            <!--                <option value="">&gt10 year(s) old</option>                    -->
+            <!--                <option value="">All</option>                    -->
+            <!--            </select>-->
+            <!--        To allow user to select his choice of type of cars to view -->
+            <!--        <select name="car-type">-->
+            <!--                <option value="">Vehicle Type</option>                    -->
+            <!--                <option value="">Hybrid Car</option>                    -->
+            <!--                <option value="">Hatchback</option>                    -->
+            <!--                <option value="">Luxury Sedan</option>                    -->
+            <!--                <option value="">MPV</option>                    -->
+            <!--                <option value="">Mid-sized Sedan</option>                    -->
+            <!--                <option value="">Sports Car</option>                    -->
+            <!--                <option value="">Stationwagon</option>                    -->
+            <!--                <option value="">SUV</option>                    -->
+            <!--                <option value="">All</option>    -->
+            <!--            </select>-->
+            <!--        <a href="buycar-search.html"><input type="button" class="btn-warning" value="Find Used" /></a>-->
+            <!--    </form>-->
+            <!--</div>-->
+          <!--Testimonial from customers: involve position shifting of the testimonials closer to respective customers-->
+          <!--<section class="row justify-content-center mt-4">-->
+          <!--    <img src="image/testimonial.jpg" class="circle" />-->
+          <!--    </div>-->
+          <!--    <div class="col-4">-->
+          <!--        <div id="testimonial1">-->
+          <!--            <p class="p-0">"A wonderful buying experience with Ace. Process is smooth and hassle-free!"</p>-->
+          <!--            <p class="text-right p-0">Michael Ang</p></div>-->
+          <!--        <div id="testimonial2">-->
+          <!--            <p>"Ace got me the lowest insurance quote and excellent coating on the car!"</p>-->
+          <!--            <p class="text-right">Farhan</p></div>-->
+          <!--    </div>-->
+          <!--    <img src="image/testimonial2.jpg" class="circle" />-->
+          <!--</section>-->
+        <!--</div>-->
+      <!--</div>-->
     </main>
 
 

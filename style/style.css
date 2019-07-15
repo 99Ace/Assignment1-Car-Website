@@ -121,6 +121,33 @@ h4{
 }
 /*End of Sellcar page styling*/
 
+/*Buycar page styling*/
+.buycar-frame{
+    background-image: url("../image/suv-back.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    width: 100%;
+    height:100%;
+    margin: 1% 0 0;
+}
+#buycar{
+    width:100%;
+    height:32rem;
+}
+.header-buycar1{
+    padding :1% 0 0 5%;
+    margin:0;
+}
+.header-buycar2{
+    padding :0 0 0 15%;
+    margin:0;
+}
+.header-buycar3{
+    padding :0 0 2% 10%;
+    margin:0;
+}
+
 /*Contact Us page styling*/
 #contact-us{
     width:100%;
@@ -130,23 +157,13 @@ h4{
 #contact-text-frame{
     width:100%;
     height:80%;
-    padding:1%;
+    padding:0.5%;
 }
 #contact-text-textbox{
     width:100%;
     height:100%;
     padding:1%;
 }
-/*#contact-text-textbox input{*/
-/*    padding:0 1%;*/
-/*}*/
-/*.feedback{*/
-/*    height:50px;*/
-/*    width:48%;*/
-/*}*/
-/*#contact-text-textbox p{*/
-/*    font-size:1em;*/
-/*}*/
 .map-image{
     height:90%;
     width :90%;
@@ -175,10 +192,6 @@ h4{
 .square-med img:hover{
     opacity:1;
 }
-/*#contact-locate{*/
-/*    background-image:url("image/contact-locate.jpg");*/
-/*}*/
-/*End of Contact Us page styling*/
 
 /*Social Media : Extract from W3School*/
 .fa {
@@ -300,6 +313,12 @@ h4{
     /*}*/
 }
 @media screen and (max-width:1024px){
+    h2 {    
+        font-size: 2.3em;
+    }
+    h3{
+        font-size:1.8em;
+    }
     .picture_main {
         background-position: 68% 70%;
         height: 65%;
@@ -320,6 +339,31 @@ h4{
         /*padding:2% 1%;*/
         margin:1%;
     }
+    #buycar{
+        width:100%;
+        height:28rem;
+    }
+     .buycar-frame{
+        background-image: url("../image/suv-back.jpg");
+        background-size: cover ;
+        background-repeat: no-repeat;
+        background-position: 40% 50%;
+        width: 100%;
+        height:100%;
+        margin: 1% 0 0;
+    }
+   /*.header-buycar1{*/
+    /*    padding :5% 0 0 5%;*/
+    /*    margin:0;*/
+    /*}*/
+    /*.header-buycar2{*/
+    /*    padding :0% 0 0 15%;*/
+    /*    margin:0;*/
+    /*}*/
+    /*.header-buycar3{*/
+    /*    padding :0% 0 0 10%;*/
+    /*    margin:0;*/
+    /*}    */
 }
 @media screen and (max-width:768px){
     h1 {
@@ -372,7 +416,6 @@ h4{
     text-align: center;
     text-decoration: none;
 }
-
 }
 @media screen and (max-width:767px){
     h1 {
@@ -434,5 +477,25 @@ h4{
     .button-sell{
         padding:1% 2%;
         margin-bottom: 2px;
+    }
+    #buycar{
+        width:100%;
+        height:28rem;
+    }
+    .buycar-frame{
+        background-image: url("../image/suv-back.jpg");
+        background-size: cover ;
+        background-repeat: no-repeat;
+        background-position: 80% 50%;
+        width: 100%;
+        height:30%;
+        margin: 1% 0 0;
+    }
+    
+    #contact-us{
+          padding:3% 0% ;
+    }
+    #contact-text-frame{
+        padding:2%;
     }
 }    
