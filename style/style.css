@@ -167,12 +167,13 @@ h4{
 }
 .car-image-frame{
     width:100px;
-    /*margin:5%;*/
-}
-.car-image{
-    height:65%;
     margin:5%;
 }
+.car-image{
+    height:75%;
+    /*margin:5%;*/
+}
+
 
 /*.car-detail{*/
     /*width:100%;*/
