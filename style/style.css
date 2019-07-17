@@ -163,6 +163,11 @@ h4{
     padding:0.2%;
     /*background-color:rgba(0, 0, 0, 0.8); */
     /*color:white;*/
+    border:none;
+}
+.car-image-frame{
+    width:100px;
+    /*margin:5%;*/
 }
 .car-image{
     height:65%;
@@ -353,10 +358,12 @@ h4{
         font-size:1.5em;
         padding:5%;
     }
-
+    .listing th, .listing td{
+        font-size:0.9em;
+    }
 }
 @media screen and (max-width:1024px){
-    h2 {    
+    h2{    
         font-size: 2.3em;
     }
     h3{
@@ -412,7 +419,7 @@ h4{
         border-radius:50%;
     }
     .listing th, .listing td{
-        font-size:0.8em;
+        font-size:0.7em;
     }
     .car-image{
         height:55%;
@@ -474,7 +481,11 @@ h4{
             
     }
     .listing th, .listing td{
-        font-size:0.6em;
+        font-size:0.5em;
+    }
+    .car-image{
+        height:38%;
+        margin:3%;
     }
     /*Background for social media tags*/
     .fa {
