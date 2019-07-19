@@ -1,99 +1,105 @@
-SELL MY CAR 
+#PROJECT NAME : PRE-OWNED CAR WEBSITE
 
-This is a prototype
-Car Owners are constantly looking for a higher price to resell their cars. 
-Hence this website provides them an alternate source to get a higher quote through our bidding system
-The foucs of the website is to show a mock up with no back-end functionality.
-Static website to convince people to use the website
+This website is a prototype for a car website landing page and it is customised for Singapore Pre-Own Car Market.
 
-This website focus on 
-- getting car owners to send in enquiry for quotation for their cars
-- being a platform for potential car buyers to buy cars from our listing (new & old)
-- being an alternate platform for car owners to sell their car on our platform
+It provides a channel for 
+* Car owners to get quotation for their used cars or post their car for sale in open market
+* Car buyers to have an alternate channel to browse for their next buy
+* Car dealers to buy and beef up their stocks through our bidding system
+* Branding and recruitment for the Website Host (company)
 
-UX (important)
+#UX
 
-As a user, you will be able to:
-- understand the simple step to get a quotation
-- submit an enquiry form for quotation for his/her car
-- browse through the listing and look for next potential car to buy
-- find the information about our company
-- see reviews and testimonials from past customers
+Situation: 
+Current Market option:
+SGCARMART - main source of marketing for car owners, buyers and dealers to do their transactions. (Only choice for car buyers and sellers)
+motorist.sg - alternate source for car owners and buyers to transact.
 
+* Car owners’ objective is to find offer their car at a better value 
+* Car buyers would like to have more choices for selection
+* Car dealers are alway trying to find car to hamburger up their stocks
 
-Tips : 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-* As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+It is continuously an issue for both parties as sourcing for quotes and potential dealers are continuously a challenge and time devouring.
+The aim is to connect car owners and car dealers to create a match through a bidding process ,thus saving them time and giving them more channels to offer and purchase cars.
 
+What’s in for :
+* Car owners : 
+    * better offer for their cars and saves time sourcing for quotation
+    * option to change to consignment where they can sell to direct owner
 
-Features (highlight what the website can do, examiner need this to assess what ur web can do
+* Car buyers : 
+    * more channels to find their dream car
 
-Landing page:
-- background runs on a random with fadingIn and fadingOut of the name of the different brands
-- transition between pages have a car zoom from left to right and right to left if return to homepage 
-- <animation 
-- Form submission will detect if information key in contains the correct information
+* Car dealers : 
+    * more channels to purchase and increase their inventory
+    * alternate option to host their listings, giving their cars a wider reach to potential buyer
 
-Sell-car Page:
-- show the steps to selling 
-- contain form submission for quotation
+#FEATURES
 
-Buy-car Page:
-- Show a list of cars that contain the information of the cars
+Contains the following pages
 
+1. Navigation Bar
+    * Logo brings to the Home Page
+    * Will shrink when MD screen size
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+2. Landing Page 
+    * Theme of the site is Yellowish-Gold, White and Dark, chosen pictures, fonts and format is plan towards a proficient feel, subsequently liveliness is kept to negligible to keep it professional. 
+    * Picture is chose to position the car driving the attention towards the quotation page.
+    * Include a quotation page for car owners to send in an enquiry 
+    * Inclusive of about-us page and sellcar page 
 
+3. About Us Page
+    * A write up about the company
+    
+4. Sell Car Page
+    * 3 simple steps to illustrate the the selling process
+    * Displayed in 3 boxes to allow user to submit / check status / accept a quote. 
+      Future Development: 
+        * An User account which allows them to view the progress for the various stages 
+        * All the buttons and link are not functional at the moment, for future development
+6. Buy Car Page
+    * Warranty Company “MBM WHEELPOWER” have a link to their website
+    * A search box for user to choose their desired range of cars
+    * All the listed cars will be displayed at lower half of page
+    * Car-badges on the right (in blue) will change to yellow when selected
+      Future development: 
+        * when search input is sent, the list will be sorted and displayed accordingly
+        * Car-badges on the right of the list is for user easy selection for searching  cars.
+        
+7. Contact Us Page
+    * Video image as background to add some liveliness to the page
+    * Total of 4 selection (click to display the content in the display box on top);
+        * Location Box: it is the default display is the address with google map which shows the company location
+           Future Development:
+            * currently is not the real map; part of future development
+            * show the direction from user location to our showroom
+        * Contact Details: contain the contacts number for our sales rep. with hyperlink to connect to them on mobile directly when click on.
+        * Recruitment box: for recruitment purpose, allows user to apply for a position via form submission
+        * Feedback box: allow user to send back their feedbacks, serve as customer service tools
+      All submission are not functional at current stage
 
+#TECHNOLOGIES USED
 
-Existing Features
-* Feature 1 - allows users X to achieve Y, by having them fill out Z
-* ...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+HTML
+CSS
+JQUERY
+BOOTSTRAP
 
-Features Left to Implement
-* Another feature idea
+#TESTING
 
-Technologies Used (important! Tell if using any third party technology)
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-* JQuery
-    * The project uses JQuery to simplify DOM manipulation.
+- Mobile responsiveness is tested for screen size 1440px , 768px , 425px
+- Links works for navigation to different pages
 
-Testing (be specific and tell examiner what to do) whether u test for mobile responsiviness
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-1. Contact form:
-    * Go to the "Contact Us" page
-    * Try to submit the empty form and verify that an error message about the required fields appears
-    * Try to submit the form with an invalid email address and verify that a relevant error message appears
-    * Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+#DEPLOYMENT
 
-Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-* Different values for environment variables (Heroku Config Vars)?
-* Different configuration files?
-* Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+ The website is deployed on Github 
 
-Credits (if u modify code from anywhere, u can list down also)
+#CREDIT
 
 Content
-* The text for section Y was copied from the Wikipedia article Z
-
+Navigation bar is using the templates from BOOTSTRAP TUTORIAL (https://getbootstrap.com/) and modified to my current.
+During the stage of developing, I utilized templates for the social media buttons are from W3School (https://www.w3schools.com/) and also for references.
 Media
-* The photos used in this site were obtained from ...
-
-Acknowledgements
-* I received inspiration for this project from X
-
-HTML VALIDATION
-INDENTATION
+Some of the photos are downloaded from Pexels (https://www.pexels.com)
+Video is taken from Audi website 
 
