@@ -17,6 +17,7 @@
             padding: 0;
             margin: 0;
         }
+
         #myVideo {
             opacity: 0.7;
             position: fixed;
@@ -25,11 +26,12 @@
             z-index: -1;
         }
     </style>
-    <title></title>
+    
+    <title>Contact Us | Mikar * 9 Pte Ltd</title>
 </head>
 
 <body>
-
+    <!--Background Video to add liveliness to the page-->
     <video autoplay muted loop id="myVideo" class="d-md-block d-none"><source src="https://www.audi.com.sg/content/dam/nemo/models/r8/r8-spyder/my-2017/1920x1080-gallery/videos/R8_Spyder_Highlight_1385B001E.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
     </video>
@@ -64,11 +66,13 @@
                 </form>
             </div>
         </nav>
+        <!--Contact US Page-->
         <div id="contact-us">
+            <!--Main Display Frame for displaying the selection for different tab-->
             <div id="contact-text-frame" class="bg-white">
                 <div id="contact-text-textbox" class="white bg-dark text-center">
-                   
-                   
+
+
                     <div class="row w-100 m-0">
                         <div class="col-md-5 col-12 
                                     p-xl-4 p-lg-3 p-2
@@ -80,7 +84,7 @@
                                 <input type="text" placeholder="Enter your location" />
                                 <button class="bg-warning">Guide me there now!</button>
                             </form><br>
-  
+
                             <h5 class="card-title gold"><strong>Follow Us</strong></h5>
                             <a href="#" class="fa fa-facebook"></a>
                             <a href="#" class="fa fa-google"></a>
@@ -92,27 +96,61 @@
                             <image src="image/location.jpg" class="map-image"></image>
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
             </div>
             <div class="square-large row text-center">
+                <!--Selection to display location information-->
                 <div id="contact-locate" class="square-med bg-dark">
                     <image src="image/contact-locate.jpg" />
                     <h4>Locate Us</h4>
                 </div>
-                <div id="contact-details" class="square-med bg-dark"><img src="image/contact-details.jpg" />
+                <!--Selection to display contact information-->
+                <div id="contact-details" class="square-med bg-dark">
+                    <img src="image/contact-details.jpg" />
                     <h4>Contact Details</h4>
                 </div>
-                <div id="contact-join-us" class="square-med bg-dark"><img src="image/contact-join-us.jpg" />
+                <!--Selection to display form for application-->
+                <div id="contact-join-us" class="square-med bg-dark">
+                    <img src="image/contact-join-us.jpg" />
                     <h4>Join Us</h4>
                 </div>
-                <div id="contact-feedback" class="square-med bg-dark"><img src="image/contact-feedback.jpg" />
+                <!--Selection to display feedback form-->
+                <div id="contact-feedback" class="square-med bg-dark">
+                    <img src="image/contact-feedback.jpg" />
                     <h4>Feedback</h4>
                 </div>
             </div>
         </div>
     </main>
+    <!--Footer Section-->
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body pl-5">
+                <h5 class="card-title gold"><strong>Stay Connected</strong></h5>
+                <h6 class=" font-italic"><b>Subscribe to Sellmycar community!</b></h6>
+                <p class="card-text font-italic">Join us to get update on good deals and news concerning car ownership</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body pl-5">
+                <input type="text" placeholder="Email Address" class="w-50" /><button class="bg-warning">Go</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body pl-5">
+                <h5 class="card-title gold"><strong>Follow Us</strong></h5>
+
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+
+
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

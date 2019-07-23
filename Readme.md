@@ -80,10 +80,10 @@ Contains the following pages
 
 #TECHNOLOGIES USED
 
-HTML
-CSS
-JQUERY
-BOOTSTRAP
+* HTML
+* CSS
+* JQUERY
+* BOOTSTRAP
 
 #TESTING
 
@@ -92,7 +92,7 @@ BOOTSTRAP
 
 #DEPLOYMENT
 
- The website is deployed on Github 
+The website is deployed on Github 
 
 #CREDIT
 
