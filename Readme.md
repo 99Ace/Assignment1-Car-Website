@@ -1,6 +1,7 @@
 #PROJECT NAME : PRE-OWNED CAR WEBSITE
 
 This website is a prototype for a car website landing page and it is customised for Singapore Pre-Own Car Market.
+Link : https://99ace.github.io/Assignment1-Car-Website/
 
 It provides a channel for 
 * Car owners to get quotation for their used cars or post their car for sale in open market
